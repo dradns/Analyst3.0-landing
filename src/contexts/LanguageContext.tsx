@@ -39,7 +39,7 @@ const translations = {
     'hero.mode.sa.title': 'Системные требования', 
     'hero.mode.sa.description': 'Архитектура, модель данных, ERD, диаграмма последовательности, документирование API, Swagger, критерии приемки, нефункциональные требования',
     'hero.mode.reviewer.title': 'Реализация AI-агента',
-    'hero.mode.reviewer.description': 'Готовый работающий pet-проект как часть вашего портфолио',
+    'hero.mode.reviewer.description': 'Готовый работающий pet-проект в вашем портфолио',
     
     // Mode Cards
     'modes.badge': 'Roadmap',
@@ -189,7 +189,7 @@ const translations = {
     'hero.mode.sa.title': 'System Requirements',
     'hero.mode.sa.description': 'Architecture, data model, ERD, sequence diagram, API documentation, Swagger, acceptance criteria, non-functional requirements',
     'hero.mode.reviewer.title': 'AI Agent Implementation',
-    'hero.mode.reviewer.description': 'Ready working pet-project as part of your portfolio',
+    'hero.mode.reviewer.description': 'Ready working pet-project in your portfolio',
     
     // Mode Cards
     'modes.badge': 'Roadmap',
