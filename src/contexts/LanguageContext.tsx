@@ -24,7 +24,7 @@ const translations = {
     
     // Hero
     'hero.badge': 'Революция в аналитике',
-    'hero.title': 'Умное расширение\nдля VS Code',
+    'hero.title': 'Создайте AI-агента\nза 12 недель',
     'hero.description': 'В AI IDE BAS встроены специализированные режимы работы: Business Analyst, Architect, System Analyst, Code Reviewer и Designer. Один инструмент для всего цикла разработки требований прямо в VS Code.',
     'hero.startFree': 'Установить AI IDE BAS',
     'hero.watchDemo': 'Посмотреть демо',
@@ -172,7 +172,7 @@ const translations = {
     
     // Hero
     'hero.badge': 'Analytics Revolution',
-    'hero.title': 'Smart Extension\nfor VS Code',
+    'hero.title': 'Create an AI agent\nin 12 weeks',
     'hero.description': 'AI IDE BAS includes specialized work modes: Business Analyst, Architect, System Analyst, Code Reviewer, and Designer. One tool for the entire requirements development cycle right in VS Code.',
     'hero.startFree': 'Install AI IDE BAS',
     'hero.watchDemo': 'Watch Demo',
