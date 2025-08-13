@@ -43,7 +43,7 @@ const translations = {
     
     // Mode Cards
     'modes.badge': 'Результаты курса',
-    'modes.title': 'Программа курса ↓',
+    'modes.title': 'Программа курса',
     'modes.description': 'Каждый режим специализируется на определенной области разработки требований, обеспечивая экспертный уровень помощи на каждом этапе проекта',
     'modes.ba.title': 'Business Analyst',
     'modes.ba.description': 'Создает User Stories, Use Cases, бизнес-процессы, критерии приемки и Глоссарий',
@@ -193,7 +193,7 @@ const translations = {
     
     // Mode Cards
     'modes.badge': 'Course Results',
-    'modes.title': 'Course Program ↓',
+    'modes.title': 'Course Program',
     'modes.description': 'Each mode specializes in a specific area of requirements development, providing expert-level assistance at every stage of the project',
     'modes.ba.title': 'Business Analyst',
     'modes.ba.description': 'Creates User Stories, Use Cases, business processes, acceptance criteria and Glossary',
