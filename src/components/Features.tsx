@@ -87,32 +87,62 @@ const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {features.slice(0, 3).map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <Card 
-                key={index} 
-                className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardContent className="p-6 relative z-10">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
-                      <IconComponent className="w-6 h-6" />
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                    Джунам
-                  </h3>
-                  
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+          {/* First Column - Джунам */}
+          <Card className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300">
+            <CardContent className="p-6 relative z-10">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                  <Bot className="w-6 h-6" />
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+                Джунам
+              </h3>
+              
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {features[0].description}
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Second Column */}
+          <Card className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300" style={{ animationDelay: "100ms" }}>
+            <CardContent className="p-6 relative z-10">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                  <Zap className="w-6 h-6" />
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+                {features[1].title}
+              </h3>
+              
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {features[1].description}
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Third Column */}
+          <Card className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300" style={{ animationDelay: "200ms" }}>
+            <CardContent className="p-6 relative z-10">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                  <Cpu className="w-6 h-6" />
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+                {features[2].title}
+              </h3>
+              
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {features[2].description}
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
       </div>
