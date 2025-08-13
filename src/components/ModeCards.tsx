@@ -95,7 +95,7 @@ const ModeCards = () => {
     {
       id: "reviewer",
       title: t('modes.reviewer.title'),
-      shortTitle: "Reviewer",
+      shortTitle: "Format",
       description: t('modes.reviewer.description'),
       features: [
         t('modes.reviewer.features.0'),
