@@ -22,7 +22,7 @@ const translations = {
     'header.contacts': 'Контакты',
     'header.community': 'FAQ',
     'header.github': 'GitHub',
-    'header.tryNow': 'Попробовать',
+    'header.tryNow': 'Попасть на курс',
     
     // Hero
     'hero.badge': 'Революция в аналитике',
@@ -172,7 +172,7 @@ const translations = {
     'header.contacts': 'Contacts',
     'header.community': 'FAQ',
     'header.github': 'GitHub',
-    'header.tryNow': 'Try Now',
+    'header.tryNow': 'Get to the course',
     
     // Hero
     'hero.badge': 'Analytics Revolution',
