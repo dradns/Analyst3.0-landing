@@ -116,7 +116,7 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                {features[1].title}
+                Junior-аналитикам
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
