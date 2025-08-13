@@ -12,7 +12,8 @@ import {
   Code,
   Trophy,
   BookOpen,
-  Map
+  Map,
+  Bot
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -87,7 +88,7 @@ const ModeCards = () => {
       ],
       practiceTitle: t('modes.architect.practice.title'),
       result: t('modes.architect.result'),
-      icon: Brain,
+      icon: Bot,
       color: "from-purple-500 to-indigo-500",
       bgGlow: "bg-purple-500/10",
     },
