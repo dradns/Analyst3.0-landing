@@ -38,7 +38,7 @@ const translations = {
     'hero.mode.ba.description': 'US, UC, бизнес-процессы, критерии приемки, создает Глоссарий',
     'hero.mode.sa.title': 'Системные требования', 
     'hero.mode.sa.description': 'Sequence-диаграммы, OpenAPI, AsyncAPI, логика работы фичи, модель данных + ERD, создает НФТ',
-    'hero.mode.reviewer.title': 'Режим Ревьюера',
+    'hero.mode.reviewer.title': 'Реализация AI-агента',
     'hero.mode.reviewer.description': 'Проверка артефактов: на полноту требований, на соответствие правилам архитектуры, на соответствие правилам кибербезопасности, а также проверка от инженера поддержки',
     
     // Mode Cards
@@ -188,7 +188,7 @@ const translations = {
     'hero.mode.ba.description': 'US, UC, business processes, acceptance criteria, creates Glossary',
     'hero.mode.sa.title': 'System Requirements',
     'hero.mode.sa.description': 'Sequence diagrams, OpenAPI, AsyncAPI, feature logic, data model + ERD, creates NFR',
-    'hero.mode.reviewer.title': 'Reviewer Mode',
+    'hero.mode.reviewer.title': 'AI Agent Implementation',
     'hero.mode.reviewer.description': 'Artifact checks: requirements completeness, architecture compliance, cybersecurity compliance, and support engineer checks',
     
     // Mode Cards
