@@ -71,7 +71,7 @@ const ModeCards = () => {
     {
       id: "architect",
       title: t('modes.architect.title'),
-      shortTitle: "Architect",
+      shortTitle: "AI",
       description: t('modes.architect.description'),
       features: [
         t('modes.architect.features.0'),
