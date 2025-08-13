@@ -11,7 +11,7 @@ const CourseCtaSection = () => {
             <CardContent className="p-8">
               <Code className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-semibold mb-4">
-                Курс подойдет даже опытным специалистам
+                Курс подойдет даже опытным аналитикам
               </h3>
               <p className="text-muted-foreground mb-6">
                 Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
