@@ -104,7 +104,7 @@ const Features = () => {
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {features[0].description}
+                Быстрый старт в профессии аналитика с реальным проектом в портфолио
               </p>
             </CardContent>
           </Card>
