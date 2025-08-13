@@ -25,7 +25,7 @@ const Header = () => {
               <span className="text-white font-bold text-sm">AI</span>
             </div>
             <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              AI IDE BAS
+              {t('header.title')}
             </span>
           </div>
 

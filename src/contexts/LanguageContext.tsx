@@ -14,6 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   ru: {
     // Header
+    'header.title': 'Системный Аналитик 3.0',
     'header.features': 'Возможности',
     'header.modes': 'Режимы',
     'header.quickstart': 'Начать',
@@ -162,6 +163,7 @@ const translations = {
   },
   en: {
     // Header
+    'header.title': 'System Analyst 3.0',
     'header.features': 'Features',
     'header.modes': 'Modes',
     'header.quickstart': 'Get Started',
