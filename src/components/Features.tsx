@@ -142,7 +142,7 @@ const Features = () => {
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {features[2].description}
+                Расширение компетенций за счёт навыков работы с LLM и AI-агентами
               </p>
             </CardContent>
           </Card>
