@@ -200,7 +200,7 @@ const ModeCards = () => {
             <CardContent className="p-8">
               <Code className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-semibold mb-4">
-                Готовы прокачать свои знания в аналитике?
+                Курс подойдет даже опытным специалистам
               </h3>
               <p className="text-muted-foreground mb-6">
                 {t('modes.cta.description')}
