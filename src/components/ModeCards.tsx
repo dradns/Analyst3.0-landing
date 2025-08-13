@@ -13,7 +13,8 @@ import {
   Trophy,
   BookOpen,
   Map,
-  Bot
+  Bot,
+  Monitor
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -103,7 +104,7 @@ const ModeCards = () => {
         t('modes.reviewer.features.2'),
         t('modes.reviewer.features.3')
       ],
-      icon: Shield,
+      icon: Monitor,
       color: "from-red-500 to-orange-500",
       bgGlow: "bg-red-500/10",
     },
