@@ -80,21 +80,6 @@ const ModeCards = () => {
       color: "from-red-500 to-orange-500",
       bgGlow: "bg-red-500/10",
     },
-    {
-      id: "designer",
-      title: t('modes.designer.title'),
-      shortTitle: "Designer",
-      description: t('modes.designer.description'),
-      features: [
-        t('modes.designer.features.0'),
-        t('modes.designer.features.1'),
-        t('modes.designer.features.2'),
-        t('modes.designer.features.3')
-      ],
-      icon: Palette,
-      color: "from-pink-500 to-rose-500",
-      bgGlow: "bg-pink-500/10",
-    },
   ];
 
   return (
@@ -116,7 +101,7 @@ const ModeCards = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {modes.map((mode, index) => {
             const IconComponent = mode.icon;
             return (
