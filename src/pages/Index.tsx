@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ModeCards from "@/components/ModeCards";
 import Features from "@/components/Features";
+import CourseCtaSection from "@/components/CourseCtaSection";
 import QuickStart from "@/components/QuickStart";
 import Footer from "@/components/Footer";
 
@@ -13,6 +14,7 @@ const Index = () => {
         <Hero />
         <ModeCards />
         <Features />
+        <CourseCtaSection />
         <QuickStart />
       </main>
       <Footer />

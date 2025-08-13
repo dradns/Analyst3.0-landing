@@ -194,24 +194,6 @@ const ModeCards = () => {
           })}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <Card className="max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <Code className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-2xl font-semibold mb-4">
-                Курс подойдет даже опытным специалистам
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
-              </p>
-              <Button variant="hero" size="lg">
-                Попасть на курс
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
