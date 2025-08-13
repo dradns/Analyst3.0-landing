@@ -29,8 +29,16 @@ const ModeCards = () => {
         t('modes.ba.features.0'),
         t('modes.ba.features.1'), 
         t('modes.ba.features.2'),
-        t('modes.ba.features.3')
+        t('modes.ba.features.3'),
+        t('modes.ba.features.4')
       ],
+      practice: [
+        t('modes.ba.practice.0'),
+        t('modes.ba.practice.1'),
+        t('modes.ba.practice.2')
+      ],
+      practiceTitle: t('modes.ba.practice.title'),
+      result: t('modes.ba.result'),
       icon: Lightbulb,
       color: "from-blue-500 to-cyan-500",
       bgGlow: "bg-blue-500/10",
@@ -133,12 +141,31 @@ const ModeCards = () => {
                   </p>
 
                   <div className="space-y-2 mb-6">
+                    <h4 className="text-sm font-medium text-foreground mb-2">Что изучите:</h4>
                     {mode.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3" />
+                      <div key={idx} className="flex items-start text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />
                         <span className="text-muted-foreground">{feature}</span>
                       </div>
                     ))}
+                    
+                    {mode.practice && (
+                      <>
+                        <h4 className="text-sm font-medium text-foreground mb-2 mt-4">{mode.practiceTitle}</h4>
+                        {mode.practice.map((item, idx) => (
+                          <div key={idx} className="flex items-start text-sm">
+                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-3 mt-2 flex-shrink-0" />
+                            <span className="text-muted-foreground">{item}</span>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                    
+                    {mode.result && (
+                      <div className="mt-4 p-3 rounded-lg bg-muted/50">
+                        <p className="text-sm font-medium text-foreground">{mode.result}</p>
+                      </div>
+                    )}
                   </div>
 
                 </CardContent>
