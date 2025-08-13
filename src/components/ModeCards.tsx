@@ -160,7 +160,7 @@ const ModeCards = () => {
                   </p>
 
                   <div className="space-y-2 mb-6">
-                    <h4 className="text-sm font-medium text-foreground mb-2">Что изучите:</h4>
+                    <h4 className="text-sm font-medium text-foreground mb-2">Вас ожидает:</h4>
                     {mode.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />
