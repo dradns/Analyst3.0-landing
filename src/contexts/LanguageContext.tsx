@@ -19,7 +19,7 @@ const translations = {
     'header.modes': 'Режимы',
     'header.quickstart': 'Начать',
     'header.integrations': 'Интеграции',
-    'header.community': 'Сообщество',
+    'header.community': 'FAQ',
     'header.github': 'GitHub',
     'header.tryNow': 'Попробовать',
     
@@ -168,7 +168,7 @@ const translations = {
     'header.modes': 'Modes',
     'header.quickstart': 'Get Started',
     'header.integrations': 'Integrations',
-    'header.community': 'Community',
+    'header.community': 'FAQ',
     'header.github': 'GitHub',
     'header.tryNow': 'Try Now',
     
