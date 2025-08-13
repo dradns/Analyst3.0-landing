@@ -146,7 +146,7 @@ const ModeCards = () => {
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <Badge variant="secondary" className="text-xs">
-                      {mode.shortTitle}
+                      Online
                     </Badge>
                   </div>
                   <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
