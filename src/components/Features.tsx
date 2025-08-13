@@ -82,7 +82,7 @@ const Features = () => {
             Кому подойдет курс?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {t('features.description')}
+            Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
           </p>
         </div>
 
