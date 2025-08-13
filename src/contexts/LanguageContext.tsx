@@ -27,7 +27,7 @@ const translations = {
     'hero.title': 'Создайте AI-агента\nза 12 недель',
     'hero.description': 'В AI IDE BAS встроены специализированные режимы работы: Business Analyst, Architect, System Analyst, Code Reviewer и Designer. Один инструмент для всего цикла разработки требований прямо в VS Code.',
     'hero.startFree': 'Присоединиться к курсу',
-    'hero.watchDemo': 'Посмотреть демо',
+    'hero.watchDemo': 'Скачать программу',
     'hero.tryModes': 'Попробуйте разные режимы',
     'hero.tryMode': 'Попробовать режим',
     
@@ -175,7 +175,7 @@ const translations = {
     'hero.title': 'Create an AI agent\nin 12 weeks',
     'hero.description': 'AI IDE BAS includes specialized work modes: Business Analyst, Architect, System Analyst, Code Reviewer, and Designer. One tool for the entire requirements development cycle right in VS Code.',
     'hero.startFree': 'Join the course',
-    'hero.watchDemo': 'Watch Demo',
+    'hero.watchDemo': 'Download the programm',
     'hero.tryModes': 'Try Different Modes',
     'hero.tryMode': 'Try Mode',
     
