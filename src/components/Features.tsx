@@ -79,7 +79,7 @@ const Features = () => {
             {t('features.badge')}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            {t('features.title')}
+            Кому подойдет курс?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             {t('features.description')}
