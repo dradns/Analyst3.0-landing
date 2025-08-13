@@ -203,7 +203,7 @@ const ModeCards = () => {
                 Курс подойдет даже опытным специалистам
               </h3>
               <p className="text-muted-foreground mb-6">
-                {t('modes.cta.description')}
+                Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
               </p>
               <Button variant="hero" size="lg">
                 {t('modes.cta.button')}
