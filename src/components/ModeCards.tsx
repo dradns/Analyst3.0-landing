@@ -10,7 +10,7 @@ import {
   ArrowRight,
   Lightbulb,
   Code,
-  Users
+  Trophy
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -105,7 +105,7 @@ const ModeCards = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
-            <Users className="w-4 h-4 mr-2" />
+            <Trophy className="w-4 h-4 mr-2" />
             {t('modes.badge')}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">

@@ -42,7 +42,7 @@ const translations = {
     'hero.mode.reviewer.description': 'Проверка артефактов: на полноту требований, на соответствие правилам архитектуры, на соответствие правилам кибербезопасности, а также проверка от инженера поддержки',
     
     // Mode Cards
-    'modes.badge': 'Режимы работы',
+    'modes.badge': 'Результаты курса',
     'modes.title': 'В процессе обучения вы научитесь:',
     'modes.description': 'Каждый режим специализируется на определенной области разработки требований, обеспечивая экспертный уровень помощи на каждом этапе проекта',
     'modes.ba.title': 'Business Analyst',
@@ -192,7 +192,7 @@ const translations = {
     'hero.mode.reviewer.description': 'Artifact checks: requirements completeness, architecture compliance, cybersecurity compliance, and support engineer checks',
     
     // Mode Cards
-    'modes.badge': 'Work Modes',
+    'modes.badge': 'Course Results',
     'modes.title': 'In the learning process you will learn:',
     'modes.description': 'Each mode specializes in a specific area of requirements development, providing expert-level assistance at every stage of the project',
     'modes.ba.title': 'Business Analyst',
