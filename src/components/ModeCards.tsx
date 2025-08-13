@@ -206,7 +206,7 @@ const ModeCards = () => {
                 Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
               </p>
               <Button variant="hero" size="lg">
-                {t('modes.cta.button')}
+                Попасть на курс
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </CardContent>
