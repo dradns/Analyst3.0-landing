@@ -103,7 +103,7 @@ const Features = () => {
                   </div>
                   
                   <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                    Студентам
+                    Джунам
                   </h3>
                   
                   <p className="text-muted-foreground text-sm leading-relaxed">
