@@ -11,6 +11,7 @@ const Header = () => {
     { name: t('header.features'), href: "#features" },
     { name: t('header.quickstart'), href: "#quickstart" },
     { name: t('header.integrations'), href: "#integrations" },
+    { name: t('header.contacts'), href: "#contacts" },
     { name: t('header.community'), href: "#community" },
   ];
 
