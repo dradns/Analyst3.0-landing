@@ -24,7 +24,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/cfc79ad7-a059-4cab-a04c-293a54663f7c.png" 
               alt="Analyst 3.0 Logo" 
-              className="w-8 h-8 rounded-lg"
+              className="w-10 h-10 rounded-lg"
             />
             <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               {t('header.title')}
