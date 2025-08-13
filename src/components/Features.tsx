@@ -86,8 +86,8 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {features.map((feature, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {features.slice(0, 3).map((feature, index) => {
             const IconComponent = feature.icon;
             return (
               <Card 
@@ -115,49 +115,6 @@ const Features = () => {
           })}
         </div>
 
-        {/* In Development Section */}
-        <div className="mt-20">
-          <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
-              <Clock className="w-4 h-4 mr-2" />
-              {t('features.indev.badge')}
-            </Badge>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              {t('features.indev.title')}
-            </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Если вы работате и развиваетесь в аналитике → получите актуальные навыки работы с LLM и AI-агентами
-          </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {inDevFeatures.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <Card 
-                  key={index} 
-                  className="group relative overflow-hidden opacity-75 hover:opacity-100 transition-opacity duration-300"
-                >
-                  <CardContent className="p-6 relative z-10">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center text-muted-foreground">
-                        <IconComponent className="w-6 h-6" />
-                      </div>
-                    </div>
-                    
-                    <h3 className="text-lg font-semibold mb-3">
-                      {feature.title}
-                    </h3>
-                    
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </section>
   );
