@@ -30,7 +30,7 @@ const translations = {
     'hero.description': 'Освойте навыки бизнес и системного анализа, научитесь работать с AI-агентами, соберите портфолио и подготовьтесь к трудоустройству.',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать программу',
-    'hero.tryModes': 'В процессе обучения вы освоите',
+    'hero.tryModes': 'В процессе обучения вы освоите ↓',
     'hero.tryMode': 'Попробовать режим',
     
     // Hero Demo Modes  
@@ -180,7 +180,7 @@ const translations = {
     'hero.description': 'Master business and system analysis skills, learn to work with AI agents, build a portfolio and prepare for employment.',
     'hero.startFree': 'Join the course',
     'hero.watchDemo': 'Download the programm',
-    'hero.tryModes': 'In the learning process you will master',
+    'hero.tryModes': 'In the learning process you will master ↓',
     'hero.tryMode': 'Try Mode',
     
     // Hero Demo Modes  
