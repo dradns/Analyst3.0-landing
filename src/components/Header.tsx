@@ -9,7 +9,6 @@ const Header = () => {
 
   const navigation = [
     { name: t('header.features'), href: "#features" },
-    { name: t('header.modes'), href: "#modes" },
     { name: t('header.quickstart'), href: "#quickstart" },
     { name: t('header.integrations'), href: "#integrations" },
     { name: t('header.community'), href: "#community" },
