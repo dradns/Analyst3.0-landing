@@ -113,8 +113,8 @@ VSCode -> Пользователь: Дает суперсилу
 
           <Card className="max-w-4xl mx-auto">
             <CardContent className="p-6">
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div>
+              <div className="grid md:grid-cols-5 gap-6 items-center">
+                <div className="md:col-span-2">
                   <div className="flex items-center mb-4">
                     {React.createElement(demoModes[activeDemo].icon, {
                       className: "w-6 h-6 mr-3 text-primary"
@@ -127,7 +127,7 @@ VSCode -> Пользователь: Дает суперсилу
                     {demoModes[activeDemo].description}
                   </p>
                 </div>
-                <div className="bg-muted/50 rounded-lg p-4 border border-glass-border">
+                <div className="md:col-span-3 bg-muted/50 rounded-lg p-4 border border-glass-border">
                   <pre className="text-sm font-mono text-muted-foreground overflow-x-auto">
                     <code>{demoModes[activeDemo].code}</code>
                   </pre>
