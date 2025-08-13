@@ -10,7 +10,8 @@ import {
   GitBranch,
   Puzzle,
   Clock,
-  GraduationCap
+  GraduationCap,
+  Code
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -112,7 +113,7 @@ const Features = () => {
             <CardContent className="p-6 relative z-10">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
-                  <Zap className="w-6 h-6" />
+                  <Code className="w-6 h-6" />
                 </div>
               </div>
               
