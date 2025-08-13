@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Play, Sparkles, Zap, Brain, Code2 } from "lucide-react";
+import { ArrowRight, Download, Sparkles, Zap, Brain, Code2 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
@@ -87,7 +87,7 @@ VSCode -> Пользователь: Дает суперсилу
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button variant="glass" size="hero" className="animate-scale-in">
-              <Play className="w-5 h-5 mr-2" />
+              <Download className="w-5 h-5 mr-2" />
               {t('hero.watchDemo')}
             </Button>
           </div>
