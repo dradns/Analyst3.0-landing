@@ -52,8 +52,18 @@ const ModeCards = () => {
         t('modes.sa.features.0'),
         t('modes.sa.features.1'),
         t('modes.sa.features.2'),
-        t('modes.sa.features.3')
+        t('modes.sa.features.3'),
+        t('modes.sa.features.4'),
+        t('modes.sa.features.5'),
+        t('modes.sa.features.6')
       ],
+      practice: [
+        t('modes.sa.practice.0'),
+        t('modes.sa.practice.1'),
+        t('modes.sa.practice.2')
+      ],
+      practiceTitle: t('modes.sa.practice.title'),
+      result: t('modes.sa.result'),
       icon: Settings,
       color: "from-green-500 to-emerald-500",
       bgGlow: "bg-green-500/10",
