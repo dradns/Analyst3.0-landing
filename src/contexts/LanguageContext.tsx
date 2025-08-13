@@ -25,7 +25,7 @@ const translations = {
     // Hero
     'hero.badge': 'Революция в аналитике',
     'hero.title': 'Создайте AI-агента\nза 12 недель',
-    'hero.description': 'Освойте навыки бизнес и системного анализа + работа с AI-агентами, соберите портфолио и подготовьтесь к трудоустройству.',
+    'hero.description': 'Освойте навыки бизнес и системного анализа, научитесь работать с AI-агентами, соберите портфолио и подготовьтесь к трудоустройству.',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать программу',
     'hero.tryModes': 'Попробуйте разные режимы',
@@ -173,7 +173,7 @@ const translations = {
     // Hero
     'hero.badge': 'Analytics Revolution',
     'hero.title': 'Create an AI agent\nin 12 weeks',
-    'hero.description': 'Master business and system analysis skills + work with AI agents, build a portfolio and prepare for employment.',
+    'hero.description': 'Master business and system analysis skills, learn to work with AI agents, build a portfolio and prepare for employment.',
     'hero.startFree': 'Join the course',
     'hero.watchDemo': 'Download the programm',
     'hero.tryModes': 'Try Different Modes',
