@@ -37,7 +37,7 @@ const translations = {
     'hero.mode.ba.title': 'Бизнес требования',
     'hero.mode.ba.description': 'User Stories, Use Cases, прототипирование интерфейсов, BPMN, Activity diagram',
     'hero.mode.sa.title': 'Системные требования', 
-    'hero.mode.sa.description': 'Sequence-диаграммы, OpenAPI, AsyncAPI, логика работы фичи, модель данных + ERD, создает НФТ',
+    'hero.mode.sa.description': 'Архитектура, модель данных, ERD, диаграмма последовательности, документирование API, Swagger, критерии приемки, нефункциональные требования',
     'hero.mode.reviewer.title': 'Реализация AI-агента',
     'hero.mode.reviewer.description': 'Проверка артефактов: на полноту требований, на соответствие правилам архитектуры, на соответствие правилам кибербезопасности, а также проверка от инженера поддержки',
     
@@ -187,7 +187,7 @@ const translations = {
     'hero.mode.ba.title': 'Business Requirements',
     'hero.mode.ba.description': 'User Stories, Use Cases, interface prototyping, BPMN, Activity diagram',
     'hero.mode.sa.title': 'System Requirements',
-    'hero.mode.sa.description': 'Sequence diagrams, OpenAPI, AsyncAPI, feature logic, data model + ERD, creates NFR',
+    'hero.mode.sa.description': 'Architecture, data model, ERD, sequence diagram, API documentation, Swagger, acceptance criteria, non-functional requirements',
     'hero.mode.reviewer.title': 'AI Agent Implementation',
     'hero.mode.reviewer.description': 'Artifact checks: requirements completeness, architecture compliance, cybersecurity compliance, and support engineer checks',
     
