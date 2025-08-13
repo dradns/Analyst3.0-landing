@@ -34,7 +34,7 @@ const translations = {
     'hero.tryMode': 'Попробовать режим',
     
     // Hero Demo Modes  
-    'hero.mode.ba.title': 'Режим Бизнес Аналитика',
+    'hero.mode.ba.title': 'Бизнес требования',
     'hero.mode.ba.description': 'US, UC, бизнес-процессы, критерии приемки, создает Глоссарий',
     'hero.mode.sa.title': 'Режим Системного Аналитика', 
     'hero.mode.sa.description': 'Sequence-диаграммы, OpenAPI, AsyncAPI, логика работы фичи, модель данных + ERD, создает НФТ',
@@ -184,7 +184,7 @@ const translations = {
     'hero.tryMode': 'Try Mode',
     
     // Hero Demo Modes  
-    'hero.mode.ba.title': 'Business Analyst Mode',
+    'hero.mode.ba.title': 'Business Requirements',
     'hero.mode.ba.description': 'US, UC, business processes, acceptance criteria, creates Glossary',
     'hero.mode.sa.title': 'System Analyst Mode',
     'hero.mode.sa.description': 'Sequence diagrams, OpenAPI, AsyncAPI, feature logic, data model + ERD, creates NFR',
