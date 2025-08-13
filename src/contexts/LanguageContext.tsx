@@ -35,7 +35,7 @@ const translations = {
     
     // Hero Demo Modes  
     'hero.mode.ba.title': 'Бизнес требования',
-    'hero.mode.ba.description': 'US, UC, бизнес-процессы, критерии приемки, создает Глоссарий',
+    'hero.mode.ba.description': 'User Stories, Use Cases, прототипирование интерфейсов, BPMN, Activity diagram',
     'hero.mode.sa.title': 'Системные требования', 
     'hero.mode.sa.description': 'Sequence-диаграммы, OpenAPI, AsyncAPI, логика работы фичи, модель данных + ERD, создает НФТ',
     'hero.mode.reviewer.title': 'Реализация AI-агента',
@@ -185,7 +185,7 @@ const translations = {
     
     // Hero Demo Modes  
     'hero.mode.ba.title': 'Business Requirements',
-    'hero.mode.ba.description': 'US, UC, business processes, acceptance criteria, creates Glossary',
+    'hero.mode.ba.description': 'User Stories, Use Cases, interface prototyping, BPMN, Activity diagram',
     'hero.mode.sa.title': 'System Requirements',
     'hero.mode.sa.description': 'Sequence diagrams, OpenAPI, AsyncAPI, feature logic, data model + ERD, creates NFR',
     'hero.mode.reviewer.title': 'AI Agent Implementation',
