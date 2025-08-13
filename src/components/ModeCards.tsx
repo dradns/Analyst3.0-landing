@@ -77,8 +77,16 @@ const ModeCards = () => {
         t('modes.architect.features.0'),
         t('modes.architect.features.1'),
         t('modes.architect.features.2'),
-        t('modes.architect.features.3')
+        t('modes.architect.features.3'),
+        t('modes.architect.features.4')
       ],
+      practice: [
+        t('modes.architect.practice.0'),
+        t('modes.architect.practice.1'),
+        t('modes.architect.practice.2')
+      ],
+      practiceTitle: t('modes.architect.practice.title'),
+      result: t('modes.architect.result'),
       icon: Brain,
       color: "from-purple-500 to-indigo-500",
       bgGlow: "bg-purple-500/10",
