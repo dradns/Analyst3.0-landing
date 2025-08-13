@@ -15,7 +15,7 @@ const translations = {
   ru: {
     // Header
     'header.title': 'Системный Аналитик 3.0',
-    'header.features': 'Возможности',
+    'header.features': 'Контакты',
     'header.modes': 'Режимы',
     'header.quickstart': 'Начать',
     'header.integrations': 'Интеграции',
@@ -164,7 +164,7 @@ const translations = {
   en: {
     // Header
     'header.title': 'System Analyst 3.0',
-    'header.features': 'Features',
+    'header.features': 'Contacts',
     'header.modes': 'Modes',
     'header.quickstart': 'Get Started',
     'header.integrations': 'Integrations',
