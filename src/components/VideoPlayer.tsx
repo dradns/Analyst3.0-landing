@@ -36,19 +36,6 @@ const VideoPlayer = () => {
                   <source src="/course-video.mp4" type="video/mp4" />
                   Ваш браузер не поддерживает воспроизведение видео.
                 </video>
-                
-                {/* Fallback if no video is provided */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm">
-                  <div className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                      <Play className="w-10 h-10 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">Видео скоро появится</h3>
-                    <p className="text-muted-foreground">
-                      Подготавливаем детальный обзор программы курса
-                    </p>
-                  </div>
-                </div>
               </div>
             </CardContent>
           </Card>
