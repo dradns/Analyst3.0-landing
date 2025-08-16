@@ -15,6 +15,7 @@ const Index = () => {
         <ModeCards />
         <Features />
         <CourseCtaSection />
+        <CourseCtaSection />
         <QuickStart />
       </main>
       <Footer />
