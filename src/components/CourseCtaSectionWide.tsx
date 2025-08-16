@@ -13,8 +13,9 @@ const CourseCtaSectionWide = () => {
               <h3 className="text-2xl font-semibold mb-4">
                 Вам сюда не надо, если
               </h3>
-              <p className="text-muted-foreground mb-6">
-                Если вы уже в сфере аналитики — откроете для себя современные подходы и инструменты работы с LLM и AI-агентами
+              <p className="text-muted-foreground mb-6 flex items-center justify-center gap-2">
+                <X className="w-5 h-5 text-destructive" />
+                Вы не любите/не хотите/не умеете программировать
               </p>
               <Button variant="hero" size="lg">
                 Попасть на курс
