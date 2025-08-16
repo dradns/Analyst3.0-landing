@@ -111,7 +111,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                             Участников курса
                           </h3>
                           <Badge variant="secondary" className="text-xs">
-                            {step.time}
+                            Online
                           </Badge>
                         </div>
                         <p className="text-muted-foreground text-sm">
