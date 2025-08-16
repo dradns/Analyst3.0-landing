@@ -27,7 +27,7 @@ const VideoPlayer = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="overflow-hidden shadow-2xl">
             <CardContent className="p-0">
-              <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20 max-w-sm mx-auto">
                 <video 
                   className="w-full h-full object-cover rounded-lg"
                   controls
