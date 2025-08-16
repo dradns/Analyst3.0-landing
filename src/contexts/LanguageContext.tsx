@@ -29,7 +29,7 @@ const translations = {
     'hero.title': 'Создайте AI-агента\nза 12 недель',
     'hero.description': 'Освойте навыки бизнес и системного анализа, научитесь работать с AI-агентами, соберите портфолио и подготовьтесь к трудоустройству.',
     'hero.startFree': 'Присоединиться к курсу',
-    'hero.watchDemo': 'Скачать программу',
+    'hero.watchDemo': 'Скачать шаблон',
     'hero.tryModes': 'В процессе обучения вы освоите ↓',
     'hero.tryMode': 'Попробовать режим',
     
@@ -204,7 +204,7 @@ const translations = {
     'hero.title': 'Create an AI agent\nin 12 weeks',
     'hero.description': 'Master business and system analysis skills, learn to work with AI agents, build a portfolio and prepare for employment.',
     'hero.startFree': 'Join the course',
-    'hero.watchDemo': 'Download the programm',
+    'hero.watchDemo': 'Download template',
     'hero.tryModes': 'In the learning process you will master ↓',
     'hero.tryMode': 'Try Mode',
     
