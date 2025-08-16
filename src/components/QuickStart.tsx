@@ -79,7 +79,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Users className="w-4 h-4 mr-2" />
-            Проекты наших учеников
+            Статистика
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-4">
             Результаты прошлого курса
