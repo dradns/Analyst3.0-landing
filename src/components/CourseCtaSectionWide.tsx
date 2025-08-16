@@ -4,7 +4,7 @@ import { X, ArrowRight } from "lucide-react";
 
 const CourseCtaSectionWide = () => {
   return (
-    <section id="not-for-you" className="py-20 relative overflow-hidden">
+    <section id="not-for-you" className="py-20 relative overflow-hidden scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <Card className="max-w-4xl mx-auto">
