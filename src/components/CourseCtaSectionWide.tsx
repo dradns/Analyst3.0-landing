@@ -11,7 +11,7 @@ const CourseCtaSectionWide = () => {
             <CardContent className="p-8">
               <BarChart3 className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-semibold mb-4">
-                Курс будет полезен даже опытным аналитикам
+                Вам сюда не надо, если
               </h3>
               <p className="text-muted-foreground mb-6">
                 Если вы уже в сфере аналитики — откроете для себя современные подходы и инструменты работы с LLM и AI-агентами
