@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Calendar, Video } from "lucide-react";
+import { Check, Calendar, Video, ClipboardCheck } from "lucide-react";
 
 const CourseCtaSectionPositive = () => {
   return (
@@ -40,7 +40,7 @@ const CourseCtaSectionPositive = () => {
 
             <Card>
               <CardContent className="p-8 text-center">
-                <Check className="w-12 h-12 mx-auto mb-4 text-primary" />
+                <ClipboardCheck className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-4">
                   Проверка заданий
                 </h3>
