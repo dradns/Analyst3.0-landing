@@ -136,17 +136,31 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </div>
           </div>
 
-          {/* Results Image */}
-          <div className="animate-scale-in" style={{ animationDelay: "600ms" }}>
-            <Card className="relative overflow-hidden">
-              <CardContent className="p-0">
-                <img 
-                  src="/lovable-uploads/c8c377df-4b88-4bab-8f20-a2723714b48c.png"
-                  alt="GigaMentor - результаты после курса"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
+          {/* Results Images */}
+          <div className="space-y-6">
+            <div className="animate-scale-in" style={{ animationDelay: "600ms" }}>
+              <Card className="relative overflow-hidden">
+                <CardContent className="p-0">
+                  <img 
+                    src="/lovable-uploads/c8c377df-4b88-4bab-8f20-a2723714b48c.png"
+                    alt="GigaMentor - результаты после курса"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="animate-scale-in" style={{ animationDelay: "800ms" }}>
+              <Card className="relative overflow-hidden">
+                <CardContent className="p-0">
+                  <img 
+                    src="/lovable-uploads/bb3e35a5-564d-4875-b668-a0af0c1b14a1.png"
+                    alt="GigaMentor - специализации"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
 
