@@ -62,7 +62,7 @@ const Footer = () => {
                   <span className="text-white font-bold text-sm">AI</span>
                 </div>
                 <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                  AI IDE BAS
+                  Системный Аналитик 3.0
                 </span>
               </div>
               
