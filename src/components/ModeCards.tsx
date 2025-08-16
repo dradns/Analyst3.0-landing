@@ -123,7 +123,7 @@ const ModeCards = () => {
             <Map className="w-4 h-4 mr-2" />
             Что вас ожидает
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent px-8">
             {t('modes.title')}
             <BookOpen className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
