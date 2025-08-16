@@ -3,7 +3,7 @@ import { Check, Calendar, Video, ClipboardCheck, ArrowDown } from "lucide-react"
 
 const CourseCtaSectionPositive = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="learning-format" className="py-24 relative overflow-hidden scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent flex items-center justify-center gap-4">
