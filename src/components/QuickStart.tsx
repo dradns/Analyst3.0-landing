@@ -102,7 +102,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
-                          {step.step}
+                          70
                         </div>
                       </div>
                       <div className="flex-1">
