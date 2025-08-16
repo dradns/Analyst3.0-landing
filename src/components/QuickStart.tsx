@@ -85,9 +85,6 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             Результаты прошлого курса
             <ArrowDown className="w-8 h-8 text-foreground" />
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Какие навыки вы получите:
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
