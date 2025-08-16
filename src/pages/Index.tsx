@@ -5,6 +5,7 @@ import ModeCards from "@/components/ModeCards";
 import Features from "@/components/Features";
 import CourseCtaSection from "@/components/CourseCtaSection";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
+import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import QuickStart from "@/components/QuickStart";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ const Index = () => {
         <Features />
         <CourseCtaSection />
         <CourseCtaSectionWide />
+        <CourseCtaSectionPositive />
         <QuickStart />
       </main>
       <Footer />
