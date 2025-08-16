@@ -42,7 +42,7 @@ const CourseCtaSectionPositive = () => {
               <CardContent className="p-8 text-center">
                 <Check className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-4">
-                  Время
+                  Проверка заданий
                 </h3>
                 <div className="text-muted-foreground">
                   <div className="flex items-center justify-center gap-2">
