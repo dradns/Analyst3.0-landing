@@ -1,61 +1,43 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  ArrowRight,
-  Download,
-  Puzzle,
-  Key,
-  Settings,
-  Users,
-  CheckCircle,
-  Copy,
-  Terminal,
-  ArrowDown
-} from "lucide-react";
+import { ArrowRight, Download, Puzzle, Key, Settings, Users, CheckCircle, Copy, Terminal, ArrowDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
 const QuickStart = () => {
-  const { t } = useLanguage();
-  
-  const steps = [
-    {
-      step: "01",
-      title: t('quickstart.step1.title'),
-      description: t('quickstart.step1.description'),
-      icon: Download,
-      time: "1 мин"
-    },
-    {
-      step: "02", 
-      title: t('quickstart.step2.title'),
-      description: t('quickstart.step2.description'),
-      icon: Puzzle,
-      time: "1 мин"
-    },
-    {
-      step: "03",
-      title: t('quickstart.step3.title'),
-      description: t('quickstart.step3.description'),
-      icon: Key,
-      time: "30 сек"
-    },
-    {
-      step: "04",
-      title: t('quickstart.step4.title'),
-      description: t('quickstart.step4.description'),
-      icon: Settings,
-      time: "30 сек"
-    },
-    {
-      step: "05",
-      title: t('quickstart.step5.title'),
-      description: t('quickstart.step5.description'),
-      icon: Users,
-      time: "2 мин"
-    }
-  ];
-
+  const {
+    t
+  } = useLanguage();
+  const steps = [{
+    step: "01",
+    title: t('quickstart.step1.title'),
+    description: t('quickstart.step1.description'),
+    icon: Download,
+    time: "1 мин"
+  }, {
+    step: "02",
+    title: t('quickstart.step2.title'),
+    description: t('quickstart.step2.description'),
+    icon: Puzzle,
+    time: "1 мин"
+  }, {
+    step: "03",
+    title: t('quickstart.step3.title'),
+    description: t('quickstart.step3.description'),
+    icon: Key,
+    time: "30 сек"
+  }, {
+    step: "04",
+    title: t('quickstart.step4.title'),
+    description: t('quickstart.step4.description'),
+    icon: Settings,
+    time: "30 сек"
+  }, {
+    step: "05",
+    title: t('quickstart.step5.title'),
+    description: t('quickstart.step5.description'),
+    icon: Users,
+    time: "2 мин"
+  }];
   const codeExample = `# Установка расширения
 1. Откройте VS Code
 2. Перейдите в Extensions (Ctrl+Shift+X)
@@ -68,9 +50,7 @@ Ctrl+Shift+P -> AI IDE BAS: Start
 
 # Анализ текущего файла
 Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
-
-  return (
-    <section id="quickstart" className="py-20 relative overflow-hidden">
+  return <section id="quickstart" className="py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background to-muted/20" />
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -91,7 +71,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
           {/* Statistics Blocks */}
           <div className="space-y-6">
             {/* Block 1 */}
-            <Card className="group animate-slide-up" style={{ animationDelay: "0ms" }}>
+            <Card className="group animate-slide-up" style={{
+            animationDelay: "0ms"
+          }}>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -118,7 +100,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             {/* Block 2 */}
-            <Card className="group animate-slide-up" style={{ animationDelay: "200ms" }}>
+            <Card className="group animate-slide-up" style={{
+            animationDelay: "200ms"
+          }}>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -128,9 +112,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                        Успешно трудоустроились
-                      </h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Успешно трудоустроились</h3>
                       <Badge variant="secondary" className="text-xs">
                         Результат
                       </Badge>
@@ -145,7 +127,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             {/* Block 3 */}
-            <Card className="group animate-slide-up" style={{ animationDelay: "400ms" }}>
+            <Card className="group animate-slide-up" style={{
+            animationDelay: "400ms"
+          }}>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -172,7 +156,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             {/* Block 4 */}
-            <Card className="group animate-slide-up" style={{ animationDelay: "600ms" }}>
+            <Card className="group animate-slide-up" style={{
+            animationDelay: "600ms"
+          }}>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -199,7 +185,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             {/* Block 5 */}
-            <Card className="group animate-slide-up" style={{ animationDelay: "800ms" }}>
+            <Card className="group animate-slide-up" style={{
+            animationDelay: "800ms"
+          }}>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -239,27 +227,23 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
               <h3 className="text-xl font-semibold mb-4 text-center">
                 Готовый pet-проект для портфолио:
               </h3>
-              <div className="animate-scale-in" style={{ animationDelay: "600ms" }}>
+              <div className="animate-scale-in" style={{
+              animationDelay: "600ms"
+            }}>
                 <Card className="relative overflow-hidden">
                   <CardContent className="p-0">
-                    <img 
-                      src="/lovable-uploads/c8c377df-4b88-4bab-8f20-a2723714b48c.png"
-                      alt="GigaMentor - результаты после курса"
-                      className="w-full h-auto rounded-lg"
-                    />
+                    <img src="/lovable-uploads/c8c377df-4b88-4bab-8f20-a2723714b48c.png" alt="GigaMentor - результаты после курса" className="w-full h-auto rounded-lg" />
                   </CardContent>
                 </Card>
               </div>
             </div>
             
-            <div className="animate-scale-in" style={{ animationDelay: "800ms" }}>
+            <div className="animate-scale-in" style={{
+            animationDelay: "800ms"
+          }}>
               <Card className="relative overflow-hidden">
                 <CardContent className="p-0">
-                  <img 
-                    src="/lovable-uploads/bb3e35a5-564d-4875-b668-a0af0c1b14a1.png"
-                    alt="GigaMentor - специализации"
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <img src="/lovable-uploads/bb3e35a5-564d-4875-b668-a0af0c1b14a1.png" alt="GigaMentor - специализации" className="w-full h-auto rounded-lg" />
                 </CardContent>
               </Card>
             </div>
@@ -289,8 +273,6 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default QuickStart;
