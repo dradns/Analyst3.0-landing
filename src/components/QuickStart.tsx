@@ -88,42 +88,142 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Steps */}
+          {/* Statistics Blocks */}
           <div className="space-y-6">
-            {steps.map((step, index) => {
-              const IconComponent = step.icon;
-              return (
-                <Card 
-                  key={index} 
-                  className="group animate-slide-up"
-                  style={{ animationDelay: `${index * 200}ms` }}
-                >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
-                          70
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between mb-2">
-                          <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                            Участников курса
-                          </h3>
-                          <Badge variant="secondary" className="text-xs">
-                            Online
-                          </Badge>
-                        </div>
-                        <p className="text-muted-foreground text-sm">
-                          {step.description}
-                        </p>
-                      </div>
-                      <IconComponent className="w-5 h-5 text-primary flex-shrink-0" />
+            {/* Block 1 */}
+            <Card className="group animate-slide-up" style={{ animationDelay: "0ms" }}>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                      70
                     </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        Участников курса
+                      </h3>
+                      <Badge variant="secondary" className="text-xs">
+                        Online
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      Прошли обучение за последние 3 месяца
+                    </p>
+                  </div>
+                  <Users className="w-5 h-5 text-primary flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Block 2 */}
+            <Card className="group animate-slide-up" style={{ animationDelay: "200ms" }}>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                      85%
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        Успешно трудоустроились
+                      </h3>
+                      <Badge variant="secondary" className="text-xs">
+                        Результат
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      Получили работу в течение 6 месяцев после курса
+                    </p>
+                  </div>
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Block 3 */}
+            <Card className="group animate-slide-up" style={{ animationDelay: "400ms" }}>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                      12
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        Проектов в портфолио
+                      </h3>
+                      <Badge variant="secondary" className="text-xs">
+                        Среднее
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      У каждого выпускника в среднем 12 проектов
+                    </p>
+                  </div>
+                  <Puzzle className="w-5 h-5 text-primary flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Block 4 */}
+            <Card className="group animate-slide-up" style={{ animationDelay: "600ms" }}>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                      3
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        Месяца обучения
+                      </h3>
+                      <Badge variant="secondary" className="text-xs">
+                        Интенсив
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      Полный курс от новичка до специалиста
+                    </p>
+                  </div>
+                  <Settings className="w-5 h-5 text-primary flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Block 5 */}
+            <Card className="group animate-slide-up" style={{ animationDelay: "800ms" }}>
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                      95%
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        Рекомендуют курс
+                      </h3>
+                      <Badge variant="secondary" className="text-xs">
+                        Отзывы
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      Выпускники рекомендуют курс своим друзьям
+                    </p>
+                  </div>
+                  <Key className="w-5 h-5 text-primary flex-shrink-0" />
+                </div>
+              </CardContent>
+            </Card>
 
             <div className="pt-4">
               <Button variant="hero" size="lg" className="w-full">
