@@ -81,7 +81,7 @@ const Features = () => {
             <Rocket className="w-4 h-4 mr-2" />
             Быстрый старт
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
             Кому подойдет курс?
           </h2>
         </div>
