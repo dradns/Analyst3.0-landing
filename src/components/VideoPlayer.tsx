@@ -15,7 +15,7 @@ const VideoPlayer = () => {
             Вы сможете сделать
             <br />
             <span className="flex items-center justify-center gap-3">
-              такого же AI-агента
+              <span className="bg-gradient-hero bg-clip-text text-transparent">такого же AI-агента</span>
               <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
             </span>
           </h2>
