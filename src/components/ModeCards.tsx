@@ -111,7 +111,7 @@ const ModeCards = () => {
   ];
 
   return (
-    <section id="modes" className="py-20 relative overflow-hidden">
+    <section id="what-awaits" className="py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
       <div className="absolute top-40 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
