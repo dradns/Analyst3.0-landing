@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Calendar } from "lucide-react";
 
 const CourseCtaSectionPositive = () => {
   return (
@@ -12,7 +12,7 @@ const CourseCtaSectionPositive = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card>
               <CardContent className="p-8 text-center">
-                <Check className="w-12 h-12 mx-auto mb-4 text-primary" />
+                <Calendar className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-4">
                   Понедельник - Пятница
                 </h3>
