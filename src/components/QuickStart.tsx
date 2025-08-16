@@ -115,9 +115,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                       <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Студентов успешно завершили курс</h3>
                       <Badge variant="secondary" className="text-xs">Result</Badge>
                     </div>
-                    <p className="text-muted-foreground text-sm">
-                      Получили работу в течение 6 месяцев после курса
-                    </p>
+                    <p className="text-muted-foreground text-sm">Получили работу в течение 6 месяцев после кур</p>
                   </div>
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
@@ -131,15 +129,12 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">
-                      12
-                    </div>
+                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white font-bold shadow-lg group-hover:shadow-glow transition-shadow duration-300">28</div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                        Проектов в портфолио
-                      </h3>
+                    </h3>
                       <Badge variant="secondary" className="text-xs">
                         Среднее
                       </Badge>
