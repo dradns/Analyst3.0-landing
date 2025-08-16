@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BarChart3, ArrowRight } from "lucide-react";
+import { X, ArrowRight } from "lucide-react";
 
 const CourseCtaSectionWide = () => {
   return (
@@ -9,7 +9,7 @@ const CourseCtaSectionWide = () => {
         <div className="text-center">
           <Card className="max-w-4xl mx-auto">
             <CardContent className="p-8">
-              <BarChart3 className="w-12 h-12 mx-auto mb-4 text-primary" />
+              <X className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-semibold mb-4">
                 Вам сюда не надо, если
               </h3>
