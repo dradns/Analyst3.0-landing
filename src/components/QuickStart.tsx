@@ -10,7 +10,8 @@ import {
   Users,
   CheckCircle,
   Copy,
-  Terminal
+  Terminal,
+  ArrowDown
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -80,8 +81,9 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             <Users className="w-4 h-4 mr-2" />
             Проекты наших учеников
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            {t('quickstart.title')}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-4">
+            Результаты после курса
+            <ArrowDown className="w-8 h-8 text-foreground" />
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             {t('quickstart.description')}
