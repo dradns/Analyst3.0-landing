@@ -112,9 +112,11 @@ ERD – диаграмма сущностей
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button variant="hero" size="hero" className="animate-scale-in">
-              {t('hero.startFree')}
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button variant="hero" size="hero" className="animate-scale-in" asChild>
+              <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
+                {t('hero.startFree')}
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
             <Button variant="glass" size="hero" className="animate-scale-in">
               <Download className="w-5 h-5 mr-2" />
