@@ -7,7 +7,7 @@ const CourseCtaSection = () => {
     <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <Card className="max-w-2xl mx-auto">
+          <Card className="max-w-4xl mx-auto">
             <CardContent className="p-8">
               <BarChart3 className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-semibold mb-4">
