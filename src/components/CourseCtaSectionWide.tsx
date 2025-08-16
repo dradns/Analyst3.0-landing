@@ -15,7 +15,7 @@ const CourseCtaSectionWide = () => {
               </h3>
               <p className="text-muted-foreground mb-6 flex items-center justify-center gap-2">
                 <X className="w-5 h-5 text-destructive" />
-                Вы не любите/не хотите/не умеете программировать
+                Вы не любите/не хотите/не умеете программировать (не можете написать вложенный цикл на Python)
               </p>
               <Button variant="hero" size="lg">
                 Попасть на курс
