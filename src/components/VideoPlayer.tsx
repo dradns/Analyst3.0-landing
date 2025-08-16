@@ -11,11 +11,11 @@ const VideoPlayer = () => {
             <Play className="w-4 h-4 mr-2" />
             Видео о курсе
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Вы сможете сделать
             <br />
             <span className="flex items-center justify-center gap-3">
-              <span className="bg-gradient-hero bg-clip-text text-transparent">такого же AI-агента</span>
+              такого же AI-агента
               <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
             </span>
           </h2>
