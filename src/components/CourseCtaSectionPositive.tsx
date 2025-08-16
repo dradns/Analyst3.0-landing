@@ -31,9 +31,8 @@ const CourseCtaSectionPositive = () => {
                   Пятница 17:00
                 </h3>
                 <div className="text-muted-foreground">
-                  <div className="flex items-center justify-center gap-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    Общение с людьми - ваша сильная сторона
+                  <div className="text-center">
+                    Еженедельная онлайн-встреча для разбора вопросов
                   </div>
                 </div>
               </CardContent>
