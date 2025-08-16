@@ -20,7 +20,7 @@ const VideoPlayer = () => {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Посмотрите детальный обзор курса и узнайте, как создать AI-агента за 12 недель
+            Посмотрите детальный обзор примера вашего будущего pet-проекта
           </p>
         </div>
 
