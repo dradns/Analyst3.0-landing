@@ -8,7 +8,7 @@ const Header = () => {
   const { t, language, setLanguage } = useLanguage();
 
   const navigation = [
-    { name: "Программа", href: "#features" },
+    { name: "Программа", href: "#what-awaits" },
     { name: t('header.quickstart'), href: "#quickstart" },
     { name: t('header.integrations'), href: "#integrations" },
     { name: t('header.contacts'), href: "#contacts" },
