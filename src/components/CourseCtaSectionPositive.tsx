@@ -1,13 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Calendar, Video, ClipboardCheck } from "lucide-react";
+import { Check, Calendar, Video, ClipboardCheck, ArrowDown } from "lucide-react";
 
 const CourseCtaSectionPositive = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent flex items-center justify-center gap-4">
             Формат обучения
+            <ArrowDown className="w-8 h-8 text-primary" />
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card>
