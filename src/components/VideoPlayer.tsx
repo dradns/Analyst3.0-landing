@@ -9,7 +9,7 @@ const VideoPlayer = () => {
         <div className="text-center mb-12 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Play className="w-4 h-4 mr-2" />
-            Видео о курсе
+            Как работает AI-агент
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Вы сможете сделать
