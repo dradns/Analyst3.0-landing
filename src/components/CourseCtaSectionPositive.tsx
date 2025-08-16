@@ -20,7 +20,6 @@ const CourseCtaSectionPositive = () => {
                   <div className="text-center mb-2">
                     Самостоятельная работа над проектами и заданиями
                   </div>
-                  <div className="text-sm">(можете написать вложенный цикл на Python)</div>
                 </div>
               </CardContent>
             </Card>
