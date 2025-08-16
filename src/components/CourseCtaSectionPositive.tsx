@@ -17,9 +17,8 @@ const CourseCtaSectionPositive = () => {
                   Понедельник - Пятница
                 </h3>
                 <div className="text-muted-foreground">
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    Вы любите программировать и готовы изучать новое
+                  <div className="text-center mb-2">
+                    Самостоятельная работа над проектами и заданиями
                   </div>
                   <div className="text-sm">(можете написать вложенный цикл на Python)</div>
                 </div>
