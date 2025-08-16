@@ -86,7 +86,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             <ArrowDown className="w-8 h-8 text-foreground" />
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {t('quickstart.description')}
+            Какие навыки вы получите:
           </p>
         </div>
 
