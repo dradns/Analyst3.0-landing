@@ -6,7 +6,7 @@ const CourseCtaSectionPositive = () => {
     <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
             Формат обучения
           </h2>
           <Card className="max-w-4xl mx-auto">
