@@ -157,7 +157,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Джунов-аналитиков прошли на</h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Джунов-аналитиков</h3>
                       <Badge variant="secondary" className="text-xs">Junior</Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">Всего 18 выпускников устроились на стажировку</p>
