@@ -24,14 +24,17 @@ const VideoPlayer = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-xs mx-auto">
           <Card className="overflow-hidden shadow-2xl">
             <CardContent className="p-0">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20 max-w-sm mx-auto">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20">
                 <video 
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                   controls
                   preload="metadata"
+                  playsInline
+                  webkit-playsinline="true"
+                  style={{ objectFit: 'contain' }}
                   onError={(e) => console.log('Video error:', e)}
                   onLoadStart={() => console.log('Video loading started')}
                 >
