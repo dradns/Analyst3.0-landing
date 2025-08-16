@@ -136,41 +136,15 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </div>
           </div>
 
-          {/* Code Example */}
+          {/* Results Image */}
           <div className="animate-scale-in" style={{ animationDelay: "600ms" }}>
             <Card className="relative overflow-hidden">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <Terminal className="w-5 h-5 text-primary" />
-                    <CardTitle className="text-lg">VS Code Extension Setup</CardTitle>
-                  </div>
-                  <Button variant="ghost" size="sm">
-                    <Copy className="w-4 h-4 mr-2" />
-                    {t('quickstart.copy')}
-                  </Button>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="bg-muted/50 rounded-lg p-4 font-mono text-sm">
-                  <pre className="text-muted-foreground overflow-x-auto">
-                    <code>{codeExample}</code>
-                  </pre>
-                </div>
-                
-                <div className="mt-6 space-y-3">
-                  {[
-                    t('quickstart.features.0'),
-                    t('quickstart.features.1'),
-                    t('quickstart.features.2'),
-                    t('quickstart.features.3')
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-center text-sm">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+              <CardContent className="p-0">
+                <img 
+                  src="/lovable-uploads/c8c377df-4b88-4bab-8f20-a2723714b48c.png"
+                  alt="GigaMentor - результаты после курса"
+                  className="w-full h-auto rounded-lg"
+                />
               </CardContent>
             </Card>
           </div>
