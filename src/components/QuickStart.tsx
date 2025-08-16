@@ -108,7 +108,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                       <div className="flex-1">
                         <div className="flex items-center justify-between mb-2">
                           <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                            {step.title}
+                            Участников курса
                           </h3>
                           <Badge variant="secondary" className="text-xs">
                             {step.time}
