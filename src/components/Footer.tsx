@@ -58,9 +58,11 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">AI</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/cfc79ad7-a059-4cab-a04c-293a54663f7c.png" 
+                  alt="Analyst 3.0 Logo" 
+                  className="w-8 h-8 rounded-lg"
+                />
                 <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
                   Системный Аналитик 3.0
                 </span>
