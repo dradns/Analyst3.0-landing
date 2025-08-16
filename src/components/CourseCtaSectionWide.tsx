@@ -28,10 +28,6 @@ const CourseCtaSectionWide = () => {
                   У вас нет 80 часов в течении двух месяцев
                 </div>
               </div>
-              <Button variant="hero" size="lg">
-                Попасть на курс
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
             </CardContent>
           </Card>
         </div>
