@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Zap, 
+  Rocket, 
   Cpu, 
   Bot,
   ClipboardCheck,
@@ -26,7 +26,7 @@ const Features = () => {
       description: t('features.ai.description')
     },
     {
-      icon: Zap,
+      icon: Rocket,
       title: t('features.speed.title'),
       description: t('features.speed.description')
     },
@@ -78,7 +78,7 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
-            <Zap className="w-4 h-4 mr-2" />
+            <Rocket className="w-4 h-4 mr-2" />
             Быстрый старт
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
