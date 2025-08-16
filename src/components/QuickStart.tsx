@@ -112,7 +112,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Успешно трудоустроились</h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Студентов успешно завершили курс</h3>
                       <Badge variant="secondary" className="text-xs">
                         Результат
                       </Badge>
