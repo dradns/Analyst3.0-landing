@@ -45,9 +45,8 @@ const CourseCtaSectionPositive = () => {
                   Проверка заданий
                 </h3>
                 <div className="text-muted-foreground">
-                  <div className="flex items-center justify-center gap-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    У вас есть 80 часов в течении двух месяцев
+                  <div className="text-center">
+                    Система Peer-to-Peer (p2p) проверки заданий
                   </div>
                 </div>
               </CardContent>
