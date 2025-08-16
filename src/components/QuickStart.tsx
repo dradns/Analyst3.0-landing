@@ -7,7 +7,7 @@ import {
   Puzzle,
   Key,
   Settings,
-  Rocket,
+  Users,
   CheckCircle,
   Copy,
   Terminal
@@ -50,7 +50,7 @@ const QuickStart = () => {
       step: "05",
       title: t('quickstart.step5.title'),
       description: t('quickstart.step5.description'),
-      icon: Rocket,
+      icon: Users,
       time: "2 мин"
     }
   ];
@@ -77,8 +77,8 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
-            <Rocket className="w-4 h-4 mr-2" />
-            {t('quickstart.badge')}
+            <Users className="w-4 h-4 mr-2" />
+            Проекты наших учеников
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             {t('quickstart.title')}
