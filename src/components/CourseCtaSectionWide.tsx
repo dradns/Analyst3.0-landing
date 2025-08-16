@@ -19,9 +19,13 @@ const CourseCtaSectionWide = () => {
                   Вы не любите/не хотите/не умеете программировать
                 </div>
                 <div className="mb-2">(не можете написать вложенный цикл на Python)</div>
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-2 mb-2">
                   <X className="w-5 h-5 text-destructive" />
                   Общение с людьми - не ваше
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <X className="w-5 h-5 text-destructive" />
+                  У вас нет 80 часов в течении двух месяцев
                 </div>
               </div>
               <Button variant="hero" size="lg">
