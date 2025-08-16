@@ -71,7 +71,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="course-audience" className="py-20 relative overflow-hidden">
+    <section id="features" className="py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-background to-background" />
       
