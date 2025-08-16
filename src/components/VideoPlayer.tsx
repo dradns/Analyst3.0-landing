@@ -29,9 +29,11 @@ const VideoPlayer = () => {
             <CardContent className="p-0">
               <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20">
                 <video 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-lg"
                   controls
-                  poster="/placeholder.svg"
+                  preload="metadata"
+                  onError={(e) => console.log('Video error:', e)}
+                  onLoadStart={() => console.log('Video loading started')}
                 >
                   <source src="/course-video.mp4" type="video/mp4" />
                   Ваш браузер не поддерживает воспроизведение видео.
