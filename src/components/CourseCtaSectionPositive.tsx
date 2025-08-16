@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Calendar } from "lucide-react";
+import { Check, Calendar, Video } from "lucide-react";
 
 const CourseCtaSectionPositive = () => {
   return (
@@ -26,7 +26,7 @@ const CourseCtaSectionPositive = () => {
 
             <Card>
               <CardContent className="p-8 text-center">
-                <Check className="w-12 h-12 mx-auto mb-4 text-primary" />
+                <Video className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-4">
                   Пятница 17:00
                 </h3>
