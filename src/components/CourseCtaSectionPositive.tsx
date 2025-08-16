@@ -7,7 +7,7 @@ const CourseCtaSectionPositive = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-            Вам точно сюда, если
+            Формат обучения
           </h2>
           <Card className="max-w-4xl mx-auto">
             <CardContent className="p-8">
