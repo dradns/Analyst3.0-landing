@@ -13,10 +13,13 @@ const CourseCtaSectionWide = () => {
               <h3 className="text-2xl font-semibold mb-4">
                 Вам сюда не надо, если
               </h3>
-              <p className="text-muted-foreground mb-6 flex items-center justify-center gap-2">
-                <X className="w-5 h-5 text-destructive" />
-                Вы не любите/не хотите/не умеете программировать (не можете написать вложенный цикл на Python)
-              </p>
+              <div className="text-muted-foreground mb-6 text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <X className="w-5 h-5 text-destructive" />
+                  Вы не любите/не хотите/не умеете программировать
+                </div>
+                <div>(не можете написать вложенный цикл на Python)</div>
+              </div>
               <Button variant="hero" size="lg">
                 Попасть на курс
                 <ArrowRight className="w-4 h-4 ml-2" />
