@@ -160,7 +160,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                       <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Джунов аналитиков прошли на стажировку в Сбер</h3>
                       <Badge variant="secondary" className="text-xs">Junior</Badge>
                     </div>
-                    <p className="text-muted-foreground text-sm">Прошли на стажировку в СБЕР, а всего 18 успешно трудоустроенных студентов</p>
+                    <p className="text-muted-foreground text-sm">Всего 18 выпускников устроились на стажировку</p>
                   </div>
                   <Key className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
