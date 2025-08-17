@@ -211,7 +211,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
           <Card className="max-w-2xl mx-auto bg-gradient-glass">
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4">
-                {t('quickstart.help.title')}
+                Нужна подробная консультация по обучению?
               </h3>
               <p className="text-muted-foreground mb-6">
                 {t('quickstart.help.description')}
