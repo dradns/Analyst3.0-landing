@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download, Puzzle, Key, FileText, Users, CheckCircle, Copy, Terminal, ArrowDown } from "lucide-react";
+import { ArrowRight, Download, Puzzle, TrendingUp, FileText, Users, CheckCircle, Copy, Terminal, ArrowDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 const QuickStart = () => {
   const {
@@ -23,7 +23,7 @@ const QuickStart = () => {
     step: "03",
     title: t('quickstart.step3.title'),
     description: t('quickstart.step3.description'),
-    icon: Key,
+    icon: TrendingUp,
     time: "30 сек"
   }, {
     step: "04",
@@ -162,7 +162,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                     </div>
                     <p className="text-muted-foreground text-sm">Всего 18 выпускников устроились на стажировку</p>
                   </div>
-                  <Key className="w-5 h-5 text-primary flex-shrink-0" />
+                  <TrendingUp className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
               </CardContent>
             </Card>
