@@ -168,9 +168,11 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             <div className="pt-4">
-              <Button variant="hero" size="lg" className="w-full">
-                {t('quickstart.button')}
-                <ArrowRight className="w-4 h-4 ml-2" />
+              <Button variant="hero" size="lg" className="w-full" asChild>
+                <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
+                  Присоединиться к курсу
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
               </Button>
             </div>
           </div>
