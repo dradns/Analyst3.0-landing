@@ -218,7 +218,8 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline">
-                  {t('quickstart.help.docs')}
+                  <Download className="w-4 h-4 mr-2" />
+                  Скачать шаблон
                 </Button>
                 <Button variant="default" asChild>
                   <a href="https://t.me/biryukovaoly" target="_blank" rel="noopener noreferrer">
