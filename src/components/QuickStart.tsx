@@ -220,9 +220,11 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                 <Button variant="outline">
                   {t('quickstart.help.docs')}
                 </Button>
-                <Button variant="default">
-                  {t('quickstart.help.contact')}
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                <Button variant="default" asChild>
+                  <a href="https://t.me/biryukovaoly" target="_blank" rel="noopener noreferrer">
+                    {t('quickstart.help.contact')}
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </a>
                 </Button>
               </div>
             </CardContent>
