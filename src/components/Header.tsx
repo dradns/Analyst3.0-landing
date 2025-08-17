@@ -38,6 +38,7 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105"
+                {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
               </a>
@@ -88,6 +89,7 @@ const Header = () => {
                   href={item.href}
                   className="block text-muted-foreground hover:text-foreground transition-colors duration-300"
                   onClick={() => setIsMenuOpen(false)}
+                  {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
                   {item.name}
                 </a>
