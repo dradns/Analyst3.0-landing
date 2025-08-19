@@ -11,7 +11,7 @@ const Header = () => {
     { name: "Программа", href: "#what-awaits" },
     { name: t('header.quickstart'), href: "#features" },
     { name: t('header.community'), href: "#community" },
-    { name: t('header.contacts'), href: "https://t.me/biryukovaoly" },
+    { name: t('header.contacts'), href: "#" },
   ];
 
   return (
