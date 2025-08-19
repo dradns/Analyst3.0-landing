@@ -59,7 +59,7 @@ const Header = () => {
               {t('header.github')}
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/+7AGqgMbw-yc5MTAy" target="_blank" rel="noopener noreferrer">
                 {t('header.tryNow')}
                 <ArrowUpRight className="w-4 h-4 ml-1" />
               </a>
@@ -108,7 +108,7 @@ const Header = () => {
                   {t('header.github')}
                 </Button>
                 <Button variant="hero" size="sm" className="w-full" asChild>
-                  <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/+7AGqgMbw-yc5MTAy" target="_blank" rel="noopener noreferrer">
                     {t('header.tryNow')}
                     <ArrowUpRight className="w-4 h-4 ml-1" />
                   </a>
