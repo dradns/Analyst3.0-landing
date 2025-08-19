@@ -397,7 +397,9 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   }, [language]);
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    const translation = translations[language]?.[key] || translations['ru']?.[key] || key;
+    console.log('Translation for key:', key, 'language:', language, 'result:', translation);
+    return translation;
   };
 
   return (
