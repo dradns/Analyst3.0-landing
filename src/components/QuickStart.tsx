@@ -59,10 +59,10 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Users className="w-4 h-4 mr-2" />
-            Статистика
+            {t('quickstart.badge')}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-4">
-            Результаты прошлого курса
+            {t('quickstart.title')}
             <ArrowDown className="w-8 h-8 text-foreground" />
           </h2>
         </div>
@@ -84,14 +84,14 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                        Участников курса
+                        {t('quickstart.stats.participants')}
                       </h3>
                       <Badge variant="secondary" className="text-xs">
                         Online
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Прошли обучение за последние 3 месяца
+                      {t('quickstart.stats.participantsDesc')}
                     </p>
                   </div>
                   <Users className="w-5 h-5 text-primary flex-shrink-0" />
@@ -112,10 +112,10 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Студентов успешно завершили курс</h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{t('quickstart.stats.completed')}</h3>
                       <Badge variant="secondary" className="text-xs">Result</Badge>
                     </div>
-                    <p className="text-muted-foreground text-sm">Создали работающих AI-агентов</p>
+                    <p className="text-muted-foreground text-sm">{t('quickstart.stats.completedDesc')}</p>
                   </div>
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
@@ -136,10 +136,10 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Резюме для стажировок</h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{t('quickstart.stats.resumes')}</h3>
                       <Badge variant="secondary" className="text-xs">Resume</Badge>
                     </div>
-                    <p className="text-muted-foreground text-sm">Студенты получили от нас рекомендации</p>
+                    <p className="text-muted-foreground text-sm">{t('quickstart.stats.resumesDesc')}</p>
                   </div>
                   <FileText className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
@@ -157,10 +157,10 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">Джунов аналитиков прошли на стажировку в Сбер</h3>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{t('quickstart.stats.internships')}</h3>
                       <Badge variant="secondary" className="text-xs">Junior</Badge>
                     </div>
-                    <p className="text-muted-foreground text-sm">Всего 18 выпускников устроились на стажировку</p>
+                    <p className="text-muted-foreground text-sm">{t('quickstart.stats.internshipsDesc')}</p>
                   </div>
                   <TrendingUp className="w-5 h-5 text-primary flex-shrink-0" />
                 </div>
@@ -170,7 +170,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             <div className="pt-4">
               <Button variant="hero" size="lg" className="w-full" asChild>
                 <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
-                  Присоединиться к курсу
+                  {t('quickstart.cta.join')}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Button>
@@ -181,7 +181,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-center">
-                Готовый pet-проект для портфолио:
+                {t('quickstart.project.title')}
               </h3>
               <div className="animate-scale-in" style={{
               animationDelay: "600ms"
@@ -211,7 +211,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
           <Card className="max-w-2xl mx-auto bg-gradient-glass">
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4">
-                Нужна подробная консультация по обучению?
+                {t('quickstart.consultation.title')}
               </h3>
               <p className="text-muted-foreground mb-6">
                 {t('quickstart.help.description')}
@@ -219,7 +219,7 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline">
                   <Download className="w-4 h-4 mr-2" />
-                  Скачать шаблон
+                  {t('quickstart.consultation.download')}
                 </Button>
                 <Button variant="default" asChild>
                   <a href="https://t.me/biryukovaoly" target="_blank" rel="noopener noreferrer">

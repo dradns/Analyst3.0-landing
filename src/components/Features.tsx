@@ -79,10 +79,10 @@ const Features = () => {
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Rocket className="w-4 h-4 mr-2" />
-            Быстрый старт
+            {t('features.badge')}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-            Кому подойдет курс?
+            {t('features.title')}
           </h2>
         </div>
 
@@ -97,11 +97,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Студентам
+                {t('features.students.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Быстрый старт в профессии аналитика с реальным проектом в портфолио
+                {t('features.students.description')}
               </p>
             </CardContent>
           </Card>
@@ -116,11 +116,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Junior-аналитикам
+                {t('features.juniors.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Систематизация знаний и освоение работы с AI-инструментами
+                {t('features.juniors.description')}
               </p>
             </CardContent>
           </Card>
@@ -135,11 +135,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Специалистам
+                {t('features.specialists.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Расширение компетенций за счёт навыков работы с LLM и AI-агентами
+                {t('features.specialists.description')}
               </p>
             </CardContent>
           </Card>
