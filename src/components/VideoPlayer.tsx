@@ -14,20 +14,7 @@ const VideoPlayer = () => {
             {t('video.badge')}
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            {t('video.title').split('\n').map((line, index) => (
-              <span key={index}>
-                {line}
-                {index === 0 && (
-                  <>
-                    <br />
-                    <span className="flex items-center justify-center gap-3">
-                      {t('video.subtitle')}
-                      <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
-                    </span>
-                  </>
-                )}
-              </span>
-            ))}
+            {t('video.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {t('video.description')}
