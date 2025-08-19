@@ -121,12 +121,15 @@ ERD – диаграмма сущностей
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
-            <button 
+            <a
+              href="https://disk.yandex.ru/i/KUjijWxF-Ck14Q"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-glass/30 backdrop-blur-md border border-glass-border/50 hover:bg-glass/50 hover:border-primary/30 hover:scale-105 active:scale-95 animate-scale-in transition-all duration-300"
             >
               <Download className="w-5 h-5 mr-2" />
               {t('hero.watchDemo')}
-            </button>
+            </a>
           </div>
         </div>
 
