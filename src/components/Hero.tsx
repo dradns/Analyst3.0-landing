@@ -115,7 +115,18 @@ ERD – диаграмма сущностей
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button variant="hero" size="hero" className="animate-scale-in" asChild>
-              <a href="https://t.me/+7AGqgMbw-yc5MTAy" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://t.me/+7AGqgMbw-yc5MTAy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  console.log('Hero button clicked!');
+                  // Дополнительно форсируем переход
+                  setTimeout(() => {
+                    window.open('https://t.me/+7AGqgMbw-yc5MTAy', '_blank', 'noopener,noreferrer');
+                  }, 100);
+                }}
+              >
                 {t('hero.startFree')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
