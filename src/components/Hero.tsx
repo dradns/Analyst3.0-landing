@@ -102,10 +102,10 @@ ERD – диаграмма сущностей
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight">
             {t('hero.title').split('\n').map((line, index) => (
-              <React.Fragment key={index}>
+              <span key={index}>
                 {line}
                 {index === 0 && <br />}
-              </React.Fragment>
+              </span>
             ))}
           </h1>
           
