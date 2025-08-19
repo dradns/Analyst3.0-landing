@@ -112,24 +112,15 @@ ERD – диаграмма сущностей
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
-            <button
+            <a
+              href="https://t.me/+7AGqgMbw-yc5MTAy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
-              style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
-              onClick={() => {
-                const telegramLink = 'https://t.me/+7AGqgMbw-yc5MTAy';
-                
-                // Копируем ссылку в буфер обмена
-                navigator.clipboard.writeText(telegramLink).then(() => {
-                  alert(`Ссылка скопирована в буфер обмена!\n\n${telegramLink}\n\nВставьте её в адресную строку браузера или откройте в Telegram вручную.`);
-                }).catch(() => {
-                  // Если копирование не сработало, показываем ссылку
-                  alert(`Скопируйте эту ссылку вручную:\n\n${telegramLink}\n\nВставьте её в адресную строку браузера или откройте в Telegram.`);
-                });
-              }}
             >
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
-            </button>
+            </a>
             <a 
               href="https://google.com" 
               target="_blank" 
