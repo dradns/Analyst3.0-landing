@@ -113,7 +113,7 @@ ERD – диаграмма сущностей
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
             <a
-              href="https://t.me/+7AGqgMbw-yc5MTAy"
+              href="https://t.me/+QM76lGLpwlM0ZmNi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
