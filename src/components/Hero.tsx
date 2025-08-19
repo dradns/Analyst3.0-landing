@@ -111,7 +111,7 @@ ERD – диаграмма сущностей
             {t('hero.description')}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
               href="https://t.me/+QM76lGLpwlM0ZmNi"
               target="_blank"
