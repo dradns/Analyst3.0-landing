@@ -112,14 +112,29 @@ ERD – диаграмма сущностей
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
-            <a 
-              href="https://t.me/+7AGqgMbw-yc5MTAy" 
+            <button
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
               style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
+              onClick={() => {
+                // Попробуем разные способы открытия Telegram
+                const telegramUrls = [
+                  'tg://join?invite=7AGqgMbw-yc5MTAy',
+                  'https://telegram.me/joinchat/7AGqgMbw-yc5MTAy',
+                  'https://t.me/+7AGqgMbw-yc5MTAy'
+                ];
+                
+                // Попробуем первый URL (tg://)
+                window.location.href = telegramUrls[0];
+                
+                // Если не сработает, через 2 секунды попробуем второй
+                setTimeout(() => {
+                  window.open(telegramUrls[1], '_blank');
+                }, 2000);
+              }}
             >
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
-            </a>
+            </button>
             <a 
               href="https://google.com" 
               target="_blank" 
