@@ -168,11 +168,14 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
             </Card>
 
             <div className="pt-4">
-              <Button variant="hero" size="lg" className="w-full" asChild>
-                <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
-                  Присоединиться к курсу
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="w-full"
+                onClick={() => window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank')}
+              >
+                Присоединиться к курсу
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
@@ -221,11 +224,12 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                   <Download className="w-4 h-4 mr-2" />
                   Скачать шаблон
                 </Button>
-                <Button variant="default" asChild>
-                  <a href="https://t.me/biryukovaoly" target="_blank" rel="noopener noreferrer">
-                    {t('quickstart.help.contact')}
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </a>
+                <Button 
+                  variant="default"
+                  onClick={() => window.open('https://t.me/biryukovaoly', '_blank')}
+                >
+                  {t('quickstart.help.contact')}
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
             </CardContent>
