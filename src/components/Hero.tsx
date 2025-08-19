@@ -111,19 +111,17 @@ ERD – диаграмма сущностей
             {t('hero.description')}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
             <a 
               href="https://t.me/+7AGqgMbw-yc5MTAy" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
+              style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
               onClick={(e) => {
                 console.log('Клик по ссылке:', e);
                 console.log('Ссылка href:', e.currentTarget.href);
-                // Проверим, не блокируется ли переход
-                setTimeout(() => {
-                  console.log('Если это сообщение видно, переход не произошел');
-                }, 1000);
+                alert('Клик работает! Сейчас откроется Telegram');
               }}
             >
               {t('hero.startFree')}
@@ -134,13 +132,19 @@ ERD – диаграмма сущностей
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-red-600 text-white hover:bg-red-700 transition-all duration-300"
+              style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
+              onClick={() => alert('Google клик работает!')}
             >
               ТЕСТ Google (должен работать)
             </a>
-            <Button variant="glass" size="hero" className="animate-scale-in">
+            <button 
+              className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-glass/30 backdrop-blur-md border border-glass-border/50 hover:bg-glass/50 hover:border-primary/30 hover:scale-105 active:scale-95 animate-scale-in transition-all duration-300"
+              style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
+              onClick={() => alert('Кнопка работает!')}
+            >
               <Download className="w-5 h-5 mr-2" />
               {t('hero.watchDemo')}
-            </Button>
+            </button>
           </div>
         </div>
 
