@@ -114,15 +114,8 @@ ERD – диаграмма сущностей
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" style={{position: 'relative', zIndex: 9999}}>
             <a 
               href="https://t.me/+7AGqgMbw-yc5MTAy" 
-              target="_blank" 
-              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
               style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
-              onClick={(e) => {
-                console.log('Клик по ссылке:', e);
-                console.log('Ссылка href:', e.currentTarget.href);
-                alert('Клик работает! Сейчас откроется Telegram');
-              }}
             >
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
