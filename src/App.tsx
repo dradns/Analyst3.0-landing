@@ -9,10 +9,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => {
-  console.log('App component rendering');
-  
-  return (
+const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
       <TooltipProvider>
@@ -29,6 +26,5 @@ const App = () => {
     </LanguageProvider>
   </QueryClientProvider>
 );
-};
 
 export default App;

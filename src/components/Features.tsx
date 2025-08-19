@@ -79,10 +79,10 @@ const Features = () => {
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Rocket className="w-4 h-4 mr-2" />
-            {t('features.badge')}
+            Быстрый старт
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-            {t('features.title')}
+            Кому подойдет курс?
           </h2>
         </div>
 
@@ -97,11 +97,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                {t('features.students.title')}
+                Студентам
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {t('features.students.description')}
+                Быстрый старт в профессии аналитика с реальным проектом в портфолио
               </p>
             </CardContent>
           </Card>
@@ -116,11 +116,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                {t('features.juniors.title')}
+                Junior-аналитикам
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {t('features.juniors.description')}
+                Систематизация знаний и освоение работы с AI-инструментами
               </p>
             </CardContent>
           </Card>
@@ -135,11 +135,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                {t('features.specialists.title')}
+                Специалистам
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {t('features.specialists.description')}
+                Расширение компетенций за счёт навыков работы с LLM и AI-агентами
               </p>
             </CardContent>
           </Card>

@@ -121,7 +121,7 @@ const ModeCards = () => {
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Map className="w-4 h-4 mr-2" />
-            {t('modes.badge')}
+            Что вас ожидает
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-3 px-8 text-foreground">
             {t('modes.title')}
@@ -161,7 +161,7 @@ const ModeCards = () => {
                   </p>
 
                   <div className="space-y-2 mb-6">
-                    <h4 className="text-sm font-medium text-foreground mb-2">{t('modes.common.features')}</h4>
+                    <h4 className="text-sm font-medium text-foreground mb-2">Вы получите:</h4>
                     {mode.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />

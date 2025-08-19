@@ -17,7 +17,7 @@ const CourseCtaSection = () => {
                 Если вы уже в сфере аналитики — откроете для себя современные подходы и инструменты работы с LLM и AI-агентами
               </p>
               <Button variant="hero" size="lg" asChild>
-                <a href="https://t.me/+7AGqgMbw-yc5MTAy" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
                   Попасть на курс
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>

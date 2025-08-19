@@ -27,7 +27,7 @@ const translations = {
     // Hero
     'hero.badge': 'Революция в аналитике',
     'hero.title': 'Создайте AI-агента\nза 12 недель',
-    'hero.description': 'Освойте навыки бизнес и системного анализа,\nнаучитесь работать с AI-агентами и соберите портфолио',
+    'hero.description': 'Освойте навыки бизнес и системного анализа, научитесь работать с AI-агентами и соберите портфолио',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать шаблон',
     'hero.tryModes': 'В процессе обучения вы освоите ↓',
@@ -103,12 +103,6 @@ const translations = {
     'modes.cta.title': 'Готовы попробовать все режимы?',
     'modes.cta.description': 'Скачайте расширение AI IDE BAS и получите доступ ко всем режимам работ',
     'modes.cta.button': 'Установить AI IDE BAS',
-    
-    // Video
-    'video.badge': 'Демо',
-    'video.title': 'Вы сможете сделать такого же AI-агента',
-    'video.description': 'Пример вашего будущего pet-проекта',
-    'video.noSupport': 'Ваш браузер не поддерживает воспроизведение видео.',
     
     // Features
     'features.badge': 'Возможности платформы',
@@ -285,12 +279,6 @@ const translations = {
     'modes.cta.description': 'Download AI IDE BAS extension and get access to all work modes',
     'modes.cta.button': 'Install AI IDE BAS',
     
-    // Video
-    'video.badge': 'Demo',
-    'video.title': 'You will be able to create the same AI agent',
-    'video.description': 'Example of your future pet project',
-    'video.noSupport': 'Your browser does not support video playback.',
-    
     // Features
     'features.badge': 'Platform Features',
     'features.title': 'Why Choose AI IDE BAS',
@@ -397,9 +385,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   }, [language]);
 
   const t = (key: string): string => {
-    const translation = translations[language]?.[key] || translations['ru']?.[key] || key;
-    console.log('Translation for key:', key, 'language:', language, 'result:', translation);
-    return translation;
+    return translations[language][key] || key;
   };
 
   return (

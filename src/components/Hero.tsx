@@ -8,8 +8,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
   const { t } = useLanguage();
-  
-  console.log('Hero component loaded');
 
   const demoModes = {
     ba: {
@@ -102,10 +100,10 @@ ERD – диаграмма сущностей
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight">
             {t('hero.title').split('\n').map((line, index) => (
-              <span key={index}>
+              <React.Fragment key={index}>
                 {line}
                 {index === 0 && <br />}
-              </span>
+              </React.Fragment>
             ))}
           </h1>
           
@@ -115,31 +113,15 @@ ERD – диаграмма сущностей
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button variant="hero" size="hero" className="animate-scale-in" asChild>
-              <a 
-                href="https://t.me/+7AGqgMbw-yc5MTAy" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  console.log('Hero button clicked!');
-                  // Дополнительно форсируем переход
-                  setTimeout(() => {
-                    window.open('https://t.me/+7AGqgMbw-yc5MTAy', '_blank', 'noopener,noreferrer');
-                  }, 100);
-                }}
-              >
+              <a href="https://t.me/+QM76lGLpwlM0ZmNi" target="_blank" rel="noopener noreferrer">
                 {t('hero.startFree')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </Button>
-            <a 
-              href="https://disk.yandex.ru/i/KUjijWxF-Ck14Q" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden bg-glass/30 backdrop-blur-md border border-glass-border/50 hover:bg-glass/50 hover:border-primary/30 hover:scale-105 active:scale-95 h-14 px-8 py-4 animate-scale-in"
-            >
+            <Button variant="glass" size="hero" className="animate-scale-in">
               <Download className="w-5 h-5 mr-2" />
               {t('hero.watchDemo')}
-            </a>
+            </Button>
           </div>
         </div>
 
@@ -155,10 +137,7 @@ ERD – диаграмма сущностей
                     key={key}
                     variant={activeDemo === key ? "default" : "glass"}
                     size="sm"
-                    onClick={() => {
-                      console.log('Demo button clicked:', key);
-                      setActiveDemo(key);
-                    }}
+                    onClick={() => setActiveDemo(key)}
                     className="transition-all duration-300"
                   >
                     <IconComponent className="w-4 h-4 mr-2" />
