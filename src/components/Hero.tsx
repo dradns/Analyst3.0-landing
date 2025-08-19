@@ -116,20 +116,15 @@ ERD – диаграмма сущностей
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
               style={{position: 'relative', zIndex: 10000, pointerEvents: 'auto'}}
               onClick={() => {
-                // Попробуем разные способы открытия Telegram
-                const telegramUrls = [
-                  'tg://join?invite=7AGqgMbw-yc5MTAy',
-                  'https://telegram.me/joinchat/7AGqgMbw-yc5MTAy',
-                  'https://t.me/+7AGqgMbw-yc5MTAy'
-                ];
+                const telegramLink = 'https://t.me/+7AGqgMbw-yc5MTAy';
                 
-                // Попробуем первый URL (tg://)
-                window.location.href = telegramUrls[0];
-                
-                // Если не сработает, через 2 секунды попробуем второй
-                setTimeout(() => {
-                  window.open(telegramUrls[1], '_blank');
-                }, 2000);
+                // Копируем ссылку в буфер обмена
+                navigator.clipboard.writeText(telegramLink).then(() => {
+                  alert(`Ссылка скопирована в буфер обмена!\n\n${telegramLink}\n\nВставьте её в адресную строку браузера или откройте в Telegram вручную.`);
+                }).catch(() => {
+                  // Если копирование не сработало, показываем ссылку
+                  alert(`Скопируйте эту ссылку вручную:\n\n${telegramLink}\n\nВставьте её в адресную строку браузера или откройте в Telegram.`);
+                });
               }}
             >
               {t('hero.startFree')}
