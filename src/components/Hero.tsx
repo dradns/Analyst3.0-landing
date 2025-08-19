@@ -8,6 +8,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
   const { t } = useLanguage();
+  
+  console.log('Hero component loaded');
 
   const demoModes = {
     ba: {
@@ -142,7 +144,10 @@ ERD – диаграмма сущностей
                     key={key}
                     variant={activeDemo === key ? "default" : "glass"}
                     size="sm"
-                    onClick={() => setActiveDemo(key)}
+                    onClick={() => {
+                      console.log('Demo button clicked:', key);
+                      setActiveDemo(key);
+                    }}
                     className="transition-all duration-300"
                   >
                     <IconComponent className="w-4 h-4 mr-2" />
