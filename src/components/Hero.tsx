@@ -118,9 +118,11 @@ ERD – диаграмма сущностей
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </Button>
-            <Button variant="glass" size="hero" className="animate-scale-in">
-              <Download className="w-5 h-5 mr-2" />
-              {t('hero.watchDemo')}
+            <Button variant="glass" size="hero" className="animate-scale-in" asChild>
+              <a href="https://disk.yandex.ru/i/KUjijWxF-Ck14Q" target="_blank" rel="noopener noreferrer">
+                <Download className="w-5 h-5 mr-2" />
+                {t('hero.watchDemo')}
+              </a>
             </Button>
           </div>
         </div>
