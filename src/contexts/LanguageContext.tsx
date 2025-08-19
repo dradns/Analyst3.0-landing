@@ -104,6 +104,13 @@ const translations = {
     'modes.cta.description': 'Скачайте расширение AI IDE BAS и получите доступ ко всем режимам работ',
     'modes.cta.button': 'Установить AI IDE BAS',
     
+    // Video
+    'video.badge': 'Демо',
+    'video.title': 'Вы сможете сделать такого же AI-агента',
+    'video.subtitle': 'всего за 5 минут',
+    'video.description': 'Посмотрите демонстрацию создания AI-агента в режиме реального времени',
+    'video.noSupport': 'Ваш браузер не поддерживает воспроизведение видео.',
+    
     // Features
     'features.badge': 'Возможности платформы',
     'features.title': 'Почему выбирают AI IDE BAS',
@@ -278,6 +285,13 @@ const translations = {
     'modes.cta.title': 'Ready to try all modes?',
     'modes.cta.description': 'Download AI IDE BAS extension and get access to all work modes',
     'modes.cta.button': 'Install AI IDE BAS',
+    
+    // Video
+    'video.badge': 'Demo',
+    'video.title': 'You will be able to create the same AI agent',
+    'video.subtitle': 'in just 5 minutes',
+    'video.description': 'Watch a real-time demonstration of creating an AI agent',
+    'video.noSupport': 'Your browser does not support video playback.',
     
     // Features
     'features.badge': 'Platform Features',
