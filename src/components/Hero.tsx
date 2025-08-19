@@ -116,7 +116,15 @@ ERD – диаграмма сущностей
               variant="hero" 
               size="hero" 
               className="animate-scale-in"
-              onClick={() => window.open('https://t.me/+7AGqgMbw-yc5MTAy', '_blank')}
+              onClick={() => {
+                console.log('Клик по главной кнопке - попытка открыть ссылку');
+                try {
+                  window.open('https://t.me/+7AGqgMbw-yc5MTAy', '_blank');
+                  console.log('Ссылка должна открыться');
+                } catch (error) {
+                  console.error('Ошибка при открытии ссылки:', error);
+                }
+              }}
             >
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
