@@ -117,9 +117,25 @@ ERD – диаграмма сущностей
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow animate-glow hover:scale-110 active:scale-95 animate-scale-in transition-all duration-300"
+              onClick={(e) => {
+                console.log('Клик по ссылке:', e);
+                console.log('Ссылка href:', e.currentTarget.href);
+                // Проверим, не блокируется ли переход
+                setTimeout(() => {
+                  console.log('Если это сообщение видно, переход не произошел');
+                }, 1000);
+              }}
             >
               {t('hero.startFree')}
               <ArrowRight className="w-5 h-5 ml-2" />
+            </a>
+            <a 
+              href="https://google.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 h-14 px-8 py-4 text-lg font-semibold rounded-lg bg-red-600 text-white hover:bg-red-700 transition-all duration-300"
+            >
+              ТЕСТ Google (должен работать)
             </a>
             <Button variant="glass" size="hero" className="animate-scale-in">
               <Download className="w-5 h-5 mr-2" />
