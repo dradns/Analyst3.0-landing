@@ -220,9 +220,12 @@ Ctrl+Shift+P -> AI IDE BAS: Review Current File`;
                 {t('quickstart.help.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline">
-                  <Download className="w-4 h-4 mr-2" />
+                <Button 
+                  variant="outline"
+                  onClick={() => window.open('https://disk.yandex.ru/i/KUjijWxF-Ck14Q', '_blank')}
+                >
                   Скачать шаблон
+                  <Download className="w-4 h-4 ml-2" />
                 </Button>
                 <Button 
                   variant="default"
