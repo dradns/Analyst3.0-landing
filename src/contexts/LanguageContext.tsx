@@ -107,7 +107,7 @@ const translations = {
     // Video
     'video.badge': 'Демо',
     'video.title': 'Вы сможете сделать такого же AI-агента',
-    'video.description': 'Посмотрите демонстрацию создания AI-агента в режиме реального времени',
+    'video.description': 'Пример вашего будущего pet-проекта',
     'video.noSupport': 'Ваш браузер не поддерживает воспроизведение видео.',
     
     // Features
@@ -288,7 +288,7 @@ const translations = {
     // Video
     'video.badge': 'Demo',
     'video.title': 'You will be able to create the same AI agent',
-    'video.description': 'Watch a real-time demonstration of creating an AI agent',
+    'video.description': 'Example of your future pet project',
     'video.noSupport': 'Your browser does not support video playback.',
     
     // Features

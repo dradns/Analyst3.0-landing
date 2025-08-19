@@ -16,8 +16,9 @@ const VideoPlayer = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
             {t('video.title')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto flex items-center justify-center gap-2">
             {t('video.description')}
+            <ArrowDown className="w-5 h-5 text-primary" />
           </p>
         </div>
 
