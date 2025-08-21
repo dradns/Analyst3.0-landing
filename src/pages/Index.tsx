@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import VideoPlayer from "@/components/VideoPlayer";
 import ModeCards from "@/components/ModeCards";
 import Features from "@/components/Features";
-import CourseCtaSection from "@/components/CourseCtaSection";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import QuickStart from "@/components/QuickStart";
@@ -18,7 +17,6 @@ const Index = () => {
         <VideoPlayer />
         <ModeCards />
         <Features />
-        <CourseCtaSection />
         <CourseCtaSectionWide />
         <CourseCtaSectionPositive />
         <QuickStart />

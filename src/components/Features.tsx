@@ -12,7 +12,8 @@ import {
   Clock,
   GraduationCap,
   Code,
-  BriefcaseBusiness
+  BriefcaseBusiness,
+  BarChart3
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -86,7 +87,7 @@ const Features = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* First Column - Джунам */}
           <Card className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300">
             <CardContent className="p-6 relative z-10">
@@ -140,6 +141,25 @@ const Features = () => {
               
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Расширение компетенций за счёт навыков работы с LLM и AI-агентами
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Fourth Column - Опытным аналитикам */}
+          <Card className="group relative overflow-hidden animate-scale-in hover:scale-105 transition-all duration-300" style={{ animationDelay: "300ms" }}>
+            <CardContent className="p-6 relative z-10">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center text-white shadow-lg group-hover:shadow-glow transition-shadow duration-300">
+                  <BarChart3 className="w-6 h-6" />
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+                Опытным аналитикам
+              </h3>
+              
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Откроете для себя современные подходы и инструменты работы с LLM и AI-агентами
               </p>
             </CardContent>
           </Card>
