@@ -71,7 +71,7 @@ const translations = {
     'modes.sa.practice.2': 'Подготовка документации для передачи разработчикам',
     'modes.sa.result': 'Результат: полный набор системных требований для AI-агента',
     'modes.architect.title': 'Модуль 3 — AI-агент (2 недели)',
-    'modes.architect.description': 'Цель: Реализовать и задеплоить работающего AI-ассистента, интегрированного в проект.',
+    'modes.architect.description': 'Цель: Реализовать работающего AI-ассистента.',
     'modes.architect.features.0': 'Выбор и подключение LLM',
     'modes.architect.features.1': 'Разработка логики работы агента',
     'modes.architect.features.2': 'Интеграция с внешними сервисами и базами данных',
