@@ -66,8 +66,7 @@ const ModeCards = () => {
         t('modes.architect.features.0'),
         t('modes.architect.features.1'),
         t('modes.architect.features.2'),
-        t('modes.architect.features.3'),
-        t('modes.architect.features.4')
+        t('modes.architect.features.3')
       ],
       result: t('modes.architect.result'),
       icon: Bot,
