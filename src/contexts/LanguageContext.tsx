@@ -76,7 +76,7 @@ const translations = {
     'modes.architect.features.1': 'Разработка логики работы агента',
     'modes.architect.features.2': 'Интеграция с внешними сервисами и базами данных',
     'modes.architect.features.3': 'Тестирование и оптимизация ответов',
-    'modes.architect.features.4': 'Деплой агента в продакшн-среду',
+    'modes.architect.features.4': 'Деплой агента',
     'modes.architect.practice.title': 'Практика:',
     'modes.architect.practice.0': 'Настройка AI-агента под ваш пет-проект',
     'modes.architect.practice.1': 'Реализация ключевых сценариев взаимодействия',
