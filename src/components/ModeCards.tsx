@@ -110,8 +110,9 @@ const ModeCards = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {modes.map((mode, index) => {
+        {/* Modules 1-3 in one row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
+          {modes.slice(0, 3).map((mode, index) => {
             const IconComponent = mode.icon;
             return (
               <Card 
@@ -161,6 +162,56 @@ const ModeCards = () => {
               </Card>
             );
           })}
+        </div>
+
+        {/* Format module in second row */}
+        <div className="flex justify-center max-w-5xl mx-auto">
+          <div className="w-full max-w-md">
+            {modes.slice(3).map((mode, index) => {
+              const IconComponent = mode.icon;
+              return (
+                <Card 
+                  key={mode.id} 
+                  className="group relative overflow-hidden animate-scale-in"
+                  style={{ animationDelay: `${(index + 3) * 100}ms` }}
+                >
+                  {/* Glow effect */}
+                  <div className={`absolute inset-0 ${mode.bgGlow} opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl`} />
+                  
+                  <CardHeader className="relative z-10">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${mode.color} flex items-center justify-center text-white shadow-lg`}>
+                        <IconComponent className="w-6 h-6" />
+                      </div>
+                      <Badge variant="secondary" className="text-xs">
+                        Online
+                      </Badge>
+                    </div>
+                    <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      {mode.title}
+                    </CardTitle>
+                  </CardHeader>
+
+                  <CardContent className="relative z-10">
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {mode.description}
+                    </p>
+
+                    <div className="space-y-2 mb-6">
+                      <h4 className="text-sm font-medium text-foreground mb-2">Вы получите:</h4>
+                      {mode.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start text-sm">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />
+                          <span className="text-muted-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
 
       </div>
