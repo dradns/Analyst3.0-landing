@@ -34,12 +34,6 @@ const ModeCards = () => {
         t('modes.ba.features.3'),
         t('modes.ba.features.4')
       ],
-      practice: [
-        t('modes.ba.practice.0'),
-        t('modes.ba.practice.1'),
-        t('modes.ba.practice.2')
-      ],
-      practiceTitle: t('modes.ba.practice.title'),
       result: t('modes.ba.result'),
       icon: Lightbulb,
       color: "from-blue-500 to-cyan-500",
@@ -59,12 +53,6 @@ const ModeCards = () => {
         t('modes.sa.features.5'),
         t('modes.sa.features.6')
       ],
-      practice: [
-        t('modes.sa.practice.0'),
-        t('modes.sa.practice.1'),
-        t('modes.sa.practice.2')
-      ],
-      practiceTitle: t('modes.sa.practice.title'),
       result: t('modes.sa.result'),
       icon: Settings,
       color: "from-green-500 to-emerald-500",
@@ -82,12 +70,6 @@ const ModeCards = () => {
         t('modes.architect.features.3'),
         t('modes.architect.features.4')
       ],
-      practice: [
-        t('modes.architect.practice.0'),
-        t('modes.architect.practice.1'),
-        t('modes.architect.practice.2')
-      ],
-      practiceTitle: t('modes.architect.practice.title'),
       result: t('modes.architect.result'),
       icon: Bot,
       color: "from-purple-500 to-indigo-500",
@@ -168,20 +150,8 @@ const ModeCards = () => {
                         <span className="text-muted-foreground">{feature}</span>
                       </div>
                     ))}
-                    
-                    {mode.practice && (
-                      <>
-                        <h4 className="text-sm font-medium text-foreground mb-2 mt-4">{mode.practiceTitle}</h4>
-                        {mode.practice.map((item, idx) => (
-                          <div key={idx} className="flex items-start text-sm">
-                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-3 mt-2 flex-shrink-0" />
-                            <span className="text-muted-foreground">{item}</span>
-                          </div>
-                        ))}
-                      </>
-                    )}
-                    
-                    {mode.result && (
+                     
+                     {mode.result && (
                       <div className="mt-4 p-3 rounded-lg bg-muted/50">
                         <p className="text-sm font-medium text-foreground">{mode.result}</p>
                       </div>
