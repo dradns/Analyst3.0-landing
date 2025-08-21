@@ -80,7 +80,7 @@ const translations = {
     'modes.architect.practice.0': 'Настройка AI-агента под ваш пет-проект',
     'modes.architect.practice.1': 'Реализация ключевых сценариев взаимодействия',
     'modes.architect.practice.2': 'Запуск работающего продукта в реальной среде',
-    'modes.architect.result': 'Результат: готовый AI-агент в портфолио — доказательство навыков в аналитике и AI-разработке.',
+    'modes.architect.result': 'Результат: готовый AI-агент в портфолио — доказательство навыков в аналитике и AI-разработке',
     'modes.designer.title': 'Designer',
     'modes.designer.description': 'Создает макеты интерфейсов и UI компоненты',
     'modes.designer.features.0': 'Макеты интерфейсов',
