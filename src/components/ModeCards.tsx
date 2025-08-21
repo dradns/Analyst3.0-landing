@@ -30,9 +30,7 @@ const ModeCards = () => {
       features: [
         t('modes.ba.features.0'),
         t('modes.ba.features.1'), 
-        t('modes.ba.features.2'),
-        t('modes.ba.features.3'),
-        t('modes.ba.features.4')
+        t('modes.ba.features.2')
       ],
       result: t('modes.ba.result'),
       icon: Lightbulb,
