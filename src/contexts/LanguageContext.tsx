@@ -61,7 +61,7 @@ const translations = {
     'modes.sa.features.0': 'Проектирование архитектуры системы',
     'modes.sa.features.1': 'Создание модели данных',
     'modes.sa.features.2': 'Построение ERD',
-    'modes.sa.features.3': 'Диаграммы последовательности (Sequence Diagrams)',
+    'modes.sa.features.3': 'Диаграммы последовательности',
     'modes.sa.features.4': 'Документирование API с использованием Swagger',
     'modes.sa.features.5': 'Определение критериев приёмки (Acceptance Criteria)',
     'modes.sa.features.6': 'Формулировка нефункциональных требований (скорость, безопасность, масштабируемость)',
