@@ -61,7 +61,12 @@ const Footer = () => {
                       className="hover:scale-110 transition-transform duration-300"
                       asChild
                     >
-                      <a href={social.href} aria-label={social.name}>
+                     <a 
+                       href={social.href} 
+                       aria-label={social.name}
+                       target={social.name === "Telegram" ? "_blank" : undefined}
+                       rel={social.name === "Telegram" ? "noopener noreferrer" : undefined}
+                     >
                         <IconComponent className="w-4 h-4" />
                       </a>
                     </Button>
