@@ -9,8 +9,8 @@ const Header = () => {
 
   const navigation = [
     { name: "Программа", href: "#what-awaits" },
-    { name: "Структура обучения", href: "#course-structure" },
     { name: "Для кого", href: "#features" },
+    { name: "Структура обучения", href: "#course-structure" },
     { name: t('header.contacts'), href: "#" },
   ];
 
