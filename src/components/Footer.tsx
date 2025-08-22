@@ -4,7 +4,6 @@ import {
   Twitter, 
   Linkedin, 
   Mail,
-  ArrowUpRight,
   Heart
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -20,12 +19,6 @@ const Footer = () => {
     ],
     support: [
       { name: "Как работает AI-агент", href: "#video" },
-    ],
-    legal: [
-      { name: t('footer.legal.privacy'), href: "#" },
-      { name: t('footer.legal.terms'), href: "#" },
-      { name: t('footer.legal.cookies'), href: "#" },
-      { name: t('footer.legal.security'), href: "#" },
     ]
   };
 
@@ -107,12 +100,9 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block flex items-center"
+                        className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
                       >
                         {item.name}
-                        {item.name === "API Reference" && (
-                          <ArrowUpRight className="w-3 h-3 ml-1" />
-                        )}
                       </a>
                     </li>
                   ))}
@@ -124,22 +114,8 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t border-glass-border">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <span>{t('footer.copyright')}</span>
-              <div className="hidden md:flex items-center space-x-4">
-                {navigation.legal.map((item, index) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="hover:text-foreground transition-colors duration-300"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-            
+          <div className="flex items-center justify-center">
+            <span className="text-sm text-muted-foreground">{t('footer.copyright')}</span>
           </div>
         </div>
       </div>
