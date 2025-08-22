@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -85,14 +85,31 @@ const CourseStructure = () => {
     },
     {
       id: "module-4",
-      title: "Этап 4: Пользовательский интерфейс",
-      description: "Разработка интуитивного интерфейса для взаимодействия с AI-агентом.",
+      title: "Этап 4: Проектирование архитектуры",
+      description: "Спроектируйте архитектуру вашего AI-агента. Определите, как будут взаимодействовать фронтенд, бэкенд и база данных.",
       tasks: [
-        "Создать wireframes интерфейса",
-        "Разработать UI компоненты",
-        "Настроить пользовательские сценарии"
+        "Создать схему архитектуры системы",
+        "Описать компоненты (фронтенд, бэкенд, БД)",
+        "Показать связи между компонентами"
       ],
-      icon: FileText
+      examples: [
+        "Фронтенд: веб-интерфейс или Telegram бот",
+        "Бэкенд: Python сервер",
+        "База данных: PostgreSQL",
+        "AI компонент: интеграция с LLM",
+        "RAG система: для работы с базой знаний"
+      ],
+      tools: [
+        "🏗️ Draw.io - для создания схем"
+      ],
+      resources: [
+        {
+          title: "Видеолекция: \"Архитектура систем\"",
+          url: "https://youtu.be/zNic2ow-8GE",
+          icon: Video
+        }
+      ],
+      icon: Layers
     },
     {
       id: "module-5",
