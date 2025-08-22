@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -226,14 +226,29 @@ const CourseStructure = () => {
     },
     {
       id: "module-9",
-      title: "Этап 9: Деплой и масштабирование",
-      description: "Развертывание AI-агента в продакшн среде и настройка масштабирования.",
+      title: "Этап 9: Определение критериев качества",
+      description: "Сформулируйте критерии приемки и нефункциональные требования для вашего AI-агента. Это поможет понять, когда проект можно считать завершенным.",
       tasks: [
-        "Развернуть в облачной инфраструктуре",
-        "Настроить автомасштабирование",
-        "Провести нагрузочное тестирование"
+        "Создать критерии приемки в формате \"Дано-Когда-Тогда\"",
+        "Определить нефункциональные требования"
       ],
-      icon: Trophy
+      examples: [
+        "Дано: пользователь отправляет запрос",
+        "Когда: система обрабатывает запрос", 
+        "Тогда: пользователь получает ответ в течение 5 секунд",
+        "Производительность: время ответа < 5 сек",
+        "Надежность: доступность 99.9%",
+        "Безопасность: шифрование данных",
+        "Масштабируемость: поддержка 1000+ пользователей"
+      ],
+      resources: [
+        {
+          title: "Видеолекция: \"Критерии приемки и требования\"",
+          url: "https://youtu.be/KmZi30R3h0g",
+          icon: Video
+        }
+      ],
+      icon: CheckCircle
     },
     {
       id: "module-10",
