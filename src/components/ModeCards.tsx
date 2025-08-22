@@ -163,47 +163,79 @@ const ModeCards = () => {
           })}
         </div>
 
-        {/* Format module in second row */}
-        <div className="flex justify-center max-w-5xl mx-auto">
-          <div className="w-full max-w-md">
+        {/* Format module in second row - highlighted */}
+        <div className="flex justify-center max-w-7xl mx-auto">
+          <div className="w-full max-w-4xl relative">
+            {/* Special background for Format block */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 rounded-2xl blur-3xl transform scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background/60 rounded-xl backdrop-blur-sm border border-primary/10" />
+            
             {modes.slice(3).map((mode, index) => {
               const IconComponent = mode.icon;
               return (
                 <Card 
                   key={mode.id} 
-                  className="group relative overflow-hidden animate-scale-in"
+                  className="group relative overflow-hidden animate-scale-in border-2 border-primary/20 bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-sm shadow-2xl"
                   style={{ animationDelay: `${(index + 3) * 100}ms` }}
                 >
-                  {/* Glow effect */}
-                  <div className={`absolute inset-0 ${mode.bgGlow} opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl`} />
+                  {/* Enhanced glow effect */}
+                  <div className={`absolute inset-0 ${mode.bgGlow} opacity-0 group-hover:opacity-100 transition-all duration-500 blur-2xl`} />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   <CardHeader className="relative z-10">
                     <div className="flex items-center justify-between mb-4">
-                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${mode.color} flex items-center justify-center text-white shadow-lg`}>
-                        <IconComponent className="w-6 h-6" />
+                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${mode.color} flex items-center justify-center text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300`}>
+                        <IconComponent className="w-7 h-7" />
                       </div>
-                      <Badge variant="secondary" className="text-xs">
+                      <Badge variant="secondary" className="text-sm bg-primary/10 text-primary border-primary/20">
                         Online
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
+                    <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
                       {mode.title}
                     </CardTitle>
                   </CardHeader>
 
                   <CardContent className="relative z-10">
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
                       {mode.description}
                     </p>
 
-                    <div className="space-y-2 mb-6">
-                      <h4 className="text-sm font-medium text-foreground mb-2">Вы получите:</h4>
-                      {mode.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start text-sm">
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />
-                          <span className="text-muted-foreground">{feature}</span>
+                    <div className="grid md:grid-cols-2 gap-6 mb-6">
+                      <div className="space-y-3">
+                        <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-primary" />
+                          Вы получите:
+                        </h4>
+                        {mode.features.map((feature, idx) => (
+                          <div key={idx} className="flex items-start">
+                            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary mr-3 mt-2 flex-shrink-0" />
+                            <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                      
+                      {/* Special highlight section for Format */}
+                      <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-6 border border-primary/10">
+                        <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-secondary" />
+                          Особенности формата:
+                        </h4>
+                        <div className="space-y-2">
+                          <div className="flex items-center text-sm">
+                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
+                            <span className="text-muted-foreground">Интерактивные занятия</span>
+                          </div>
+                          <div className="flex items-center text-sm">
+                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
+                            <span className="text-muted-foreground">Практические задания</span>
+                          </div>
+                          <div className="flex items-center text-sm">
+                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
+                            <span className="text-muted-foreground">Поддержка менторов</span>
+                          </div>
                         </div>
-                      ))}
+                      </div>
                     </div>
 
                   </CardContent>
