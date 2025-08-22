@@ -165,7 +165,11 @@ const CourseStructure = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
             Интерактивный курс, где вы можете последовательно изучать материал, переходя от этапа к этапу. Каждый этап содержит описание задания, инструкции, ссылки на ресурсы.
           </p>
-          <Button size="lg" className="mb-8">
+          <Button 
+            size="lg" 
+            className="mb-8"
+            onClick={() => window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank')}
+          >
             <Play className="w-5 h-5 mr-2" />
             Начать обучение
           </Button>
