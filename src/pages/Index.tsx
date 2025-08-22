@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseStructure from "@/components/CourseStructure";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
+import WhyImportant from "@/components/WhyImportant";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
         <Features />
         <CourseCtaSectionWide />
         <CourseStructure />
+        <WhyImportant />
         <CourseCtaSectionPositive />
       </main>
       <Footer />
