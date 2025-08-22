@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -178,14 +178,31 @@ const CourseStructure = () => {
     },
     {
       id: "module-7",
-      title: "Этап 7: Аналитика и мониторинг",
-      description: "Внедрение системы мониторинга и аналитики для отслеживания работы AI-агента.",
+      title: "Этап 7: Описание API интерфейса",
+      description: "Опишите REST API для вашего AI-агента в табличном виде. Определите эндпоинты, методы и параметры.",
       tasks: [
-        "Настроить систему логирования",
-        "Создать дашборд с метриками",
-        "Настроить алерты и уведомления"
+        "Создать таблицу с описанием API",
+        "Определить HTTP-методы для каждого эндпоинта",
+        "Описать параметры и ответы"
       ],
-      icon: BarChart3
+      resources: [
+        {
+          title: "Видеолекция: \"API в табличном виде\"",
+          url: "https://youtu.be/nNLCVTrdRJ0",
+          icon: Video
+        },
+        {
+          title: "Видеолекция: \"REST API\"",
+          url: "https://youtu.be/wY8hBQvlzCE",
+          icon: Video
+        },
+        {
+          title: "Видеолекция: \"Разбор ДЗ\"",
+          url: "https://youtu.be/XJ5CgkQ953Q",
+          icon: Video
+        }
+      ],
+      icon: Globe
     },
     {
       id: "module-8",
