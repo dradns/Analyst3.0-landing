@@ -10,7 +10,7 @@ const Header = () => {
   const navigation = [
     { name: "Программа", href: "#what-awaits" },
     { name: "Структура обучения", href: "#course-structure" },
-    { name: t('header.community'), href: "#community" },
+    { name: "Для кого", href: "#features" },
     { name: t('header.contacts'), href: "#" },
   ];
 
