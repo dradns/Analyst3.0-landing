@@ -95,7 +95,7 @@ const Footer = () => {
             {/* Navigation Links */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:col-span-3">
               <div>
-                <h3 className="font-semibold mb-4">{t('footer.product')}</h3>
+                <h3 className="font-semibold mb-4">О курсе</h3>
                 <ul className="space-y-3">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
