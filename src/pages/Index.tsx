@@ -4,6 +4,7 @@ import VideoPlayer from "@/components/VideoPlayer";
 import ModeCards from "@/components/ModeCards";
 import Features from "@/components/Features";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
+import CourseStructure from "@/components/CourseStructure";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import QuickStart from "@/components/QuickStart";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ const Index = () => {
         <ModeCards />
         <Features />
         <CourseCtaSectionWide />
+        <CourseStructure />
         <CourseCtaSectionPositive />
         <QuickStart />
       </main>
