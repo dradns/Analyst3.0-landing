@@ -6,7 +6,6 @@ import Features from "@/components/Features";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseStructure from "@/components/CourseStructure";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
-import QuickStart from "@/components/QuickStart";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,7 +20,6 @@ const Index = () => {
         <CourseCtaSectionWide />
         <CourseStructure />
         <CourseCtaSectionPositive />
-        <QuickStart />
       </main>
       <Footer />
     </div>
