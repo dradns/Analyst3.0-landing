@@ -9,7 +9,7 @@ const Header = () => {
 
   const navigation = [
     { name: "Программа", href: "#what-awaits" },
-    { name: t('header.quickstart'), href: "#features" },
+    { name: "Структура обучения", href: "#course-structure" },
     { name: t('header.community'), href: "#community" },
     { name: t('header.contacts'), href: "#" },
   ];
