@@ -101,6 +101,8 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : undefined}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
                       >
                         {item.name}
