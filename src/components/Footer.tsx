@@ -19,7 +19,7 @@ const Footer = () => {
       { name: "Структура", href: "#course-structure" },
     ],
     support: [
-      { name: "Как работает AI-агент", href: "#hero" },
+      { name: "Как работает AI-агент", href: "#video" },
     ],
     legal: [
       { name: t('footer.legal.privacy'), href: "#" },
