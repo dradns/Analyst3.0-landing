@@ -201,41 +201,17 @@ const ModeCards = () => {
                       {mode.description}
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-6 mb-6">
-                      <div className="space-y-3">
-                        <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-primary" />
-                          Вы получите:
-                        </h4>
-                        {mode.features.map((feature, idx) => (
-                          <div key={idx} className="flex items-start">
-                            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary mr-3 mt-2 flex-shrink-0" />
-                            <span className="text-muted-foreground leading-relaxed">{feature}</span>
-                          </div>
-                        ))}
-                      </div>
-                      
-                      {/* Special highlight section for Format */}
-                      <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-6 border border-primary/10">
-                        <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-secondary" />
-                          Особенности формата:
-                        </h4>
-                        <div className="space-y-2">
-                          <div className="flex items-center text-sm">
-                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
-                            <span className="text-muted-foreground">Интерактивные занятия</span>
-                          </div>
-                          <div className="flex items-center text-sm">
-                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
-                            <span className="text-muted-foreground">Практические задания</span>
-                          </div>
-                          <div className="flex items-center text-sm">
-                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mr-2 flex-shrink-0" />
-                            <span className="text-muted-foreground">Поддержка менторов</span>
-                          </div>
+                    <div className="space-y-3 mb-6">
+                      <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-primary" />
+                        Вы получите:
+                      </h4>
+                      {mode.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start">
+                          <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary mr-3 mt-2 flex-shrink-0" />
+                          <span className="text-muted-foreground leading-relaxed">{feature}</span>
                         </div>
-                      </div>
+                      ))}
                     </div>
 
                   </CardContent>
