@@ -1,10 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { 
-  Github, 
-  Twitter, 
-  Linkedin, 
-  Mail,
-  Heart
+  Github
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -24,9 +20,6 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "GitHub", icon: Github, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
-    { name: "LinkedIn", icon: Linkedin, href: "#" },
-    { name: "Email", icon: Mail, href: "mailto:hello@devmode.ai" },
   ];
 
   return (
