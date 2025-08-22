@@ -17,7 +17,6 @@ const Footer = () => {
       { name: "Программа", href: "#what-awaits" },
       { name: "Для кого", href: "#features" },
       { name: "Структура", href: "#course-structure" },
-      { name: t('footer.product.pricing'), href: "#pricing" },
     ],
     support: [
       { name: t('footer.support.docs'), href: "#" },
