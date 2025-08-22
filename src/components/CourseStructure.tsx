@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -113,14 +113,36 @@ const CourseStructure = () => {
     },
     {
       id: "module-5",
-      title: "Этап 5: Интеграция и тестирование",
-      description: "Объединение всех компонентов системы и проведение комплексного тестирования.",
+      title: "Этап 5: Проектирование базы данных",
+      description: "Создайте ERD-диаграмму для вашего AI-агента. Определите, какие данные будут храниться и как они связаны между собой.",
       tasks: [
-        "Интегрировать фронтенд с бэкендом",
-        "Провести unit и интеграционные тесты",
-        "Оптимизировать производительность"
+        "Создать ERD-диаграмму с основными сущностями",
+        "Определить атрибуты каждой сущности",
+        "Показать связи между сущностями"
       ],
-      icon: Settings
+      tools: [
+        "🗄️ DBeaver - для работы с базами данных",
+        "🎨 Draw.io - для создания ERD",
+        "📊 dbdiagram.io - специализированный инструмент"
+      ],
+      resources: [
+        {
+          title: "Видеолекция: \"Data modeling\"",
+          url: "https://youtu.be/E0VjxevUrjA",
+          icon: Video
+        },
+        {
+          title: "Видеолекция: \"ERD диаграммы\"",
+          url: "https://youtu.be/oj-LG7-NrTM",
+          icon: Video
+        },
+        {
+          title: "Видеолекция: \"ДЗ по ERD\"",
+          url: "https://youtu.be/9SZBpNoj8Cw",
+          icon: Video
+        }
+      ],
+      icon: Database
     },
     {
       id: "module-6",
