@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -206,14 +206,23 @@ const CourseStructure = () => {
     },
     {
       id: "module-8",
-      title: "Этап 8: Безопасность и соответствие",
-      description: "Обеспечение безопасности AI-системы и соответствие требованиям защиты данных.",
+      title: "Этап 8: Создание API документации",
+      description: "Создайте Swagger документацию для вашего API. Это поможет другим разработчикам понять, как использовать вашу систему.",
       tasks: [
-        "Провести аудит безопасности",
-        "Настроить шифрование данных",
-        "Обеспечить GDPR compliance"
+        "Создать Swagger спецификацию в формате YAML/JSON",
+        "Описать все эндпоинты с примерами"
       ],
-      icon: Settings
+      tools: [
+        "📝 Swagger Editor - онлайн редактор"
+      ],
+      resources: [
+        {
+          title: "Видеолекция: \"Swagger документация\"",
+          url: "https://youtu.be/J0rkBB-ncRM",
+          icon: Video
+        }
+      ],
+      icon: Code
     },
     {
       id: "module-9",
