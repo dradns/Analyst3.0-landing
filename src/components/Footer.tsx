@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { 
-  Github
+  Github,
+  Send
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -20,6 +21,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "GitHub", icon: Github, href: "#" },
+    { name: "Telegram", icon: Send, href: "https://t.me/+QM76lGLpwlM0ZmNi" },
   ];
 
   return (
