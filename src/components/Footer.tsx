@@ -122,28 +122,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter */}
-        <div className="py-8 border-t border-glass-border">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div>
-              <h3 className="font-semibold mb-2">{t('footer.newsletter.title')}</h3>
-              <p className="text-muted-foreground text-sm">
-                {t('footer.newsletter.description')}
-              </p>
-            </div>
-            <div className="flex space-x-2 w-full md:w-auto">
-              <input
-                type="email"
-                placeholder={t('footer.newsletter.placeholder')}
-                className="flex-1 md:w-64 px-3 py-2 text-sm border border-glass-border rounded-lg bg-glass/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-              />
-              <Button variant="default" size="sm">
-                {t('footer.newsletter.subscribe')}
-              </Button>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="py-6 border-t border-glass-border">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
