@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/cfc79ad7-a059-4cab-a04c-293a54663f7c.png" 
+              src="/lovable-uploads/2e714a34-e99b-4061-a879-1417e78d58c2.png" 
               alt="Analyst 3.0 Logo" 
               className="w-14 h-12 rounded-lg"
             />
