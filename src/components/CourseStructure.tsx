@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -146,14 +146,35 @@ const CourseStructure = () => {
     },
     {
       id: "module-6",
-      title: "Этап 6: Обучение и настройка модели",
-      description: "Дообучение AI-модели на специфических данных и fine-tuning параметров.",
+      title: "Этап 6: Диаграмма последовательности",
+      description: "Создайте UML диаграмму последовательности для вашего AI-агента. Покажите, как различные компоненты системы взаимодействуют во времени.",
       tasks: [
-        "Подготовить обучающий датасет",
-        "Провести fine-tuning модели",
-        "Оценить качество работы AI"
+        "Создать диаграмму последовательности для основных сценариев",
+        "Показать временную последовательность действий",
+        "Отобразить взаимодействие между компонентами"
       ],
-      icon: Brain
+      examples: [
+        "Обработка запроса пользователя",
+        "Взаимодействие с LLM",
+        "Работа с базой данных",
+        "Формирование ответа"
+      ],
+      tools: [
+        "📊 PlantUML - для UML диаграмм"
+      ],
+      resources: [
+        {
+          title: "Видеолекция: \"Диаграмма последовательности\"",
+          url: "https://youtu.be/VuF8DOEp13M",
+          icon: Video
+        },
+        {
+          title: "Видеолекция: \"Разбор ДЗ\"",
+          url: "https://youtu.be/6MJUIznc3WI",
+          icon: Video
+        }
+      ],
+      icon: Activity
     },
     {
       id: "module-7",
