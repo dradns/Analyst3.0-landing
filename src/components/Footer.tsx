@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:col-span-3">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:col-span-3">
               <div>
                 <h3 className="font-semibold mb-4">О курсе</h3>
                 <ul className="space-y-3">
