@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map } from "lucide-react";
 
 const CourseStructure = () => {
   const courseModules = [
@@ -287,8 +287,8 @@ const CourseStructure = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">
-            <BookOpen className="w-4 h-4 mr-2" />
-            Интерактивный курс
+            <Map className="w-4 h-4 mr-2" />
+            Roadmap
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
             Структура обучения
