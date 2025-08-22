@@ -20,15 +20,6 @@ const Footer = () => {
     ],
     support: [
       { name: "Как работает AI-агент", href: "#hero" },
-      { name: t('footer.support.api'), href: "#" },
-      { name: t('footer.support.community'), href: "#community" },
-      { name: t('footer.support.help'), href: "#" },
-    ],
-    company: [
-      { name: t('footer.company.about'), href: "#" },
-      { name: t('footer.company.blog'), href: "#" },
-      { name: t('footer.company.careers'), href: "#" },
-      { name: t('footer.company.press'), href: "#" },
     ],
     legal: [
       { name: t('footer.legal.privacy'), href: "#" },
@@ -92,7 +83,7 @@ const Footer = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:col-span-3">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:col-span-3">
               <div>
                 <h3 className="font-semibold mb-4">О курсе</h3>
                 <ul className="space-y-3">
@@ -122,22 +113,6 @@ const Footer = () => {
                         {item.name === "API Reference" && (
                           <ArrowUpRight className="w-3 h-3 ml-1" />
                         )}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
-                <ul className="space-y-3">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
-                      >
-                        {item.name}
                       </a>
                     </li>
                   ))}
