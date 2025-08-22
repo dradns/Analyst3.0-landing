@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-2">
@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:col-span-3">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:col-span-2">
               <div>
                 <h3 className="font-semibold mb-4">О курсе</h3>
                 <ul className="space-y-3">
