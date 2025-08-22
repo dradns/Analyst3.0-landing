@@ -19,7 +19,7 @@ const Footer = () => {
       { name: "Структура", href: "#course-structure" },
     ],
     support: [
-      { name: t('footer.support.docs'), href: "#" },
+      { name: "Как работает AI-агент", href: "#hero" },
       { name: t('footer.support.api'), href: "#" },
       { name: t('footer.support.community'), href: "#community" },
       { name: t('footer.support.help'), href: "#" },
