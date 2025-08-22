@@ -187,7 +187,7 @@ const ModeCards = () => {
                       <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${mode.color} flex items-center justify-center text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300`}>
                         <IconComponent className="w-7 h-7" />
                       </div>
-                      <Badge variant="secondary" className="text-sm bg-primary/10 text-primary border-primary/20">
+                      <Badge variant="secondary" className="text-xs">
                         Online
                       </Badge>
                     </div>
