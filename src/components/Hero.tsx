@@ -107,11 +107,8 @@ ERD – диаграмма сущностей
             ))}
           </h1>
           
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in relative">
-            <span className="relative z-10 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse">
-              {t('hero.description')}
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 blur-xl animate-glow pointer-events-none" />
+          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
+            {t('hero.description')}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
