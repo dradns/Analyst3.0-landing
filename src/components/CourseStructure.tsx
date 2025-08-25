@@ -283,9 +283,9 @@ const CourseStructure = () => {
   ];
 
   return (
-    <section id="course-structure" className="py-20 relative overflow-hidden">
+    <section id="course-structure" className="py-8 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <Badge variant="outline" className="mb-4">
             <Map className="w-4 h-4 mr-2" />
             Roadmap

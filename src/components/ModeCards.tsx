@@ -91,14 +91,14 @@ const ModeCards = () => {
   ];
 
   return (
-    <section id="what-awaits" className="py-20 relative overflow-hidden">
+    <section id="what-awaits" className="py-12 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
       <div className="absolute top-40 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-40 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
           <Badge variant="outline" className="mb-4">
             <Map className="w-4 h-4 mr-2" />
             Что вас ожидает
