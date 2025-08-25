@@ -26,7 +26,7 @@ const translations = {
     
     // Hero
     'hero.badge': 'Революция в аналитике',
-    'hero.title': 'От бизнес-идей к AI-решениям за 12 недель',
+    'hero.title': 'От бизнес-идей к AI-решениям\nза 12 недель',
     'hero.description': 'Качественное обучение, реальная практика и готовое портфолио',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать шаблон',
@@ -367,12 +367,10 @@ interface LanguageProviderProps {
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   const [language, setLanguage] = useState<Language>(() => {
-    // Получаем язык из localStorage или используем системный
     const savedLang = localStorage.getItem('language') as Language;
     if (savedLang && ['ru', 'en'].includes(savedLang)) {
       return savedLang;
     }
-    // Определяем язык браузера
     const browserLang = navigator.language.toLowerCase();
     return browserLang.startsWith('ru') ? 'ru' : 'en';
   });
@@ -381,8 +379,24 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     localStorage.setItem('language', language);
   }, [language]);
 
-  const t = (key: string): string => {
-    return translations[language][key] || key;
+  const t = (key: string): string | JSX.Element => {
+    const value = translations[language][key] || key;
+
+    if (value.includes('\n')) {
+      const parts = value.split('\n');
+      return (
+        <>
+          {parts.map((part, i) => (
+            <span key={i}>
+              {part}
+              {i < parts.length - 1 && <br />}
+            </span>
+          ))}
+        </>
+      );
+    }
+
+    return value;
   };
 
   return (
