@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Download, Sparkles, Zap, Brain, Code2, Play, ArrowDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import CourseStructure from "@/components/CourseStructure";
 
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
@@ -177,6 +178,11 @@ ERD – диаграмма сущностей
                 </CardContent>
               </Card>
             </div>
+          </div>
+
+          {/* Course Structure Section */}
+          <div className="mt-16">
+            <CourseStructure />
           </div>
         </div>
 
