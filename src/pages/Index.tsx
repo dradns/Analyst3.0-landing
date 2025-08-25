@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import VideoPlayer from "@/components/VideoPlayer";
 import ModeCards from "@/components/ModeCards";
 import Features from "@/components/Features";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
@@ -15,7 +14,6 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <VideoPlayer />
         <ModeCards />
         <Features />
         <CourseCtaSectionWide />
