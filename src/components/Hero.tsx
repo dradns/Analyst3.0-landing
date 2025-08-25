@@ -147,7 +147,7 @@ ERD – диаграмма сущностей
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_3s_ease-in-out_infinite] drop-shadow-2xl">
                 <span className="flex items-center justify-center gap-3 animate-pulse">
                   <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_2s_ease-in-out_infinite_reverse]">
-                    Вы сможете сделать такого же AI-агента
+                    Научитесь делать такого же AI-агента
                   </span>
                   <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
                 </span>
