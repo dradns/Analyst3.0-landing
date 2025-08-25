@@ -125,6 +125,10 @@ export default {
 				'glow': {
 					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.3)' },
 					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.6)' }
+				},
+				'shimmer': {
+					'0%': { backgroundPosition: '200% 0' },
+					'100%': { backgroundPosition: '-200% 0' }
 				}
 			},
 			animation: {
@@ -133,7 +137,8 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
 				'slide-up': 'slide-up 0.8s ease-out',
-				'glow': 'glow 2s ease-in-out infinite'
+				'glow': 'glow 2s ease-in-out infinite',
+				'shimmer': 'shimmer 3s ease-in-out infinite'
 			}
 		}
 	},

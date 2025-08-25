@@ -134,17 +134,23 @@ ERD – диаграмма сущностей
 
           {/* Video Section */}
           <div className="py-8 relative overflow-hidden">
-            <div className="text-center mb-8 animate-fade-in">
+            {/* Enhanced Background Glow Effects */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl animate-glow pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-secondary/8 rounded-full blur-2xl animate-pulse pointer-events-none" />
+            
+            <div className="text-center mb-8 animate-fade-in relative z-10">
               <Badge variant="outline" className="mb-4">
                 <Play className="w-4 h-4 mr-2" />
                 Как работает AI-агент
               </Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-                Вы сможете сделать
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_3s_ease-in-out_infinite] drop-shadow-2xl">
+                <span className="inline-block animate-pulse">Вы сможете сделать</span>
                 <br />
-                <span className="flex items-center justify-center gap-3">
-                  такого же AI-агента
-                  <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
+                <span className="flex items-center justify-center gap-3 animate-bounce">
+                  <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_2s_ease-in-out_infinite_reverse]">
+                    такого же AI-агента
+                  </span>
+                  <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-bounce" />
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
