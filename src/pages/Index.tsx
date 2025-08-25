@@ -14,10 +14,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <CourseStructure />
         <ModeCards />
         <Features />
         <CourseCtaSectionWide />
-        <CourseStructure />
         <WhyImportant />
         <CourseCtaSectionPositive />
       </main>
