@@ -92,7 +92,7 @@ ERD – диаграмма сущностей
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-glow pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-8 animate-fade-in">
           <Badge variant="secondary" className="mb-6 text-sm px-4 py-2">
             <Sparkles className="w-4 h-4 mr-2" />
             {t('hero.badge')}
@@ -111,7 +111,7 @@ ERD – диаграмма сущностей
             {t('hero.description')}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a
               href="https://t.me/+QM76lGLpwlM0ZmNi"
               target="_blank"
@@ -133,8 +133,8 @@ ERD – диаграмма сущностей
           </div>
 
           {/* Video Section */}
-          <div className="py-12 relative overflow-hidden">
-            <div className="text-center mb-12 animate-fade-in">
+          <div className="py-8 relative overflow-hidden">
+            <div className="text-center mb-8 animate-fade-in">
               <Badge variant="outline" className="mb-4">
                 <Play className="w-4 h-4 mr-2" />
                 Как работает AI-агент
@@ -152,7 +152,7 @@ ERD – диаграмма сущностей
               </p>
             </div>
 
-            <div className="max-w-xs mx-auto mb-12">
+            <div className="max-w-xs mx-auto mb-8">
               <Card className="overflow-hidden shadow-2xl">
                 <CardContent className="p-0">
                   <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20">
