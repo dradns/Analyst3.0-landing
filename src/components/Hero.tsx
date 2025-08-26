@@ -104,7 +104,7 @@ ERD – диаграмма сущностей
               От бизнес-идей
             </h1>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-1 bg-gradient-hero bg-clip-text text-transparent leading-tight">
-              к AI-проектам за 12 недель
+              к AI-решениям
             </h1>
           </div>
           
