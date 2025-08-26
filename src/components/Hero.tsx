@@ -161,12 +161,13 @@ ERD – диаграмма сущностей
             
             {/* Secondary Button */}
             <div className="relative group animate-scale-in">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
               <button
-                className="inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl glass-card text-foreground border-2 border-primary/30 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-glass hover:shadow-glow group hover-lift"
+                className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
               >
                 <span className="flex items-center gap-3">
                   Начать первый урок
-                  <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
+                  <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
                 </span>
               </button>
             </div>
