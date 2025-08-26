@@ -26,7 +26,7 @@ const translations = {
     
     // Hero
     'hero.badge': 'Революция в аналитике',
-    'hero.title': 'От бизнес-идеи к AI-проекту',
+    'hero.title': 'От бизнес-идей к AI-проектам',
     'hero.description': 'От бизнес-идеи до внедрения AI-решений — с практикой и портфолио',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать шаблон',
