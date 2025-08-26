@@ -109,7 +109,7 @@ ERD – диаграмма сущностей
           </h1>
           
           <p key="hero-description" className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed animate-fade-in">
-            <span className="font-bold">Бесплатный курс:</span> бизнес- и системный анализ с AI
+            <span className="font-bold">Бесплатный онлайн-курс:</span> бизнес- и системный анализ с AI
           </p>
 
           <div className="mb-8 animate-fade-in">
