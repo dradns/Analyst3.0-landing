@@ -134,14 +134,17 @@ ERD – диаграмма сущностей
             </div>
           </div>
           
-          {/* Enhanced Description */}
+          {/* Enhanced Course Description */}
           <div className="mb-8 animate-fade-in">
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 mx-auto leading-relaxed">
-              <span className="font-bold text-gradient-primary">
-                Бесплатный онлайн-курс:
-              </span>
-              {" "}<span className="font-bold">бизнес- и системный анализ с AI</span>
-            </p>
+            <div className="inline-block relative">
+              <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
+              <p className="relative text-xl md:text-2xl lg:text-3xl font-bold text-center bg-gradient-hero text-primary-foreground px-8 py-4 rounded-2xl shadow-glow leading-relaxed">
+                <span className="font-bold">
+                  Бесплатный онлайн-курс:
+                </span>
+                {" "}<span className="font-bold">бизнес- и системный анализ с AI</span>
+              </p>
+            </div>
           </div>
 
           {/* Enhanced Practice Badge */}
