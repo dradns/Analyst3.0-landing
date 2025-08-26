@@ -136,7 +136,7 @@ ERD – диаграмма сущностей
           
           {/* Enhanced Description */}
           <div className="mb-8 animate-fade-in">
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 mx-auto leading-relaxed">
               <span className="font-bold text-gradient-primary">
                 Бесплатный онлайн-курс:
               </span>
