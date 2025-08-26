@@ -151,7 +151,7 @@ ERD – диаграмма сущностей
           <div className="mb-10 animate-scale-in">
             <div className="inline-block relative">
               <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3">
-                12 недель практики + портфолио
+                12 недель практики и знаний для создания AI-проекта — бесплатно и с поддержкой комьюнити
               </p>
             </div>
           </div>
