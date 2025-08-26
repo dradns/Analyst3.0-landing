@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Download, Sparkles, Zap, Brain, Code2, Play, Bot } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -183,8 +183,8 @@ ERD – диаграмма сущностей
                 className="inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl glass-card text-foreground border-2 border-primary/30 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-glass hover:shadow-glow group hover-lift"
               >
                 <span className="flex items-center gap-3">
-                  Скачать шаблон
-                  <Download className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
+                  Сделать первый урок
+                  <BookOpen className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </span>
               </a>
             </div>
