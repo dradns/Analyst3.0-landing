@@ -86,7 +86,7 @@ ERD – диаграмма сущностей
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-4">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
       
