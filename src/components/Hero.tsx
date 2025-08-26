@@ -108,7 +108,7 @@ ERD – диаграмма сущностей
             ))}
           </h1>
           
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
+          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
             {t('hero.description')}
           </p>
 
