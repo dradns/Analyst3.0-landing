@@ -90,11 +90,11 @@ ERD – диаграмма сущностей
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-secondary/5 pointer-events-none" />
       
-      {/* Floating Orbs */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-to-r from-primary/20 to-secondary/30 rounded-full blur-3xl animate-[glow_4s_ease-in-out_infinite] pointer-events-none" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-gradient-to-r from-secondary/25 to-primary/20 rounded-full blur-2xl animate-[glow_3s_ease-in-out_infinite_0.5s] pointer-events-none" />
-      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-gradient-to-r from-primary/15 to-secondary/25 rounded-full blur-xl animate-[glow_5s_ease-in-out_infinite_1s] pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-r from-secondary/20 to-primary/15 rounded-full blur-3xl animate-[glow_6s_ease-in-out_infinite_1.5s] pointer-events-none" />
+      {/* Floating Orbs with Glow Animation */}
+      <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-primary opacity-20 rounded-full blur-3xl animate-glow pointer-events-none" />
+      <div className="absolute top-40 right-20 w-72 h-72 bg-gradient-secondary opacity-25 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
+      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-gradient-hero opacity-15 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-primary opacity-20 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
       
       {/* Animated Particles */}
       <div className="absolute inset-0 pointer-events-none">
@@ -107,10 +107,10 @@ ERD – диаграмма сущностей
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-8 animate-fade-in">
           {/* Enhanced Badge */}
-          <div className="mb-8 animate-fade-in">
-            <Badge variant="secondary" className="mb-6 text-sm px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-glass-card backdrop-blur-md border border-primary/20">
+          <div className="mb-8 animate-scale-in">
+            <Badge variant="secondary" className="mb-6 text-sm px-6 py-3 shadow-glow hover:shadow-glow transition-all duration-300 hover:scale-105 glass-card border border-primary/20">
               <Sparkles className="w-4 h-4 mr-2 animate-pulse text-primary" />
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-semibold">
+              <span className="text-gradient-hero font-semibold">
                 {t('hero.badge')}
               </span>
             </Badge>
@@ -120,24 +120,24 @@ ERD – диаграмма сущностей
           <div className="mb-8 animate-fade-in">
             <div className="relative">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4 relative">
-                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_3s_linear_infinite] drop-shadow-2xl">
+                <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                   От бизнес-идей
                 </span>
               </h1>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight relative">
-                <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_3s_linear_infinite_reverse] drop-shadow-2xl">
+                <span className="bg-gradient-secondary bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                   к AI-решениям
                 </span>
               </h1>
               {/* Glow effect behind text */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30 blur-2xl opacity-50 scale-110 animate-pulse pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-2xl scale-110 animate-pulse pointer-events-none" />
             </div>
           </div>
           
           {/* Enhanced Description */}
           <div className="mb-8 animate-fade-in">
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed backdrop-blur-sm">
-              <span className="font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
+              <span className="font-bold text-gradient-primary">
                 Бесплатный онлайн-курс:
               </span>
               {" "}бизнес- и системный анализ с AI
@@ -145,10 +145,10 @@ ERD – диаграмма сущностей
           </div>
 
           {/* Enhanced Practice Badge */}
-          <div className="mb-10 animate-fade-in">
+          <div className="mb-10 animate-scale-in">
             <div className="inline-block relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30 blur-lg opacity-60 animate-pulse" />
-              <p className="relative text-lg md:text-xl font-bold text-center bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_2s_ease-in-out_infinite] px-6 py-3 rounded-full border border-primary/20 backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
+              <p className="relative text-lg md:text-xl font-bold text-center text-gradient-hero animate-shimmer px-6 py-3 rounded-full border border-primary/20 glass-card">
                 ✨ 12 недель практики + портфолио ✨
               </p>
             </div>
@@ -157,31 +157,30 @@ ERD – диаграмма сущностей
           {/* Enhanced Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             {/* Primary CTA Button */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-60 group-hover:opacity-80 transition-opacity duration-300 animate-pulse" />
+            <div className="relative group animate-scale-in">
+              <div className="absolute inset-0 bg-gradient-hero blur-lg opacity-60 group-hover:opacity-80 transition-opacity duration-300 animate-pulse" />
               <a
                 href="https://t.me/+QM76lGLpwlM0ZmNi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary to-secondary text-primary-foreground shadow-2xl hover:shadow-primary/50 hover:scale-110 active:scale-95 transition-all duration-500 group overflow-hidden"
+                className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow hover:scale-110 active:scale-95 transition-all duration-500 group overflow-hidden hover-glow"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="relative z-10 flex items-center gap-3">
                   {t('hero.startFree')}
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
                 {/* Shimmer effect */}
-                <div className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:animate-[shimmer_1s_ease-out] group-hover:opacity-100" />
+                <div className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:animate-shimmer group-hover:opacity-100" />
               </a>
             </div>
             
             {/* Secondary Button */}
-            <div className="relative group">
+            <div className="relative group animate-scale-in">
               <a
                 href="https://disk.yandex.ru/i/KUjijWxF-Ck14Q"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-glass-card backdrop-blur-md text-foreground border-2 border-primary/30 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl group"
+                className="inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl glass-card text-foreground border-2 border-primary/30 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-glass hover:shadow-glow group hover-lift"
               >
                 <span className="flex items-center gap-3">
                   Скачать шаблон
