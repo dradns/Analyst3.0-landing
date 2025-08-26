@@ -188,9 +188,6 @@ ERD – диаграмма сущностей
               <div className="text-center mb-8 animate-fade-in relative z-10">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 text-gradient-hero">
                   <span className="flex items-center justify-center gap-3">
-                    <span className="text-gradient-hero">
-                      Научитесь создавать AI-агентов
-                    </span>
                     <Bot className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-primary animate-bounce" />
                   </span>
                 </h2>
