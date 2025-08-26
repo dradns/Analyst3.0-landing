@@ -154,9 +154,8 @@ ERD – диаграмма сущностей
               {/* Homework Call-to-Action */}
               <div className="mb-8 animate-scale-in">
                 <div className="inline-block relative">
-                  <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3 flex items-center font-semibold">
+                  <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3 font-semibold">
                     Попробуйте выполнить первое домашнее задание прямо сейчас
-                    <ArrowDown className="w-6 h-6 animate-bounce ml-1" />
                   </p>
                 </div>
               </div>
