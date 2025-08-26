@@ -109,17 +109,17 @@ ERD – диаграмма сущностей
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center mb-8">
           {/* Left Column - Text Content (3/5 width) */}
           <div className="lg:col-span-3">
-            <div className="text-left animate-fade-in">
+            <div className="text-left animate-fade-in pt-8">
               
               {/* Enhanced Main Title - Professional Blue Theme */}
               <div className="mb-8 animate-fade-in">
                 <div className="relative">
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 relative">
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4 relative">
                     <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                       От бизнес-идей
                     </span>
                   </h1>
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight relative">
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight relative">
                     <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                       к AI-решениям
                     </span>
@@ -133,7 +133,7 @@ ERD – диаграмма сущностей
               <div className="mb-8 animate-fade-in">
                 <div className="inline-block relative">
                   <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
-                  <p className="relative text-lg md:text-xl lg:text-2xl font-bold text-left bg-gradient-hero text-primary-foreground px-6 py-3 rounded-lg shadow-glow leading-relaxed mt-4">
+                  <p className="relative text-xl md:text-2xl lg:text-3xl font-bold text-left bg-gradient-hero text-primary-foreground px-6 py-3 rounded-lg shadow-glow leading-relaxed mt-4">
                     <span className="font-bold">
                       Бесплатный онлайн-курс:
                     </span>
@@ -145,7 +145,7 @@ ERD – диаграмма сущностей
               {/* Enhanced Practice Badge */}
               <div className="mb-1 animate-scale-in">
                 <div className="inline-block relative">
-                  <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3">
+                  <p className="relative text-xl md:text-2xl lg:text-3xl text-left text-muted-foreground px-6 py-3">
                     12 недель для создания AI-проекта с нуля — с практикой и поддержкой комьюнити
                   </p>
                 </div>
@@ -154,7 +154,7 @@ ERD – диаграмма сущностей
               {/* Homework Call-to-Action */}
               <div className="mb-8 animate-scale-in">
                 <div className="inline-block relative">
-                  <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3 font-semibold">
+                  <p className="relative text-xl md:text-2xl lg:text-3xl text-left text-muted-foreground px-6 py-3 font-semibold">
                     Попробуйте выполнить первое домашнее задание прямо сейчас
                   </p>
                 </div>
@@ -166,7 +166,7 @@ ERD – диаграмма сущностей
                 <div className="relative group animate-scale-in">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                   <button
-                    className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
+                    className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-2xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
                   >
                     <span className="flex items-center gap-3">
                       Начать первый урок
