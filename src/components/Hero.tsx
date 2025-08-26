@@ -148,8 +148,8 @@ ERD – диаграмма сущностей
           <div className="mb-10 animate-scale-in">
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
-              <p className="relative text-lg md:text-xl font-bold text-center text-gradient-hero animate-shimmer px-6 py-3 rounded-full border border-primary/20 glass-card">
-                ✨ 12 недель практики + портфолио ✨
+              <p className="relative text-lg md:text-xl font-bold text-center bg-gradient-hero text-primary-foreground px-6 py-3 rounded-full shadow-glow">
+                12 недель практики + портфолио
               </p>
             </div>
           </div>
