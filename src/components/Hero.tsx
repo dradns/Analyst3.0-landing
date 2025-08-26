@@ -108,9 +108,15 @@ ERD – диаграмма сущностей
             ))}
           </h1>
           
-          <p key="hero-description" className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
+          <p key="hero-description" className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed animate-fade-in">
             {t('hero.description')}
           </p>
+
+          <div className="mb-8 animate-fade-in">
+            <p className="text-lg md:text-xl font-semibold text-center bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-[shimmer_2s_ease-in-out_infinite] animate-pulse">
+              ✨ 12 недель практики + портфолио ✨
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a
