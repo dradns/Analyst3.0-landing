@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, PlayCircle, Bot } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, PlayCircle, Rocket, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -166,7 +166,7 @@ ERD – диаграмма сущностей
               >
                 <span className="flex items-center gap-3">
                   Начать первый урок
-                  <PlayCircle className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
+                  <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </span>
               </button>
             </div>
