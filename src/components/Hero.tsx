@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Download, Sparkles, Zap, Brain, Code2, Play, ArrowDown } from "lucide-react";
+import { ArrowRight, Download, Sparkles, Zap, Brain, Code2, Play, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -206,7 +206,7 @@ ERD – диаграмма сущностей
                   <span className="text-gradient-hero">
                     Узнаете как создавать AI-агента
                   </span>
-                  <ArrowDown className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-bounce" />
+                  <Bot className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-bounce" />
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
