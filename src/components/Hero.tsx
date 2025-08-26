@@ -88,20 +88,20 @@ ERD – диаграмма сущностей
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Enhanced Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-secondary/6 pointer-events-none" />
       
-      {/* Floating Orbs with Glow Animation - Professional Blue Tones */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-primary opacity-15 rounded-full blur-3xl animate-glow pointer-events-none" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-gradient-primary opacity-20 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
-      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-primary opacity-12 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
+      {/* Floating Orbs with Glow Animation - Professional Blue-Purple Tones */}
+      <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-hero opacity-15 rounded-full blur-3xl animate-glow pointer-events-none" />
+      <div className="absolute top-40 right-20 w-72 h-72 bg-gradient-primary opacity-18 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
+      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-gradient-secondary opacity-12 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-hero opacity-14 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
       
-      {/* Animated Particles - Blue Professional Theme */}
+      {/* Animated Particles - Blue-Purple Professional Theme */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-primary/50 rounded-full animate-pulse" />
-        <div className="absolute top-2/3 left-1/4 w-1 h-1 bg-primary/30 rounded-full animate-ping" />
+        <div className="absolute top-2/3 left-1/4 w-1 h-1 bg-secondary/35 rounded-full animate-ping" />
         <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-primary/40 rounded-full animate-bounce" />
-        <div className="absolute bottom-1/3 right-1/3 w-1.5 h-1.5 bg-primary/45 rounded-full animate-pulse" />
+        <div className="absolute bottom-1/3 right-1/3 w-1.5 h-1.5 bg-secondary/45 rounded-full animate-pulse" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -116,21 +116,21 @@ ERD – диаграмма сущностей
             </Badge>
           </div>
           
-          {/* Enhanced Main Title - Professional Blue Theme */}
+          {/* Enhanced Main Title - Professional Blue-Purple Theme */}
           <div className="mb-8 animate-fade-in">
             <div className="relative">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4 relative">
-                <span className="bg-gradient-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
+                <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                   От бизнес-идей
                 </span>
               </h1>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight relative">
-                <span className="bg-gradient-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
+                <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
                   к AI-решениям
                 </span>
               </h1>
-              {/* Professional Blue Glow effect behind text */}
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-2xl scale-110 animate-pulse pointer-events-none" />
+              {/* Professional Blue-Purple Glow effect behind text */}
+              <div className="absolute inset-0 bg-gradient-hero opacity-25 blur-2xl scale-110 animate-pulse pointer-events-none" />
             </div>
           </div>
           
