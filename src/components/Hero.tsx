@@ -186,12 +186,12 @@ ERD – диаграмма сущностей
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] bg-secondary/8 rounded-full blur-2xl animate-pulse pointer-events-none" />
               
               <div className="text-center mb-8 animate-fade-in relative z-10">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-gradient-hero">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 text-gradient-hero">
                   <span className="flex items-center justify-center gap-3">
                     <span className="text-gradient-hero">
-                      Посмотрите как работает AI-агент
+                      Научитесь создавать AI-агентов
                     </span>
-                    <Bot className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary animate-bounce" />
+                    <Bot className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-primary animate-bounce" />
                   </span>
                 </h2>
                 <p className="text-base text-muted-foreground max-w-xl mx-auto">
