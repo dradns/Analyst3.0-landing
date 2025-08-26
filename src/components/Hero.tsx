@@ -168,8 +168,8 @@ ERD – диаграмма сущностей
                 className="inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl glass-card text-foreground border-2 border-primary/30 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-glass hover:shadow-glow group hover-lift"
               >
                 <span className="flex items-center gap-3">
-                  Сделать первый урок
-                  <BookOpen className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
+                  Начать первый урок
+                  <Play className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </span>
               </a>
             </div>
