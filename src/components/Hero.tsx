@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, PlayCircle, Rocket, Bot } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, PlayCircle, Rocket, ArrowDown, Bot } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -152,6 +152,16 @@ ERD – диаграмма сущностей
             <div className="inline-block relative">
               <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3">
                 12 недель практики и знаний для создания AI-проекта — бесплатно и с поддержкой комьюнити
+              </p>
+            </div>
+          </div>
+
+          {/* Homework Call-to-Action */}
+          <div className="mb-10 animate-scale-in">
+            <div className="inline-block relative">
+              <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3 flex items-center justify-center gap-3">
+                Попробуй выполнить первое домашнее задание прямо сейчас
+                <ArrowDown className="w-6 h-6 animate-bounce" />
               </p>
             </div>
           </div>
