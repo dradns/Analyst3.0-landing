@@ -196,7 +196,7 @@ ERD – диаграмма сущностей
                 </h2>
               </div>
 
-              <div className="max-w-xs mx-auto mb-4">
+              <div className="max-w-48 mx-auto mb-4">
                 <Card className="overflow-hidden shadow-2xl">
                   <CardContent className="p-0">
                     <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20">
