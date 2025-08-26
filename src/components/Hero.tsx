@@ -195,7 +195,6 @@ ERD – диаграмма сущностей
                   <span className="text-gradient-hero">
                     Посмотрите как работает AI-агент
                   </span>
-                  <Cpu className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
                   <Bot className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-bounce" />
                 </span>
               </h2>
