@@ -148,7 +148,7 @@ ERD – диаграмма сущностей
           </div>
 
           {/* Enhanced Practice Badge */}
-          <div className="mb-10 animate-scale-in">
+          <div className="mb-4 animate-scale-in">
             <div className="inline-block relative">
               <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3">
                 12 недель практики и знаний для создания AI-проекта — бесплатно и с поддержкой комьюнити
@@ -157,7 +157,7 @@ ERD – диаграмма сущностей
           </div>
 
           {/* Homework Call-to-Action */}
-          <div className="mb-10 animate-scale-in">
+          <div className="mb-8 animate-scale-in">
             <div className="inline-block relative">
               <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3 flex items-center justify-center gap-3">
                 Попробуй выполнить первое домашнее задание прямо сейчас
