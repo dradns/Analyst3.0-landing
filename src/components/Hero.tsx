@@ -156,23 +156,6 @@ ERD – диаграмма сущностей
 
           {/* Enhanced Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
-            {/* Primary CTA Button */}
-            <div className="relative group animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-hero blur-lg opacity-60 group-hover:opacity-80 transition-opacity duration-300 animate-pulse" />
-              <a
-                href="https://t.me/+QM76lGLpwlM0ZmNi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-hero text-primary-foreground shadow-glow hover:shadow-glow hover:scale-110 active:scale-95 transition-all duration-500 group overflow-hidden hover-glow"
-              >
-                <span className="relative z-10 flex items-center gap-3">
-                  {t('hero.startFree')}
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
-                </span>
-                {/* Shimmer effect */}
-                <div className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:animate-shimmer group-hover:opacity-100" />
-              </a>
-            </div>
             
             {/* Secondary Button */}
             <div className="relative group animate-scale-in">
