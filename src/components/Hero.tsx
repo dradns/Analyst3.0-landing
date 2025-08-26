@@ -99,14 +99,14 @@ ERD – диаграмма сущностей
             {t('hero.badge')}
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight animate-fade-in">
-            {t('hero.title').split('\n').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index === 0 && <br />}
-              </React.Fragment>
-            ))}
-          </h1>
+          <div className="mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent leading-tight">
+              От бизнес-идей
+            </h1>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-1 bg-gradient-hero bg-clip-text text-transparent leading-tight">
+              к AI-проектам за 12 недель
+            </h1>
+          </div>
           
           <p key="hero-description" className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed animate-fade-in">
             <span className="font-bold">Бесплатный онлайн-курс:</span> бизнес- и системный анализ с AI
