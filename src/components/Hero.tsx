@@ -140,7 +140,7 @@ ERD – диаграмма сущностей
               <span className="font-bold text-gradient-primary">
                 Бесплатный онлайн-курс:
               </span>
-              {" "}бизнес- и системный анализ с AI
+              {" "}<span className="font-bold">бизнес- и системный анализ с AI</span>
             </p>
           </div>
 
