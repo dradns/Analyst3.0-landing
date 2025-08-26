@@ -110,15 +110,6 @@ ERD – диаграмма сущностей
           {/* Left Column - Text Content (3/5 width) */}
           <div className="lg:col-span-3">
             <div className="text-left animate-fade-in">
-              {/* Enhanced Badge */}
-              <div className="mb-8 animate-scale-in">
-                <Badge variant="secondary" className="mb-6 text-sm px-6 py-3 shadow-glow hover:shadow-glow transition-all duration-300 hover:scale-105 glass-card border border-primary/20">
-                  <Sparkles className="w-4 h-4 mr-2 animate-pulse text-primary" />
-                  <span className="text-gradient-hero font-semibold">
-                    {t('hero.badge')}
-                  </span>
-                </Badge>
-              </div>
               
               {/* Enhanced Main Title - Professional Blue Theme */}
               <div className="mb-8 animate-fade-in">
