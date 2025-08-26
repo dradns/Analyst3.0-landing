@@ -109,7 +109,7 @@ ERD – диаграмма сущностей
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center mb-8">
           {/* Left Column - Text Content (3/5 width) */}
           <div className="lg:col-span-3">
-            <div className="text-left animate-fade-in">
+            <div className="text-left animate-fade-in pt-12">
               
               {/* Enhanced Main Title - Professional Blue Theme */}
               <div className="mb-8 animate-fade-in">
