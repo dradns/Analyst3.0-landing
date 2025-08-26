@@ -150,7 +150,7 @@ ERD – диаграмма сущностей
           {/* Enhanced Practice Badge */}
           <div className="mb-10 animate-scale-in">
             <div className="inline-block relative">
-              <p className="relative text-lg md:text-xl font-bold text-center text-muted-foreground px-6 py-3">
+              <p className="relative text-xl md:text-2xl text-center text-muted-foreground px-6 py-3">
                 12 недель практики + портфолио
               </p>
             </div>
