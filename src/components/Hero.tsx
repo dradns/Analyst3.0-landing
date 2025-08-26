@@ -194,9 +194,6 @@ ERD – диаграмма сущностей
                     <Bot className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-primary animate-bounce" />
                   </span>
                 </h2>
-                <p className="text-base text-muted-foreground max-w-xl mx-auto">
-                  Результат студента нашего курса
-                </p>
               </div>
 
               <div className="max-w-xs mx-auto mb-4">
