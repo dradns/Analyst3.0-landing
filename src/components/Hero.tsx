@@ -199,7 +199,7 @@ ERD – диаграмма сущностей
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Посмотрите детальный обзор примера вашего будущего pet-проекта
+                Результат студента нашего курса
               </p>
             </div>
 
