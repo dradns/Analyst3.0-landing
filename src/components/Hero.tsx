@@ -138,7 +138,7 @@ ERD – диаграмма сущностей
           <div className="mb-8 animate-fade-in">
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
-              <p className="relative text-xl md:text-2xl lg:text-3xl font-bold text-center bg-gradient-hero text-primary-foreground px-6 py-3 rounded-full shadow-glow leading-relaxed">
+              <p className="relative text-xl md:text-2xl lg:text-3xl font-bold text-center bg-gradient-hero text-primary-foreground px-6 py-3 rounded-full shadow-glow leading-relaxed mt-4">
                 <span className="font-bold">
                   Бесплатный онлайн-курс:
                 </span>
