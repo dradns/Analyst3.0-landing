@@ -197,10 +197,6 @@ ERD – диаграмма сущностей
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-secondary/8 rounded-full blur-2xl animate-pulse pointer-events-none" />
             
             <div className="text-center mb-8 animate-fade-in relative z-10">
-              <Badge variant="outline" className="mb-4">
-                <Play className="w-4 h-4 mr-2" />
-                Как работает AI-агент
-              </Badge>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gradient-hero">
                 <span className="flex items-center justify-center gap-3">
                   <span className="text-gradient-hero">
