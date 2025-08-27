@@ -99,10 +99,6 @@ const ModeCards = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 animate-fade-in">
-          <Badge variant="outline" className="mb-4">
-            <Map className="w-4 h-4 mr-2" />
-            Что вас ожидает
-          </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-3 px-8 text-foreground">
             {t('modes.title')}
             <BookOpen className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-foreground" />
