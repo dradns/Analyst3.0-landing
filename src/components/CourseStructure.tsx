@@ -367,8 +367,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
               }, 100);
             }}
           >
-            <ArrowDown className="w-5 h-5 mr-2" />
-            Попробуй первое домашнее задание
+            Попробуй первое задание ↓
           </Button>
         </div>
 
