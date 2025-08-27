@@ -92,18 +92,10 @@ ERD – диаграмма сущностей
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
       
       {/* Subtle Background Mist - Almost Transparent */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-primary/3 rounded-full blur-3xl animate-glow pointer-events-none" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-secondary/4 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
-      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/2 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/3 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
-      
-      {/* Subtle Animated Particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-primary/20 rounded-full animate-pulse" />
-        <div className="absolute top-2/3 left-1/4 w-1 h-1 bg-secondary/15 rounded-full animate-ping" />
-        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-primary/18 rounded-full animate-bounce" />
-        <div className="absolute bottom-1/3 right-1/3 w-1.5 h-1.5 bg-secondary/20 rounded-full animate-pulse" />
-      </div>
+      <div className="absolute top-10 left-10 w-96 h-96 bg-primary/1 rounded-full blur-3xl animate-glow pointer-events-none" />
+      <div className="absolute top-40 right-20 w-72 h-72 bg-secondary/2 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
+      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/1 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/1 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Grid Layout */}
