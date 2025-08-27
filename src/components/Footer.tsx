@@ -14,7 +14,7 @@ const Footer = () => {
       { name: "Структура", href: "#course-structure" },
     ],
     support: [
-      { name: "Как работает AI-агент", href: "#video" },
+      { name: "Как работает AI-агент", href: "#" },
       { name: "Скачать шаблон требований", href: "https://disk.yandex.ru/i/KUjijWxF-Ck14Q" },
     ]
   };
