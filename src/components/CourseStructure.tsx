@@ -11,9 +11,16 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown } from "lucide-react";
 
-const CourseStructure = () => {
+interface CourseStructureProps {
+  openModuleId?: string;
+  onOpenModule?: (moduleId: string) => void;
+}
+
+const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = {}) => {
   // Состояние для отслеживания прогресса чек-листов
   const [moduleProgress, setModuleProgress] = useState<Record<string, boolean[]>>({});
+  // Состояние для управления открытым аккордеоном
+  const [accordionValue, setAccordionValue] = useState<string>(openModuleId || "");
 
   // Загрузка прогресса из localStorage
   useEffect(() => {
@@ -22,6 +29,18 @@ const CourseStructure = () => {
       setModuleProgress(JSON.parse(savedProgress));
     }
   }, []);
+
+  // Обновление открытого аккордеона при изменении openModuleId
+  useEffect(() => {
+    if (openModuleId) {
+      setAccordionValue(openModuleId);
+      // Прокрутка к разделу структуры курса
+      const element = document.getElementById('course-structure');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [openModuleId]);
 
   // Сохранение прогресса в localStorage
   useEffect(() => {
@@ -333,7 +352,17 @@ const CourseStructure = () => {
           <Button 
             size="lg" 
             className="mb-8"
-            onClick={() => window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank')}
+            onClick={() => {
+              setAccordionValue("module-1");
+              onOpenModule?.("module-1");
+              // Прокрутка к первому модулю
+              setTimeout(() => {
+                const element = document.querySelector('[data-state="open"]');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+              }, 100);
+            }}
           >
             <Play className="w-5 h-5 mr-2" />
             Начать обучение
@@ -341,7 +370,16 @@ const CourseStructure = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+          <Accordion 
+            type="single" 
+            collapsible 
+            className="w-full space-y-4" 
+            value={accordionValue}
+            onValueChange={(value) => {
+              setAccordionValue(value || "");
+              onOpenModule?.(value || "");
+            }}
+          >
             {courseModules.map((module, index) => {
               const IconComponent = module.icon;
               return (

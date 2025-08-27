@@ -8,6 +8,7 @@ import CourseStructure from "@/components/CourseStructure";
 
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
+  const [openCourseModule, setOpenCourseModule] = useState<string>("");
   const { t } = useLanguage();
 
   const demoModes = {
@@ -167,6 +168,16 @@ ERD – диаграмма сущностей
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                   <button
                     className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
+                    onClick={() => {
+                      setOpenCourseModule("module-1");
+                      // Прокрутка к разделу структуры курса
+                      setTimeout(() => {
+                        const element = document.getElementById('course-structure');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                      }, 100);
+                    }}
                   >
                     <span className="flex items-center gap-3">
                       Начать первый урок
@@ -221,7 +232,10 @@ ERD – диаграмма сущностей
 
         {/* Course Structure Section */}
         <div className="mt-8">
-          <CourseStructure />
+          <CourseStructure 
+            openModuleId={openCourseModule} 
+            onOpenModule={setOpenCourseModule}
+          />
         </div>
 
         {/* Demo Section */}
