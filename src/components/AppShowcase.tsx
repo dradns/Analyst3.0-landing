@@ -48,7 +48,7 @@ const AppShowcase = () => {
               key={image.id}
               className="group relative bg-card rounded-2xl border border-border/50 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
-              <div className="aspect-[9/16] bg-gradient-to-br from-muted/50 to-muted/20 p-4">
+              <div className="aspect-[16/10] bg-gradient-to-br from-muted/50 to-muted/20 p-4">
                 <img
                   src={image.src}
                   alt={image.alt}
