@@ -367,7 +367,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
               }, 100);
             }}
           >
-            Попробуй первое задание ↓
+            Попробуйте первое задание ↓
           </Button>
         </div>
 
