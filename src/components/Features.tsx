@@ -81,7 +81,7 @@ const Features = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
             Кому подойдет курс
-            <HelpCircle className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-black" />
+            <HelpCircle className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
         </div>
 

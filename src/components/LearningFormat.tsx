@@ -45,7 +45,7 @@ const LearningFormat = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
             Формат обучения
-            <Monitor className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-foreground" />
+            <Monitor className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Как мы поможем вам погрузиться в аналитику 3.0?</p>
         </div>

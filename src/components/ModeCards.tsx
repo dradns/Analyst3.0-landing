@@ -86,7 +86,7 @@ const ModeCards = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 flex items-center justify-center gap-3 px-8 text-foreground">
             {t('modes.title')}
-            <BookOpen className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-foreground" />
+            <BookOpen className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
         </div>
 
