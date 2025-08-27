@@ -48,11 +48,11 @@ const AppShowcase = () => {
               key={image.id}
               className="group relative bg-card rounded-2xl border border-border/50 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
-              <div className="aspect-[9/19.5] bg-gradient-to-br from-muted/50 to-muted/20 p-2">
+              <div className="aspect-[9/16] bg-gradient-to-br from-muted/50 to-muted/20 p-4">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                   loading="lazy"
                 />
               </div>
