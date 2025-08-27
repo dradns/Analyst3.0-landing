@@ -104,7 +104,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-4">Демо</h3>
+                <h3 className="font-semibold mb-4">Полезные материалы</h3>
                 <ul className="space-y-3">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
