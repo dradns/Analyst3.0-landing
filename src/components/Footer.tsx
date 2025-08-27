@@ -16,7 +16,7 @@ const Footer = () => {
     ],
     support: [
       { name: "Как работает AI-агент", href: "#video" },
-      { name: "Скачать шаблон", href: "https://disk.yandex.ru/i/KUjijWxF-Ck14Q" },
+      { name: "Скачать шаблон требований", href: "https://disk.yandex.ru/i/KUjijWxF-Ck14Q" },
     ]
   };
 
