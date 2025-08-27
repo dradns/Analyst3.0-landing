@@ -30,7 +30,7 @@ const translations = {
     'hero.description': 'Бесплатный курс: бизнес- и системный анализ с AI',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать шаблон',
-    'hero.tryModes': 'В процессе обучения вы освоите ↓',
+    'hero.tryModes': 'В процессе обучения вы узнаете, что такое ↓',
     'hero.tryMode': 'Попробовать режим',
     
     // Hero Demo Modes  
@@ -203,7 +203,7 @@ const translations = {
     'hero.description': 'Master business and system analysis skills, learn to work with AI agents, build a portfolio and prepare for employment.',
     'hero.startFree': 'Join the course',
     'hero.watchDemo': 'Download template',
-    'hero.tryModes': 'In the learning process you will master ↓',
+    'hero.tryModes': 'In the learning process you will learn what is ↓',
     'hero.tryMode': 'Try Mode',
     
     // Hero Demo Modes  
