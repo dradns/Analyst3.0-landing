@@ -1,6 +1,10 @@
-import { Smartphone } from "lucide-react";
+import { Smartphone, X } from "lucide-react";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const AppShowcase = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+  
   const appImages = [
     {
       id: 1,
@@ -46,7 +50,8 @@ const AppShowcase = () => {
           {appImages.map((image) => (
             <div
               key={image.id}
-              className="group relative bg-card rounded-2xl border border-border/50 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="group relative bg-card rounded-2xl border border-border/50 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={() => setSelectedImage({ src: image.src, alt: image.alt })}
             >
               <div className="aspect-[16/10] bg-gradient-to-br from-muted/50 to-muted/20 p-4">
                 <img
@@ -69,6 +74,25 @@ const AppShowcase = () => {
           </p>
         </div>
       </div>
+      
+      {/* Image Modal */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
+          <DialogClose className="absolute right-4 top-4 z-10 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <X className="h-4 w-4" />
+            <span className="sr-only">Close</span>
+          </DialogClose>
+          {selectedImage && (
+            <div className="flex items-center justify-center bg-background">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="max-w-full max-h-[90vh] object-contain"
+              />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
