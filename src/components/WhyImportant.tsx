@@ -115,7 +115,7 @@ const WhyImportant = () => {
           </div>
 
           {/* Community CTA Section */}
-          <div className="mt-16 text-center animate-fade-in">
+          <div className="mt-20 text-center animate-fade-in">
             <div className="mb-8">
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-semibold">
                 Освойте навыки бизнес и системного анализа
