@@ -245,14 +245,21 @@ ERD – диаграмма сущностей
             <div className="flex flex-wrap justify-center gap-3">
               {Object.entries(demoModes).map(([key, mode]) => {
                 const IconComponent = mode.icon;
+                const isActive = activeDemo === key;
                 return (
                   <div key={key} className="relative group animate-scale-in">
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    {isActive && (
+                      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    )}
                     <Button
-                      variant={activeDemo === key ? "default" : "glass"}
+                      variant="ghost"
                       size="sm"
                       onClick={() => setActiveDemo(key)}
-                      className="relative bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary transition-all duration-300 shadow-lg hover:shadow-glow"
+                      className={`relative transition-all duration-300 border ${
+                        isActive 
+                          ? 'bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground shadow-lg hover:shadow-glow hover:from-primary hover:to-secondary' 
+                          : 'bg-white text-black border-gray-200 hover:bg-gray-50 shadow-sm'
+                      }`}
                     >
                       <IconComponent className="w-4 h-4 mr-2" />
                       {mode.title}
