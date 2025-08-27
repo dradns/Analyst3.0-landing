@@ -29,8 +29,8 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -42,6 +42,9 @@ const Header = () => {
               </a>
             ))}
           </nav>
+
+          {/* Empty space to balance the layout */}
+          <div className="w-0"></div>
 
 
           {/* Mobile menu button */}
