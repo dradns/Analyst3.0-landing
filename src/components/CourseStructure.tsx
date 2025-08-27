@@ -351,7 +351,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
           </p>
           <Button 
             size="lg" 
-            className="mb-8"
+            className="mb-8 animate-pulse hover:animate-none transition-all duration-300"
             onClick={() => {
               setAccordionValue("module-1");
               onOpenModule?.("module-1");
@@ -364,7 +364,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
               }, 100);
             }}
           >
-            <Play className="w-5 h-5 mr-2" />
+            <ChevronDown className="w-5 h-5 mr-2" />
             Начать обучение
           </Button>
         </div>
