@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, ArrowUp, Bot, Cpu } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
+import AppShowcase from "@/components/AppShowcase";
 
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
@@ -221,6 +222,9 @@ ERD – диаграмма сущностей
             </div>
           </div>
         </div>
+
+        {/* App Showcase Section */}
+        <AppShowcase />
 
         {/* Course Structure Section */}
         <div className="mt-8">
