@@ -42,7 +42,7 @@ const AppShowcase = () => {
         </div>
 
         {/* App Images Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
           {appImages.map((image) => (
             <div
               key={image.id}
