@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Sparkles, Zap, Brain, Code2, Play, PlayCircle, Rocket, ArrowDown, Bot, Cpu } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, Bot, Cpu } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -54,7 +54,7 @@ ERD – диаграмма сущностей
 
 Нефункциональные требования – скорость, 
 безопасность, масштабируемость системы.`,
-      icon: Brain,
+      icon: TrendingUp,
     },
     reviewer: {
       title: t('hero.mode.reviewer.title'),
@@ -122,7 +122,7 @@ ERD – диаграмма сущностей
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight relative">
                     <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl flex items-center gap-4">
                       к AI-решениям
-                      <Brain className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-primary animate-pulse" />
+                      <TrendingUp className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-primary animate-pulse" />
                     </span>
                   </h1>
                   {/* Subtle text glow */}
