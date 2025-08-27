@@ -246,16 +246,18 @@ ERD – диаграмма сущностей
               {Object.entries(demoModes).map(([key, mode]) => {
                 const IconComponent = mode.icon;
                 return (
-                  <Button
-                    key={key}
-                    variant={activeDemo === key ? "default" : "glass"}
-                    size="sm"
-                    onClick={() => setActiveDemo(key)}
-                    className="transition-all duration-300"
-                  >
-                    <IconComponent className="w-4 h-4 mr-2" />
-                    {mode.title}
-                  </Button>
+                  <div key={key} className="relative group animate-scale-in">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <Button
+                      variant={activeDemo === key ? "default" : "glass"}
+                      size="sm"
+                      onClick={() => setActiveDemo(key)}
+                      className="relative bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary transition-all duration-300 shadow-lg hover:shadow-glow"
+                    >
+                      <IconComponent className="w-4 h-4 mr-2" />
+                      {mode.title}
+                    </Button>
+                  </div>
                 );
               })}
             </div>
