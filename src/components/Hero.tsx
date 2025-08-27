@@ -91,18 +91,18 @@ ERD – диаграмма сущностей
       {/* Matrix Analytics Background Animation */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Animated Grid Pattern */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-40">
           <div className="grid grid-cols-20 grid-rows-20 h-full w-full">
             {Array.from({ length: 400 }).map((_, i) => (
               <div
                 key={i}
-                className="border-r border-b border-primary/10 relative"
+                className="border-r border-b border-primary/20 relative"
                 style={{
                   animationDelay: `${Math.random() * 3}s`
                 }}
               >
-                {Math.random() > 0.85 && (
-                  <div className="absolute inset-0 bg-primary/20 animate-pulse" />
+                {Math.random() > 0.90 && (
+                  <div className="absolute inset-0 bg-primary/40 animate-data-pulse" />
                 )}
               </div>
             ))}
@@ -111,10 +111,10 @@ ERD – диаграмма сущностей
         
         {/* Falling Analytics Data */}
         <div className="absolute inset-0">
-          {Array.from({ length: 15 }).map((_, i) => (
+          {Array.from({ length: 20 }).map((_, i) => (
             <div
               key={`data-${i}`}
-              className="absolute text-primary/30 font-mono text-sm animate-data-pulse"
+              className="absolute text-primary/60 font-mono text-lg font-bold animate-data-pulse"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -122,17 +122,17 @@ ERD – диаграмма сущностей
                 animationDuration: `${2 + Math.random() * 3}s`
               }}
             >
-              {['97%', '$2.4M', '↗ 45%', '128K', 'ROI', 'KPI', '∑', 'λ', 'μ', 'σ'][Math.floor(Math.random() * 10)]}
+              {['97%', '$2.4M', '↗ 45%', '128K', 'ROI', 'KPI', '∑', 'λ', 'μ', 'σ', '📊', '📈'][Math.floor(Math.random() * 12)]}
             </div>
           ))}
         </div>
         
         {/* Floating Analytics Symbols */}
         <div className="absolute inset-0">
-          {Array.from({ length: 8 }).map((_, i) => (
+          {Array.from({ length: 12 }).map((_, i) => (
             <div
               key={`symbol-${i}`}
-              className="absolute text-primary/20 text-2xl font-bold animate-analytics-float"
+              className="absolute text-primary/40 text-3xl font-bold animate-analytics-float"
               style={{
                 left: `${10 + Math.random() * 80}%`,
                 top: `${10 + Math.random() * 80}%`,
@@ -140,17 +140,17 @@ ERD – диаграмма сущностей
                 animationDuration: `${3 + Math.random() * 2}s`
               }}
             >
-              {['📊', '📈', '💡', '⚡', '🎯', '💰', '🔍', '⭐'][i]}
+              {['📊', '📈', '💡', '⚡', '🎯', '💰', '🔍', '⭐', '🚀', '💎', '🔥', '✨'][i]}
             </div>
           ))}
         </div>
         
         {/* Moving Data Points */}
         <div className="absolute inset-0">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {Array.from({ length: 30 }).map((_, i) => (
             <div
               key={`point-${i}`}
-              className="absolute w-2 h-2 bg-primary/40 rounded-full animate-ping"
+              className="absolute w-3 h-3 bg-primary/60 rounded-full animate-ping"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -163,13 +163,13 @@ ERD – диаграмма сущностей
         
         {/* Matrix-style Binary Rain */}
         <div className="absolute inset-0 overflow-hidden">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {Array.from({ length: 10 }).map((_, i) => (
             <div
               key={`rain-${i}`}
-              className="absolute top-0 text-primary/15 font-mono text-xs whitespace-nowrap"
+              className="absolute top-0 text-primary/30 font-mono text-sm whitespace-nowrap animate-matrix-rain"
               style={{
                 left: `${Math.random() * 100}%`,
-                animation: `matrix-rain ${5 + Math.random() * 3}s linear infinite`,
+                animationDuration: `${5 + Math.random() * 3}s`,
                 animationDelay: `${Math.random() * 2}s`
               }}
             >
