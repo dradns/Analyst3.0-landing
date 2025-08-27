@@ -8,7 +8,7 @@ import {
   Trophy,
   AlertCircle,
   BarChart3,
-  MessageCircle,
+  Send,
   Rocket,
   ChevronDown
 } from "lucide-react";
@@ -134,7 +134,7 @@ const WhyImportant = () => {
                 >
                   <span className="flex items-center gap-3">
                     Присоединиться к комьюнити
-                    <MessageCircle className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
+                    <Send className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
                   </span>
                 </Button>
               </div>
