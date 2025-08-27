@@ -126,32 +126,6 @@ const LearningFormat = () => {
               );
             })}
           </div>
-
-          {/* CTA Section */}
-          <div className="mt-20 text-center animate-fade-in">
-            <div className="mb-8">
-              <p className="text-2xl font-semibold mb-4 max-w-3xl mx-auto text-center">
-                Присоединяйтесь к программе обучения ↓
-              </p>
-            </div>
-            
-            <div className="flex justify-center">
-              <div className="relative group animate-scale-in">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                <Button
-                  className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
-                  onClick={() => {
-                    window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank');
-                  }}
-                >
-                  <span className="flex items-center gap-3">
-                    Записаться на курс
-                    <Lightbulb className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
-                  </span>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
