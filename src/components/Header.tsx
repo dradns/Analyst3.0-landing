@@ -43,29 +43,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button 
-              variant="ghost" 
-              size="sm"
-              onClick={() => setLanguage(language === 'ru' ? 'en' : 'ru')}
-            >
-              <Globe className="w-4 h-4 mr-2" />
-              {language === 'ru' ? 'EN' : 'RU'}
-            </Button>
-            <Button variant="ghost" size="sm">
-              <Github className="w-4 h-4 mr-2" />
-              {t('header.github')}
-            </Button>
-            <Button 
-              variant="hero" 
-              size="sm"
-              onClick={() => window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank')}
-            >
-              {t('header.tryNow')}
-              <ArrowUpRight className="w-4 h-4 ml-1" />
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -94,30 +71,6 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 border-t border-glass-border space-y-2">
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="w-full justify-start"
-                  onClick={() => setLanguage(language === 'ru' ? 'en' : 'ru')}
-                >
-                  <Globe className="w-4 h-4 mr-2" />
-                  {language === 'ru' ? 'EN' : 'RU'}
-                </Button>
-                <Button variant="ghost" size="sm" className="w-full justify-start">
-                  <Github className="w-4 h-4 mr-2" />
-                  {t('header.github')}
-                </Button>
-                <Button 
-                  variant="hero" 
-                  size="sm" 
-                  className="w-full"
-                  onClick={() => window.open('https://t.me/+QM76lGLpwlM0ZmNi', '_blank')}
-                >
-                  {t('header.tryNow')}
-                  <ArrowUpRight className="w-4 h-4 ml-1" />
-                </Button>
-              </div>
             </div>
           </div>
         )}
