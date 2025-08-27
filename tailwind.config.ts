@@ -129,40 +129,6 @@ export default {
 				'shimmer': {
 					'0%': { backgroundPosition: '200% 0' },
 					'100%': { backgroundPosition: '-200% 0' }
-				},
-				'matrix-rain': {
-					'0%': { 
-						transform: 'translateY(-100vh)',
-						opacity: '1'
-					},
-					'90%': {
-						opacity: '1'
-					},
-					'100%': { 
-						transform: 'translateY(100vh)',
-						opacity: '0'
-					}
-				},
-				'data-pulse': {
-					'0%, 100%': { 
-						opacity: '0.3',
-						transform: 'scale(1)'
-					},
-					'50%': { 
-						opacity: '0.8',
-						transform: 'scale(1.05)'
-					}
-				},
-				'analytics-float': {
-					'0%, 100%': { 
-						transform: 'translateY(0px) rotate(0deg)'
-					},
-					'33%': { 
-						transform: 'translateY(-10px) rotate(5deg)'
-					},
-					'66%': { 
-						transform: 'translateY(5px) rotate(-3deg)'
-					}
 				}
 			},
 			animation: {
@@ -172,16 +138,7 @@ export default {
 				'scale-in': 'scale-in 0.4s ease-out',
 				'slide-up': 'slide-up 0.8s ease-out',
 				'glow': 'glow 2s ease-in-out infinite',
-				'shimmer': 'shimmer 3s ease-in-out infinite',
-				'matrix-rain': 'matrix-rain 8s linear infinite',
-				'data-pulse': 'data-pulse 3s ease-in-out infinite',
-				'analytics-float': 'analytics-float 4s ease-in-out infinite'
-			},
-			gridTemplateColumns: {
-				'20': 'repeat(20, minmax(0, 1fr))',
-			},
-			gridTemplateRows: {
-				'20': 'repeat(20, minmax(0, 1fr))',
+				'shimmer': 'shimmer 3s ease-in-out infinite'
 			}
 		}
 	},
