@@ -392,7 +392,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                 >
                   <AccordionTrigger className="text-left hover:no-underline group [&>svg]:hidden">
                     <div className="flex items-center gap-4 w-full">
-                      <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0 animate-pulse">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground flex items-center justify-center flex-shrink-0 animate-pulse shadow-lg">
                         <IconComponent className="w-5 h-5" />
                       </div>
                       <div className="flex-1">
