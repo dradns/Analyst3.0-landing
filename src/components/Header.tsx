@@ -24,7 +24,7 @@ const Header = () => {
               alt="Analyst 3.0 Logo" 
               className="w-14 h-12 rounded-lg"
             />
-            <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               {t('header.title')}
             </span>
           </div>
