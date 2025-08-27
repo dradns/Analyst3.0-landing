@@ -351,7 +351,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
           </p>
           <Button 
             size="lg" 
-            className="mb-8 animate-pulse hover:animate-none transition-all duration-300"
+            className="mb-8"
             onClick={() => {
               setAccordionValue("module-1");
               onOpenModule?.("module-1");
