@@ -65,7 +65,9 @@ const Footer = () => {
                        aria-label={social.name}
                        target={social.name === "Telegram" ? "_blank" : undefined}
                        rel={social.name === "Telegram" ? "noopener noreferrer" : undefined}
+                       className="flex items-center gap-2"
                      >
+                        <span className="text-sm">Комьюнити курса в Telegram</span>
                         <IconComponent className="w-4 h-4" />
                       </a>
                     </Button>
