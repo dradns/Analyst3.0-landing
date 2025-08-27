@@ -247,10 +247,10 @@ ERD – диаграмма сущностей
                       variant="ghost"
                       size="sm"
                       onClick={() => setActiveDemo(key)}
-                      className={`relative transition-all duration-300 border ${
+                      className={`relative transition-all duration-300 ${
                         isActive 
                           ? 'bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground shadow-lg hover:shadow-glow hover:from-primary hover:to-secondary' 
-                          : 'bg-white text-black border-gray-200 hover:bg-gray-50 shadow-sm'
+                          : 'bg-white text-black hover:bg-gray-50 shadow-sm'
                       }`}
                     >
                       <IconComponent className="w-4 h-4 mr-2" />
