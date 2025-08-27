@@ -342,7 +342,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
   ];
 
   return (
-    <section id="course-structure" className="py-8 relative overflow-hidden">
+    <section id="course-structure" className="py-8 relative overflow-hidden scroll-mt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">

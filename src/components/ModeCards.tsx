@@ -76,7 +76,7 @@ const ModeCards = () => {
   ];
 
   return (
-    <section id="what-awaits" className="py-12 relative overflow-hidden">
+    <section id="what-awaits" className="py-12 relative overflow-hidden scroll-mt-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
       <div className="absolute top-40 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
