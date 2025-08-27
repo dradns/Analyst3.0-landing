@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, Bot, Cpu } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, ArrowUp, Bot, Cpu } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 
@@ -206,6 +206,14 @@ ERD – диаграмма сущностей
                     </div>
                   </CardContent>
                 </Card>
+              </div>
+              
+              {/* Text under video */}
+              <div className="text-center animate-fade-in">
+                <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3 font-semibold flex items-center justify-center gap-3">
+                  Как работает AI-агент
+                  <ArrowUp className="w-6 h-6 text-primary animate-bounce" />
+                </p>
               </div>
             </div>
           </div>
