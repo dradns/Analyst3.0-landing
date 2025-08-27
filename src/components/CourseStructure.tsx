@@ -34,11 +34,13 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
   useEffect(() => {
     if (openModuleId) {
       setAccordionValue(openModuleId);
-      // Прокрутка к разделу структуры курса
-      const element = document.getElementById('course-structure');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      // Прокрутка к конкретному модулю
+      setTimeout(() => {
+        const moduleElement = document.querySelector(`[data-state="open"]`);
+        if (moduleElement) {
+          moduleElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
     }
   }, [openModuleId]);
 
