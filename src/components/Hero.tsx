@@ -147,7 +147,7 @@ ERD – диаграмма сущностей
               <div className="mb-1 animate-scale-in">
                 <div className="inline-block relative">
                   <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3">
-                    12 недель для создания AI-проекта с нуля — с практикой и поддержкой комьюнити
+                    12 недель для создания <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">AI-агента с нуля</span> — с практикой и поддержкой комьюнити
                   </p>
                 </div>
               </div>
