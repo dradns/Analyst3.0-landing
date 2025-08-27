@@ -118,9 +118,8 @@ const WhyImportant = () => {
           {/* Community CTA Section */}
           <div className="mt-20 text-center animate-fade-in">
             <div className="mb-8">
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-semibold flex items-center justify-center gap-2">
-                Общение, поддержка и обмен опытом с участниками курса
-                <ChevronDown className="w-6 h-6" />
+              <p className="text-2xl font-semibold mb-4 max-w-3xl mx-auto text-center">
+                Общение, поддержка и обмен опытом с участниками курса ↓
               </p>
             </div>
             
