@@ -1,12 +1,15 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { 
   Zap, 
   TrendingUp, 
   Users, 
   Trophy,
   AlertCircle,
-  BarChart3
+  BarChart3,
+  MessageCircle,
+  Rocket
 } from "lucide-react";
 
 const WhyImportant = () => {
@@ -108,6 +111,32 @@ const WhyImportant = () => {
               <TrendingUp className="w-8 h-8 text-primary mx-auto mb-3" />
               <h4 className="font-semibold text-foreground mb-2">Будущее</h4>
               <p className="text-sm text-muted-foreground">Навыки, которые будут востребованы всегда</p>
+            </div>
+          </div>
+
+          {/* Community CTA Section */}
+          <div className="mt-16 text-center animate-fade-in">
+            <div className="mb-8">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-semibold">
+                Освойте навыки бизнес и системного анализа
+              </p>
+            </div>
+            
+            <div className="flex justify-center">
+              <div className="relative group animate-scale-in">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                <Button
+                  className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
+                  onClick={() => {
+                    window.open('https://discord.gg/your-community', '_blank');
+                  }}
+                >
+                  <span className="flex items-center gap-3">
+                    Присоединиться к комьюнити
+                    <MessageCircle className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
+                  </span>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
