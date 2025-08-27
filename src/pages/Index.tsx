@@ -6,7 +6,6 @@ import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
 import LearningFormat from "@/components/LearningFormat";
-import AppShowcase from "@/components/AppShowcase";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,7 +17,6 @@ const Index = () => {
         <ModeCards />
         <LearningFormat />
         <Features />
-        <AppShowcase />
         <CourseCtaSectionWide />
         <WhyImportant />
         <CourseCtaSectionPositive />
