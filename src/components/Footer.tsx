@@ -83,10 +83,19 @@ const Footer = () => {
                 <ul className="space-y-3">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
-                      >
+                       <a
+                         href={item.href}
+                         className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
+                         onClick={(e) => {
+                           if (item.href.startsWith('#')) {
+                             e.preventDefault();
+                             const element = document.querySelector(item.href);
+                             if (element) {
+                               element.scrollIntoView({ behavior: 'smooth' });
+                             }
+                           }
+                         }}
+                       >
                         {item.name}
                       </a>
                     </li>
@@ -99,12 +108,21 @@ const Footer = () => {
                 <ul className="space-y-3">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        target={item.href.startsWith('http') ? '_blank' : undefined}
-                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
-                      >
+                       <a
+                         href={item.href}
+                         target={item.href.startsWith('http') ? '_blank' : undefined}
+                         rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                         className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm hover:translate-x-1 inline-block"
+                         onClick={(e) => {
+                           if (item.href.startsWith('#')) {
+                             e.preventDefault();
+                             const element = document.querySelector(item.href);
+                             if (element) {
+                               element.scrollIntoView({ behavior: 'smooth' });
+                             }
+                           }
+                         }}
+                       >
                         {item.name}
                       </a>
                     </li>
