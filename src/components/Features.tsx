@@ -13,7 +13,8 @@ import {
   GraduationCap,
   Code,
   BriefcaseBusiness,
-  BarChart3
+  BarChart3,
+  HelpCircle
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -78,8 +79,9 @@ const Features = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-            Кому подойдет курс?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
+            Кому подойдет курс
+            <HelpCircle className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-black" />
           </h2>
         </div>
 
