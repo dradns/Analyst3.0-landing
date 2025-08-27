@@ -88,6 +88,101 @@ ERD – диаграмма сущностей
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Matrix Analytics Background Animation */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Animated Grid Pattern */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="grid grid-cols-20 grid-rows-20 h-full w-full">
+            {Array.from({ length: 400 }).map((_, i) => (
+              <div
+                key={i}
+                className="border-r border-b border-primary/10 relative"
+                style={{
+                  animationDelay: `${Math.random() * 3}s`
+                }}
+              >
+                {Math.random() > 0.85 && (
+                  <div className="absolute inset-0 bg-primary/20 animate-pulse" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Falling Analytics Data */}
+        <div className="absolute inset-0">
+          {Array.from({ length: 15 }).map((_, i) => (
+            <div
+              key={`data-${i}`}
+              className="absolute text-primary/30 font-mono text-sm animate-data-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+                animationDuration: `${2 + Math.random() * 3}s`
+              }}
+            >
+              {['97%', '$2.4M', '↗ 45%', '128K', 'ROI', 'KPI', '∑', 'λ', 'μ', 'σ'][Math.floor(Math.random() * 10)]}
+            </div>
+          ))}
+        </div>
+        
+        {/* Floating Analytics Symbols */}
+        <div className="absolute inset-0">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div
+              key={`symbol-${i}`}
+              className="absolute text-primary/20 text-2xl font-bold animate-analytics-float"
+              style={{
+                left: `${10 + Math.random() * 80}%`,
+                top: `${10 + Math.random() * 80}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${3 + Math.random() * 2}s`
+              }}
+            >
+              {['📊', '📈', '💡', '⚡', '🎯', '💰', '🔍', '⭐'][i]}
+            </div>
+          ))}
+        </div>
+        
+        {/* Moving Data Points */}
+        <div className="absolute inset-0">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div
+              key={`point-${i}`}
+              className="absolute w-2 h-2 bg-primary/40 rounded-full animate-ping"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 4}s`,
+                animationDuration: `${1 + Math.random() * 2}s`
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Matrix-style Binary Rain */}
+        <div className="absolute inset-0 overflow-hidden">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={`rain-${i}`}
+              className="absolute top-0 text-primary/15 font-mono text-xs whitespace-nowrap"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animation: `matrix-rain ${5 + Math.random() * 3}s linear infinite`,
+                animationDelay: `${Math.random() * 2}s`
+              }}
+            >
+              {Array.from({ length: 50 }).map((_, j) => (
+                <div key={j} className="mb-1">
+                  {Math.random() > 0.5 ? Math.floor(Math.random() * 10) : ['%', '$', '→', '↑', '≈', '∞'][Math.floor(Math.random() * 6)]}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
       
