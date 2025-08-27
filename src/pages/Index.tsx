@@ -15,10 +15,10 @@ const Index = () => {
       <main>
         <Hero />
         <ModeCards />
+        <LearningFormat />
         <Features />
         <CourseCtaSectionWide />
         <WhyImportant />
-        <LearningFormat />
         <CourseCtaSectionPositive />
       </main>
       <Footer />
