@@ -186,8 +186,6 @@ ERD – диаграмма сущностей
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] bg-primary/5 rounded-full blur-3xl animate-glow pointer-events-none" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] bg-secondary/8 rounded-full blur-2xl animate-pulse pointer-events-none" />
               
-              <div className="text-center mb-8 animate-fade-in relative z-10">
-              </div>
 
               <div className="max-w-xs mx-auto mb-4">
                 <Card className="overflow-hidden shadow-2xl">
