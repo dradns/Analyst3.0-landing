@@ -120,8 +120,9 @@ ERD – диаграмма сущностей
                     </span>
                   </h1>
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight relative">
-                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
+                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl flex items-center gap-4">
                       к AI-решениям
+                      <Brain className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-primary animate-pulse" />
                     </span>
                   </h1>
                   {/* Subtle text glow */}
