@@ -48,7 +48,9 @@ const ModeCards = () => {
         t('modes.sa.features.1'),
         t('modes.sa.features.2'),
         t('modes.sa.features.3'),
-        t('modes.sa.features.4')
+        t('modes.sa.features.4'),
+        t('modes.sa.features.5'),
+        t('modes.sa.features.6')
       ],
       result: t('modes.sa.result'),
       icon: Settings,
