@@ -209,7 +209,7 @@ ERD – диаграмма сущностей
               </div>
               
               {/* Text under video */}
-              <div className="text-center animate-fade-in mt-4">
+              <div className="text-center animate-fade-in mt-8">
                 <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-semibold flex items-center justify-center gap-3">
                   Как работает AI-агент
                   <ArrowUp className="w-6 h-6 text-primary animate-bounce" />
