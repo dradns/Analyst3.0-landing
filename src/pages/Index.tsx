@@ -6,6 +6,7 @@ import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
 import LearningFormat from "@/components/LearningFormat";
+import VideoPlayer from "@/components/VideoPlayer";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         <Hero />
         <ModeCards />
         <LearningFormat />
+        <VideoPlayer />
         <Features />
         <CourseCtaSectionWide />
         <WhyImportant />
