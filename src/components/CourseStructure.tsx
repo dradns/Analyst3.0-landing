@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown, ArrowDown } from "lucide-react";
 
 interface CourseStructureProps {
   openModuleId?: string;
@@ -367,8 +367,8 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
               }, 100);
             }}
           >
-            <ChevronDown className="w-5 h-5 mr-2" />
-            Начать обучение
+            <ArrowDown className="w-5 h-5 mr-2" />
+            Попробуй первое домашнее задание
           </Button>
         </div>
 
