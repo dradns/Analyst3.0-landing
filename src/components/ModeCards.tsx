@@ -73,21 +73,6 @@ const ModeCards = () => {
       color: "from-purple-500 to-indigo-500",
       bgGlow: "bg-purple-500/10",
     },
-    {
-      id: "reviewer",
-      title: t('modes.reviewer.title'),
-      shortTitle: "Format",
-      description: t('modes.reviewer.description'),
-      features: [
-        t('modes.reviewer.features.0'),
-        t('modes.reviewer.features.1'),
-        t('modes.reviewer.features.2'),
-        t('modes.reviewer.features.3')
-      ],
-      icon: Monitor,
-      color: "from-red-500 to-orange-500",
-      bgGlow: "bg-red-500/10",
-    },
   ];
 
   return (
@@ -105,9 +90,9 @@ const ModeCards = () => {
           </h2>
         </div>
 
-        {/* Modules 1-3 in one row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
-          {modes.slice(0, 3).map((mode, index) => {
+        {/* All modules in one row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {modes.map((mode, index) => {
             const IconComponent = mode.icon;
             return (
               <Card 
@@ -159,63 +144,6 @@ const ModeCards = () => {
           })}
         </div>
 
-        {/* Format module in second row - highlighted */}
-        <div className="flex justify-center max-w-7xl mx-auto">
-          <div className="w-full max-w-4xl relative">
-            {/* Special background for Format block */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 rounded-2xl blur-3xl transform scale-110" />
-            <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background/60 rounded-xl backdrop-blur-sm border border-primary/10" />
-            
-            {modes.slice(3).map((mode, index) => {
-              const IconComponent = mode.icon;
-              return (
-                <Card 
-                  key={mode.id} 
-                  className="group relative overflow-hidden animate-scale-in border-2 border-primary/20 bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-sm shadow-2xl"
-                  style={{ animationDelay: `${(index + 3) * 100}ms` }}
-                >
-                  {/* Enhanced glow effect */}
-                  <div className={`absolute inset-0 ${mode.bgGlow} opacity-0 group-hover:opacity-100 transition-all duration-500 blur-2xl`} />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  <CardHeader className="relative z-10">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${mode.color} flex items-center justify-center text-white shadow-xl transform group-hover:scale-110 transition-transform duration-300`}>
-                        <IconComponent className="w-7 h-7" />
-                      </div>
-                      <Badge variant="secondary" className="text-xs">
-                        Online
-                      </Badge>
-                    </div>
-                    <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
-                      {mode.title}
-                    </CardTitle>
-                  </CardHeader>
-
-                  <CardContent className="relative z-10">
-                    <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-                      {mode.description}
-                    </p>
-
-                    <div className="space-y-3 mb-6">
-                      <h4 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-primary" />
-                        Вы получите:
-                      </h4>
-                      {mode.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start">
-                          <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-secondary mr-3 mt-2 flex-shrink-0" />
-                          <span className="text-muted-foreground leading-relaxed">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
 
       </div>
     </section>

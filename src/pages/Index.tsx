@@ -5,6 +5,7 @@ import Features from "@/components/Features";
 import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
+import LearningFormat from "@/components/LearningFormat";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
         <Features />
         <CourseCtaSectionWide />
         <WhyImportant />
+        <LearningFormat />
         <CourseCtaSectionPositive />
       </main>
       <Footer />
