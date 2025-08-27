@@ -459,6 +459,23 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                               );
                             })}
                           </div>
+                          
+                          {/* Кнопка шаблона требований */}
+                          <div className="mt-4">
+                            <Button
+                              variant="default"
+                              size="sm"
+                              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
+                              onClick={() => window.open('https://disk.yandex.ru/i/KUjijWxF-Ck14Q', '_blank')}
+                            >
+                              <FileText className="w-4 h-4 mr-2" />
+                              Шаблон требований к домашнему заданию
+                              <ExternalLink className="w-3 h-3 ml-2" />
+                            </Button>
+                            <p className="text-xs text-muted-foreground mt-2 px-2 leading-relaxed">
+                              Проверьте правильность выполнения этапа, сверившись с условиями и примерами из шаблона требований и видеолекций команды
+                            </p>
+                          </div>
                         </div>
                       )}
 
