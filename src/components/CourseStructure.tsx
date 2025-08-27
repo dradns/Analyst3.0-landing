@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -6,9 +7,46 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Progress } from "@/components/ui/progress";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown } from "lucide-react";
 
 const CourseStructure = () => {
+  // Состояние для отслеживания прогресса чек-листов
+  const [moduleProgress, setModuleProgress] = useState<Record<string, boolean[]>>({});
+
+  // Загрузка прогресса из localStorage
+  useEffect(() => {
+    const savedProgress = localStorage.getItem('course-progress');
+    if (savedProgress) {
+      setModuleProgress(JSON.parse(savedProgress));
+    }
+  }, []);
+
+  // Сохранение прогресса в localStorage
+  useEffect(() => {
+    localStorage.setItem('course-progress', JSON.stringify(moduleProgress));
+  }, [moduleProgress]);
+
+  // Функция для обновления чек-листа
+  const updateChecklistItem = (moduleId: string, taskIndex: number, checked: boolean) => {
+    setModuleProgress(prev => {
+      const currentProgress = prev[moduleId] || [];
+      const newProgress = [...currentProgress];
+      newProgress[taskIndex] = checked;
+      return {
+        ...prev,
+        [moduleId]: newProgress
+      };
+    });
+  };
+
+  // Функция для подсчета прогресса модуля
+  const getModuleProgress = (moduleId: string, totalTasks: number) => {
+    const progress = moduleProgress[moduleId] || [];
+    const completedTasks = progress.filter(Boolean).length;
+    return totalTasks > 0 ? (completedTasks / totalTasks) * 100 : 0;
+  };
   const courseModules = [
     {
       id: "module-1",
@@ -312,20 +350,33 @@ const CourseStructure = () => {
                   value={module.id}
                   className="border border-border rounded-lg px-6 py-2 bg-card/50 hover:bg-card/80 transition-colors"
                 >
-                  <AccordionTrigger className="text-left hover:no-underline group">
-                    <div className="flex items-center gap-4">
+                  <AccordionTrigger className="text-left hover:no-underline group [&>svg]:hidden">
+                    <div className="flex items-center gap-4 w-full">
                       <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0">
                         <IconComponent className="w-5 h-5" />
                       </div>
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-2">
                           <span className="text-xs bg-muted px-2 py-1 rounded font-medium">
                             {index + 1}/10
+                          </span>
+                          <div className="flex-1">
+                            <Progress 
+                              value={getModuleProgress(module.id, module.tasks?.length || 0)} 
+                              className="h-2 ml-2"
+                            />
+                          </div>
+                          <span className="text-xs text-muted-foreground">
+                            {Math.round(getModuleProgress(module.id, module.tasks?.length || 0))}%
                           </span>
                         </div>
                         <h3 className="text-lg font-semibold group-hover:text-primary transition-colors text-left">
                           {module.title}
                         </h3>
+                      </div>
+                      <div className="flex items-center gap-1 text-muted-foreground">
+                        <span className="text-xs">открыть</span>
+                        <ChevronDown className="w-4 h-4 group-data-[state=open]:rotate-180 transition-transform duration-200" />
                       </div>
                     </div>
                   </AccordionTrigger>
@@ -337,15 +388,37 @@ const CourseStructure = () => {
                       
                       {module.tasks && (
                         <div>
-                          <h4 className="font-semibold mb-3 text-foreground">Что нужно сделать:</h4>
-                          <ul className="space-y-2">
-                            {module.tasks.map((task, idx) => (
-                              <li key={idx} className="flex items-start text-sm">
-                                <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 mt-2 flex-shrink-0" />
-                                <span className="text-muted-foreground">{task}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          <h4 className="font-semibold mb-3 text-foreground">Чек-лист выполнения:</h4>
+                          <div className="space-y-3">
+                            {module.tasks.map((task, idx) => {
+                              const isChecked = moduleProgress[module.id]?.[idx] || false;
+                              return (
+                                <div key={idx} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card/30">
+                                  <Checkbox
+                                    id={`${module.id}-task-${idx}`}
+                                    checked={isChecked}
+                                    onCheckedChange={(checked) => 
+                                      updateChecklistItem(module.id, idx, checked as boolean)
+                                    }
+                                    className="mt-0.5"
+                                  />
+                                  <label 
+                                    htmlFor={`${module.id}-task-${idx}`}
+                                    className={`text-sm cursor-pointer flex-1 leading-relaxed transition-colors ${
+                                      isChecked 
+                                        ? 'text-muted-foreground line-through' 
+                                        : 'text-foreground'
+                                    }`}
+                                  >
+                                    {task}
+                                  </label>
+                                  {isChecked && (
+                                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
                         </div>
                       )}
 
