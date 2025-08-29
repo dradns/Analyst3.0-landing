@@ -356,6 +356,103 @@ ERD – диаграмма сущностей
     'module.1.video.1': 'Видеолекция: "Создание и работа с User Stories"',
     'module.1.video.2': 'Видеолекция: "Описание сценариев использования"',
     
+    // Module 2 Content
+    'module.2.description': 'Создайте визуальные макеты для вашего AI-агента. Это поможет понять, как будет выглядеть интерфейс и как пользователь будет взаимодействовать с системой. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.2.task.1': 'Создать макеты для выбранного AI-агента',
+    'module.2.task.2': 'Показать основные экраны приложения',
+    'module.2.task.3': 'Отобразить пользовательские сценарии',
+    'module.2.tool.1': '🎨 Draw.io - для создания схем и макетов',
+    'module.2.video.1': 'Видеолекция: "Создание макетов интерфейсов"',
+
+    // Module 3 Content
+    'module.3.description': 'Создайте BPMN диаграмму или Activity diagram для вашего AI-агента. Это поможет понять логику работы системы и последовательность действий. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.3.task.1': 'Создать BPMN диаграмму или Activity diagram',
+    'module.3.task.2': 'Отобразить основные процессы работы AI-агента',
+    'module.3.tool.1': '🔄 StormBPMN - для создания BPMN диаграмм',
+    'module.3.tool.2': '📊 PlantUML - для Activity diagram',
+    'module.3.tool.3': '🎨 Draw.io - универсальный инструмент',
+    'module.3.video.1': 'Видеолекция: BPMN',
+
+    // Module 4 Content
+    'module.4.description': 'Спроектируйте архитектуру вашего AI-агента. Определите, как будут взаимодействовать фронтенд, бэкенд и база данных. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.4.task.1': 'Создать схему архитектуры системы',
+    'module.4.task.2': 'Описать компоненты (фронтенд, бэкенд, БД)',
+    'module.4.task.3': 'Показать связи между компонентами',
+    'module.4.example.1': 'Фронтенд: веб-интерфейс или Telegram бот',
+    'module.4.example.2': 'Бэкенд: Python сервер',
+    'module.4.example.3': 'База данных: PostgreSQL',
+    'module.4.example.4': 'AI компонент: интеграция с LLM',
+    'module.4.example.5': 'RAG система: для работы с базой знаний',
+    'module.4.tool.1': '🏗️ Draw.io - для создания схем',
+    'module.4.video.1': 'Видеолекция: "Архитектура систем"',
+
+    // Module 5 Content
+    'module.5.description': 'Создайте ERD-диаграмму для вашего AI-агента. Определите, какие данные будут храниться и как они связаны между собой. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.5.task.1': 'Создать ERD-диаграмму с основными сущностями',
+    'module.5.task.2': 'Определить атрибуты каждой сущности',
+    'module.5.task.3': 'Показать связи между сущностями',
+    'module.5.tool.1': '🗄️ DBeaver - для работы с базами данных',
+    'module.5.tool.2': '🎨 Draw.io - для создания ERD',
+    'module.5.tool.3': '📊 dbdiagram.io - специализированный инструмент',
+    'module.5.video.1': 'Видеолекция: "Data modeling"',
+    'module.5.video.2': 'Видеолекция: "ERD диаграммы"',
+    'module.5.video.3': 'Видеолекция: "ДЗ по ERD"',
+
+    // Module 6 Content
+    'module.6.description': 'Создайте UML диаграмму последовательности для вашего AI-агента. Покажите, как различные компоненты системы взаимодействуют во времени. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.6.task.1': 'Создать диаграмму последовательности для основных сценариев',
+    'module.6.task.2': 'Показать временную последовательность действий',
+    'module.6.task.3': 'Отобразить взаимодействие между компонентами',
+    'module.6.example.1': 'Обработка запроса пользователя',
+    'module.6.example.2': 'Взаимодействие с LLM',
+    'module.6.example.3': 'Работа с базой данных',
+    'module.6.example.4': 'Формирование ответа',
+    'module.6.tool.1': '📊 PlantUML - для UML диаграмм',
+    'module.6.video.1': 'Видеолекция: "Диаграмма последовательности"',
+    'module.6.video.2': 'Видеолекция: "Разбор ДЗ"',
+
+    // Module 7 Content
+    'module.7.description': 'Опишите REST API для вашего AI-агента в табличном виде. Определите эндпоинты, методы и параметры. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.7.task.1': 'Создать таблицу с описанием API',
+    'module.7.task.2': 'Определить HTTP-методы для каждого эндпоинта',
+    'module.7.task.3': 'Описать параметры и ответы',
+    'module.7.video.1': 'Видеолекция: "API в табличном виде"',
+    'module.7.video.2': 'Видеолекция: "REST API"',
+    'module.7.video.3': 'Видеолекция: "Разбор ДЗ"',
+
+    // Module 8 Content
+    'module.8.description': 'Создайте Swagger документацию для вашего API. Это поможет другим разработчикам понять, как использовать вашу систему. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.8.task.1': 'Создать Swagger спецификацию в формате YAML/JSON',
+    'module.8.task.2': 'Описать все эндпоинты с примерами',
+    'module.8.tool.1': '📝 Swagger Editor - онлайн редактор',
+    'module.8.video.1': 'Видеолекция: "Swagger документация"',
+
+    // Module 9 Content
+    'module.9.description': 'Сформулируйте критерии приемки и нефункциональные требования для вашего AI-агента. Это поможет понять, когда проект можно считать завершенным. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.9.task.1': 'Создать критерии приемки в формате "Дано-Когда-Тогда"',
+    'module.9.task.2': 'Определить нефункциональные требования',
+    'module.9.example.1': 'Дано: пользователь отправляет запрос',
+    'module.9.example.2': 'Когда: система обрабатывает запрос',
+    'module.9.example.3': 'Тогда: пользователь получает ответ в течение 5 секунд',
+    'module.9.example.4': 'Производительность: время ответа < 5 сек',
+    'module.9.example.5': 'Надежность: доступность 99.9%',
+    'module.9.example.6': 'Безопасность: шифрование данных',
+    'module.9.example.7': 'Масштабируемость: поддержка 1000+ пользователей',
+    'module.9.video.1': 'Видеолекция: "Критерии приемки и требования"',
+
+    // Module 10 Content
+    'module.10.description': 'Создайте работающий AI-агент и разверните его. Это финальный этап, где вы применяете все полученные знания. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.10.task.1': 'Разработать AI-агента согласно техническому заданию',
+    'module.10.task.2': 'Протестировать все функции',
+    'module.10.task.3': 'Развернуть систему в облаке',
+    'module.10.example.1': '✅ Фронтенд (web или Telegram mini app)',
+    'module.10.example.2': '✅ Бэкенд на Python',
+    'module.10.example.3': '✅ Интеграция с LLM',
+    'module.10.example.4': '✅ PostgreSQL база данных',
+    'module.10.example.5': '✅ RAG система для работы с базой знаний (при необходимости)',
+    'module.10.video.1': 'Видеолекция: "Создание AI-агента"',
+    'module.10.video.2': 'Пример',
+
     // Footer Sections
     'footer.about.title': 'О курсе',
     'footer.about.program': 'Программа',
@@ -711,6 +808,103 @@ as demonstration of your skills.`,
     'module.1.video.1': 'Video Lecture: "Creating and Working with User Stories"',
     'module.1.video.2': 'Video Lecture: "Describing Usage Scenarios"',
     
+    // Module 2 Content
+    'module.2.description': 'Create visual mockups for your AI agent. This will help understand how the interface will look and how the user will interact with the system. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.2.task.1': 'Create mockups for the selected AI agent',
+    'module.2.task.2': 'Show main application screens',
+    'module.2.task.3': 'Display user scenarios',
+    'module.2.tool.1': '🎨 Draw.io - for creating schemes and mockups',
+    'module.2.video.1': 'Video Lecture: "Creating Interface Mockups"',
+
+    // Module 3 Content
+    'module.3.description': 'Create a BPMN diagram or Activity diagram for your AI agent. This will help understand the system logic and sequence of actions. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.3.task.1': 'Create BPMN diagram or Activity diagram',
+    'module.3.task.2': 'Display main AI agent work processes',
+    'module.3.tool.1': '🔄 StormBPMN - for creating BPMN diagrams',
+    'module.3.tool.2': '📊 PlantUML - for Activity diagram',
+    'module.3.tool.3': '🎨 Draw.io - universal tool',
+    'module.3.video.1': 'Video Lecture: BPMN',
+
+    // Module 4 Content
+    'module.4.description': 'Design the architecture of your AI agent. Define how frontend, backend and database will interact. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.4.task.1': 'Create system architecture scheme',
+    'module.4.task.2': 'Describe components (frontend, backend, DB)',
+    'module.4.task.3': 'Show connections between components',
+    'module.4.example.1': 'Frontend: web interface or Telegram bot',
+    'module.4.example.2': 'Backend: Python server',
+    'module.4.example.3': 'Database: PostgreSQL',
+    'module.4.example.4': 'AI component: LLM integration',
+    'module.4.example.5': 'RAG system: for knowledge base work',
+    'module.4.tool.1': '🏗️ Draw.io - for creating schemes',
+    'module.4.video.1': 'Video Lecture: "System Architecture"',
+
+    // Module 5 Content
+    'module.5.description': 'Create an ERD diagram for your AI agent. Define what data will be stored and how it is connected. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.5.task.1': 'Create ERD diagram with main entities',
+    'module.5.task.2': 'Define attributes for each entity',
+    'module.5.task.3': 'Show relationships between entities',
+    'module.5.tool.1': '🗄️ DBeaver - for working with databases',
+    'module.5.tool.2': '🎨 Draw.io - for creating ERD',
+    'module.5.tool.3': '📊 dbdiagram.io - specialized tool',
+    'module.5.video.1': 'Video Lecture: "Data modeling"',
+    'module.5.video.2': 'Video Lecture: "ERD diagrams"',
+    'module.5.video.3': 'Video Lecture: "ERD homework"',
+
+    // Module 6 Content
+    'module.6.description': 'Create a UML sequence diagram for your AI agent. Show how different system components interact over time. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.6.task.1': 'Create sequence diagram for main scenarios',
+    'module.6.task.2': 'Show temporal sequence of actions',
+    'module.6.task.3': 'Display interaction between components',
+    'module.6.example.1': 'Processing user request',
+    'module.6.example.2': 'LLM interaction',
+    'module.6.example.3': 'Database work',
+    'module.6.example.4': 'Response formation',
+    'module.6.tool.1': '📊 PlantUML - for UML diagrams',
+    'module.6.video.1': 'Video Lecture: "Sequence Diagram"',
+    'module.6.video.2': 'Video Lecture: "Homework Review"',
+
+    // Module 7 Content
+    'module.7.description': 'Describe REST API for your AI agent in tabular format. Define endpoints, methods and parameters. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.7.task.1': 'Create table with API description',
+    'module.7.task.2': 'Define HTTP methods for each endpoint',
+    'module.7.task.3': 'Describe parameters and responses',
+    'module.7.video.1': 'Video Lecture: "API in tabular format"',
+    'module.7.video.2': 'Video Lecture: "REST API"',
+    'module.7.video.3': 'Video Lecture: "Homework Review"',
+
+    // Module 8 Content
+    'module.8.description': 'Create Swagger documentation for your API. This will help other developers understand how to use your system. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.8.task.1': 'Create Swagger specification in YAML/JSON format',
+    'module.8.task.2': 'Describe all endpoints with examples',
+    'module.8.tool.1': '📝 Swagger Editor - online editor',
+    'module.8.video.1': 'Video Lecture: "Swagger documentation"',
+
+    // Module 9 Content
+    'module.9.description': 'Formulate acceptance criteria and non-functional requirements for your AI agent. This will help understand when the project can be considered complete. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.9.task.1': 'Create acceptance criteria in "Given-When-Then" format',
+    'module.9.task.2': 'Define non-functional requirements',
+    'module.9.example.1': 'Given: user sends request',
+    'module.9.example.2': 'When: system processes request',
+    'module.9.example.3': 'Then: user receives response within 5 seconds',
+    'module.9.example.4': 'Performance: response time < 5 sec',
+    'module.9.example.5': 'Reliability: 99.9% availability',
+    'module.9.example.6': 'Security: data encryption',
+    'module.9.example.7': 'Scalability: support for 1000+ users',
+    'module.9.video.1': 'Video Lecture: "Acceptance criteria and requirements"',
+
+    // Module 10 Content
+    'module.10.description': 'Create a working AI agent and deploy it. This is the final stage where you apply all acquired knowledge. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.10.task.1': 'Develop AI agent according to technical specification',
+    'module.10.task.2': 'Test all functions',
+    'module.10.task.3': 'Deploy system in cloud',
+    'module.10.example.1': '✅ Frontend (web or Telegram mini app)',
+    'module.10.example.2': '✅ Python backend',
+    'module.10.example.3': '✅ LLM integration',
+    'module.10.example.4': '✅ PostgreSQL database',
+    'module.10.example.5': '✅ RAG system for knowledge base work (if needed)',
+    'module.10.video.1': 'Video Lecture: "Creating AI agent"',
+    'module.10.video.2': 'Example',
+
     // Footer Sections
     'footer.about.title': 'About Course',
     'footer.about.program': 'Program',
