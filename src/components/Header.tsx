@@ -43,19 +43,29 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Empty space to balance the layout */}
-          <div className="w-0"></div>
-
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Language Switcher & Mobile Menu */}
+          <div className="flex items-center space-x-2">
+            {/* Language Switcher */}
             <Button
               variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              size="sm"
+              onClick={() => setLanguage(language === 'ru' ? 'en' : 'ru')}
+              className="flex items-center space-x-1 text-muted-foreground hover:text-foreground"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              <Globe className="w-4 h-4" />
+              <span className="text-sm font-medium uppercase">{language}</span>
             </Button>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -74,6 +84,22 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              
+              {/* Mobile Language Switcher */}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => {
+                  setLanguage(language === 'ru' ? 'en' : 'ru');
+                  setIsMenuOpen(false);
+                }}
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground w-full justify-start"
+              >
+                <Globe className="w-4 h-4" />
+                <span className="text-sm font-medium">
+                  {language === 'ru' ? 'Switch to English' : 'Переключить на русский'}
+                </span>
+              </Button>
             </div>
           </div>
         )}
