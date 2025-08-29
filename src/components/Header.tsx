@@ -53,7 +53,7 @@ const Header = () => {
               className="flex items-center space-x-1 text-muted-foreground hover:text-foreground"
             >
               <Globe className="w-4 h-4" />
-              <span className="text-sm font-medium uppercase">{language}</span>
+              <span className="text-sm font-medium uppercase">{language === 'ru' ? 'EN' : 'RU'}</span>
             </Button>
 
             {/* Mobile menu button */}
