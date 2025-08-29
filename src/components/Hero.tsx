@@ -140,7 +140,7 @@ ERD – диаграмма сущностей
               <div className="mb-1 animate-scale-in">
                 <div className="inline-block relative">
                   <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3">
-                    За 12 недель вы научитесь превращать бизнес-идеи в AI-решения и создадите своего <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">AI агента с нуля</span> — с практикой и поддержкой комьюнити
+                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">12 недель бесплатного обучения</span>, где вы научитесь создавать <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">AI агента с нуля</span> — с практикой и поддержкой комьюнити
                   </p>
                 </div>
               </div>
