@@ -6,6 +6,7 @@ import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
 import LearningFormat from "@/components/LearningFormat";
+import LearningTopics from "@/components/LearningTopics";
 import CourseStructure from "@/components/CourseStructure";
 import Footer from "@/components/Footer";
 import SectionTransition from "@/components/SectionTransition";
@@ -43,7 +44,7 @@ const Index = () => {
         <SectionTransition variant="learning-to-features" />
         
         <SectionWrapper background="muted">
-          <ModeCards />
+          <LearningTopics />
         </SectionWrapper>
         
         {/* Шаг 4: Формат обучения */}
