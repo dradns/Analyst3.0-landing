@@ -9,6 +9,7 @@ import LearningFormat from "@/components/LearningFormat";
 import Footer from "@/components/Footer";
 import SectionTransition from "@/components/SectionTransition";
 import SectionWrapper from "@/components/SectionWrapper";
+import RoadmapStep from "@/components/RoadmapStep";
 
 const Index = () => {
   return (
@@ -20,7 +21,8 @@ const Index = () => {
           <Hero />
         </SectionWrapper>
         
-        {/* Переход к карточкам режимов */}
+        {/* Шаг 1: Выбор режима */}
+        <RoadmapStep stepNumber={1} title="Выберите свой путь" isActive />
         <SectionTransition variant="hero-to-cards" />
         
         {/* Карточки режимов с мягким фоном */}
@@ -28,7 +30,8 @@ const Index = () => {
           <ModeCards />
         </SectionWrapper>
         
-        {/* Переход к формату обучения */}
+        {/* Шаг 2: Формат обучения */}
+        <RoadmapStep stepNumber={2} title="Изучите формат" position="right" />
         <SectionTransition variant="cards-to-learning" />
         
         {/* Формат обучения */}
@@ -36,7 +39,8 @@ const Index = () => {
           <LearningFormat />
         </SectionWrapper>
         
-        {/* Переход к функциям */}
+        {/* Шаг 3: Возможности */}
+        <RoadmapStep stepNumber={3} title="Откройте возможности" position="left" />
         <SectionTransition variant="learning-to-features" />
         
         {/* Функции курса */}
@@ -44,7 +48,8 @@ const Index = () => {
           <Features />
         </SectionWrapper>
         
-        {/* Переход к CTA */}
+        {/* Шаг 4: Присоединение */}
+        <RoadmapStep stepNumber={4} title="Присоединяйтесь к курсу" position="right" />
         <SectionTransition variant="features-to-cta" />
         
         {/* Широкий CTA блок */}
@@ -52,7 +57,8 @@ const Index = () => {
           <CourseCtaSectionWide />
         </SectionWrapper>
         
-        {/* Переход к важности */}
+        {/* Шаг 5: Понимание важности */}
+        <RoadmapStep stepNumber={5} title="Поймите важность AI" position="left" />
         <SectionTransition variant="cta-to-why" />
         
         {/* Почему важно */}
@@ -60,7 +66,8 @@ const Index = () => {
           <WhyImportant />
         </SectionWrapper>
         
-        {/* Финальный переход */}
+        {/* Шаг 6: Финальное решение */}
+        <RoadmapStep stepNumber={6} title="Начните свой путь" />
         <SectionTransition variant="why-to-final" />
         
         {/* Финальный CTA */}
