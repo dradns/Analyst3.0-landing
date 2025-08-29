@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown, ArrowDown } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CourseStructureProps {
   openModuleId?: string;
@@ -17,6 +18,7 @@ interface CourseStructureProps {
 }
 
 const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = {}) => {
+  const { t } = useLanguage();
   // Состояние для отслеживания прогресса чек-листов
   const [moduleProgress, setModuleProgress] = useState<Record<string, boolean[]>>({});
   // Состояние для управления открытым аккордеоном
@@ -346,11 +348,11 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
-            Структура обучения
+            {t('learning.title')}
             <Map className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-            Интерактивный курс, где вы можете последовательно изучать материал, переходя от этапа к этапу. Каждый этап содержит описание задания, инструкции, ссылки на ресурсы.
+            {t('learning.description')}
           </p>
           <Button 
             size="lg" 
@@ -367,7 +369,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
               }, 100);
             }}
           >
-            Попробуйте первое задание ↓
+            {t('learning.try.button')} ↓
           </Button>
         </div>
 

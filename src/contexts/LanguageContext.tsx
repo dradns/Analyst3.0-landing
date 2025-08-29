@@ -18,7 +18,7 @@ const translations = {
     'header.features': 'Программа',
     'header.modes': 'Режимы',
     'header.quickstart': 'Для кого',
-    'header.integrations': 'Условия',
+    'header.integrations': 'Структура обучения',
     'header.contacts': 'Контакты',
     'header.community': 'FAQ',
     'header.github': 'GitHub',
@@ -247,6 +247,100 @@ ERD – диаграмма сущностей
     'footer.newsletter.subscribe': 'Подписаться',
     'footer.copyright': '© 2025 Системный Аналитик 3.0. Все права защищены.',
     'footer.madeWith': 'Сделано с',
+    // Hero Additional
+    'hero.main.title': 'Вы научитесь создавать AI-агентов',
+    'hero.agent.subtitle': 'Реальный кейс: агент, разработанный нашим студентом, в рамках обучения на бесплатном курсе "Системный Аналитик 3.0"',
+    'hero.agent.features': 'Все функции приложения полностью настроены и готовы к работе: персонализированные ответы, база знаний, история диалогов и автоматические уведомления.',
+    
+    // Learning Structure
+    'learning.title': 'Структура обучения',
+    'learning.description': 'Интерактивный курс, где вы можете последовательно изучать материал, переходя от этапа к этапу. Каждый этап содержит описание задания, инструкции, ссылки на ресурсы.',
+    'learning.try.button': 'Попробуйте первое задание',
+    
+    // Course Steps  
+    'steps.1.title': 'Этап 1: Выбор AI-агента для проекта',
+    'steps.2.title': 'Этап 2: Создание макетов интерфейса',
+    'steps.3.title': 'Этап 3: Моделирование бизнес-процессов',
+    'steps.4.title': 'Этап 4: Проектирование архитектуры',
+    'steps.5.title': 'Этап 5: Проектирование базы данных',
+    'steps.6.title': 'Этап 6: Создание системных требований',
+    'steps.7.title': 'Этап 7: Разработка технических спецификаций',
+    'steps.8.title': 'Этап 8: Настройка и тестирование агента',
+    'steps.9.title': 'Этап 9: Интеграция с внешними сервисами',
+    'steps.10.title': 'Этап 10: Деплой и запуск продукта',
+    
+    // Format Details
+    'format.practical.title': 'Практический подход',
+    'format.practical.duration': '12 недель интенсивного обучения',
+    'format.practical.description': 'Комплексная программа с еженедельными заданиями',
+    'format.practical.details': 'Создание AI-агента с нуля, реализация артефактов требований',
+    'format.community.title': 'Поддержка сообщества',
+    'format.community.subtitle': 'Общение и обмен опытом',
+    'format.community.description': 'Еженедельные встречи и общий чат участников',
+    'format.community.details': 'Карьерная поддержка, подготовка к собеседованиям',
+    
+    // Format Features
+    'format.flexible': 'Гибкий график',
+    'format.flexible.desc': 'Обучение онлайн в удобное время',
+    'format.project': 'Готовый проект',
+    'format.project.desc': 'AI-агент в портфолио как результат',
+    'format.communication': 'Живое общение',
+    'format.communication.desc': 'P2P чат и еженедельные встречи',
+    'format.career': 'Карьерный рост',
+    'format.career.desc': 'Поддержка в трудоустройстве',
+    
+    // Target Audience
+    'audience.title': 'Кому подойдет курс',
+    'audience.students.title': 'Студентам',
+    'audience.students.desc': 'Быстрый старт в профессии аналитика с реальным проектом в портфолио',
+    'audience.junior.title': 'Junior-аналитикам',
+    'audience.junior.desc': 'Систематизация знаний и освоение работы с AI-инструментами',
+    'audience.specialists.title': 'Специалистам',
+    'audience.specialists.desc': 'Расширение компетенций за счет навыков работы с LLM и AI-агентами',
+    'audience.experienced.title': 'Опытным аналитикам',
+    'audience.experienced.desc': 'Откройте для себя современные подходы и инструменты работы с LLM и AI-агентами',
+    
+    // Not For You
+    'notforyou.title': 'Вам сюда не надо, если',
+    'notforyou.programming': 'Вы не любите/не хотите/не умеете программировать',
+    'notforyou.programming.desc': '(не можете написать вложенный цикл на Python)',
+    'notforyou.communication': 'Общение с людьми - не ваше',
+    'notforyou.time': 'У вас нет 80 часов в течение двух месяцев',
+    
+    // Why Important
+    'why.title': 'Почему это важно',
+    'why.subtitle': 'И почему сейчас самое время изучать AI?',
+    'why.revolution.title': 'AI-революция уже началась',
+    'why.revolution.subtitle': 'Внедрение AI в бизнес',
+    'why.revolution.desc1': 'Искусственный интеллект меняет бизнес-процессы',
+    'why.revolution.desc2': 'Компании интегрируют AI-решения в свои процессы',
+    'why.demand.title': 'Рост спроса на специалистов',
+    'why.demand.subtitle': 'Преимущество при трудоустройстве',
+    'why.demand.desc1': 'Потребность в аналитиках со знанием AI-технологий растет',
+    'why.demand.desc2': 'Навыки работы с AI становятся важным фактором при отборе',
+    
+    // Why Features
+    'why.salary.title': 'Высокие зарплаты',
+    'why.salary.desc': 'AI-специалисты получают на 30-50% больше',
+    'why.growth.title': 'Карьерный рост',
+    'why.growth.desc': 'Быстрое продвижение в tech-компаниях',
+    'why.automation.title': 'Автоматизация',
+    'why.automation.desc': 'Освободите время для творческих задач',
+    'why.future.title': 'Будущее',
+    'why.future.desc': 'Навыки, которые будут востребованы всегда',
+    
+    // CTA Community
+    'cta.community.title': 'Общение, поддержка и обмен опытом с участниками курса',
+    'cta.community.button': 'Присоединиться к комьюнити',
+    
+    // Footer Sections
+    'footer.about.title': 'О курсе',
+    'footer.about.program': 'Программа',
+    'footer.about.audience': 'Для кого',
+    'footer.about.structure': 'Структура',
+    'footer.materials.title': 'Полезные материалы',
+    'footer.materials.agent': 'Как работает AI-агент',
+    'footer.materials.template': 'Скачать шаблон требований',
     'footer.forDevelopers': 'для разработчиков',
   },
   en: {
@@ -255,7 +349,7 @@ ERD – диаграмма сущностей
     'header.features': 'Program',
     'header.modes': 'Modes',
     'header.quickstart': 'For Whom',
-    'header.integrations': 'Conditions',
+    'header.integrations': 'Learning Structure',
     'header.contacts': 'Contacts',
     'header.community': 'FAQ',
     'header.github': 'GitHub',
@@ -484,6 +578,100 @@ as demonstration of your skills.`,
     'footer.newsletter.subscribe': 'Subscribe',
     'footer.copyright': '© 2025 System Analyst 3.0. All rights reserved.',
     'footer.madeWith': 'Made with',
+    // Hero Additional
+    'hero.main.title': 'You will learn to create AI agents',
+    'hero.agent.subtitle': 'Real case: an agent developed by our student during training in the free course "System Analyst 3.0"',
+    'hero.agent.features': 'All application functions are fully configured and ready to work: personalized responses, knowledge base, dialogue history and automatic notifications.',
+    
+    // Learning Structure
+    'learning.title': 'Learning Structure',
+    'learning.description': 'Interactive course where you can sequentially study material, moving from stage to stage. Each stage contains task description, instructions, resource links.',
+    'learning.try.button': 'Try the first assignment',
+    
+    // Course Steps  
+    'steps.1.title': 'Stage 1: Choosing AI agent for project',
+    'steps.2.title': 'Stage 2: Creating interface mockups',
+    'steps.3.title': 'Stage 3: Business process modeling',
+    'steps.4.title': 'Stage 4: Architecture design',
+    'steps.5.title': 'Stage 5: Database design',
+    'steps.6.title': 'Stage 6: Creating system requirements',
+    'steps.7.title': 'Stage 7: Developing technical specifications',
+    'steps.8.title': 'Stage 8: Agent setup and testing',
+    'steps.9.title': 'Stage 9: Integration with external services',
+    'steps.10.title': 'Stage 10: Deploy and product launch',
+    
+    // Format Details
+    'format.practical.title': 'Practical Approach',
+    'format.practical.duration': '12 weeks of intensive training',
+    'format.practical.description': 'Comprehensive program with weekly assignments',
+    'format.practical.details': 'Creating AI agent from scratch, implementing requirement artifacts',
+    'format.community.title': 'Community Support',
+    'format.community.subtitle': 'Communication and experience sharing',
+    'format.community.description': 'Weekly meetings and general participant chat',
+    'format.community.details': 'Career support, interview preparation',
+    
+    // Format Features
+    'format.flexible': 'Flexible Schedule',
+    'format.flexible.desc': 'Online learning at convenient time',
+    'format.project': 'Ready Project',
+    'format.project.desc': 'AI agent in portfolio as result',
+    'format.communication': 'Live Communication',
+    'format.communication.desc': 'P2P chat and weekly meetings',
+    'format.career': 'Career Growth',
+    'format.career.desc': 'Employment support',
+    
+    // Target Audience
+    'audience.title': 'Who is this course for',
+    'audience.students.title': 'Students',
+    'audience.students.desc': 'Quick start in analyst profession with real project in portfolio',
+    'audience.junior.title': 'Junior Analysts',
+    'audience.junior.desc': 'Systematizing knowledge and mastering work with AI tools',
+    'audience.specialists.title': 'Specialists',
+    'audience.specialists.desc': 'Expanding competencies through LLM and AI agent skills',
+    'audience.experienced.title': 'Experienced Analysts',
+    'audience.experienced.desc': 'Discover modern approaches and tools for working with LLM and AI agents',
+    
+    // Not For You
+    'notforyou.title': 'This is not for you if',
+    'notforyou.programming': 'You don\'t like/don\'t want/don\'t know how to program',
+    'notforyou.programming.desc': '(can\'t write nested loop in Python)',
+    'notforyou.communication': 'Communication with people is not your thing',
+    'notforyou.time': 'You don\'t have 80 hours over two months',
+    
+    // Why Important
+    'why.title': 'Why this is important',
+    'why.subtitle': 'And why now is the best time to learn AI?',
+    'why.revolution.title': 'AI revolution has already begun',
+    'why.revolution.subtitle': 'AI implementation in business',
+    'why.revolution.desc1': 'Artificial intelligence is changing business processes',
+    'why.revolution.desc2': 'Companies integrate AI solutions into their processes',
+    'why.demand.title': 'Growing demand for specialists',
+    'why.demand.subtitle': 'Advantage in employment',
+    'why.demand.desc1': 'Need for analysts with AI technology knowledge is growing',
+    'why.demand.desc2': 'AI skills become important factor in selection',
+    
+    // Why Features
+    'why.salary.title': 'High Salaries',
+    'why.salary.desc': 'AI specialists earn 30-50% more',
+    'why.growth.title': 'Career Growth',
+    'why.growth.desc': 'Fast advancement in tech companies',
+    'why.automation.title': 'Automation',
+    'why.automation.desc': 'Free up time for creative tasks',
+    'why.future.title': 'Future',
+    'why.future.desc': 'Skills that will always be in demand',
+    
+    // CTA Community
+    'cta.community.title': 'Communication, support and experience sharing with course participants',
+    'cta.community.button': 'Join the Community',
+    
+    // Footer Sections
+    'footer.about.title': 'About Course',
+    'footer.about.program': 'Program',
+    'footer.about.audience': 'For Whom',
+    'footer.about.structure': 'Structure',
+    'footer.materials.title': 'Useful Materials',
+    'footer.materials.agent': 'How AI Agent Works',
+    'footer.materials.template': 'Download Requirements Template',
     'footer.forDevelopers': 'for developers',
   }
 };

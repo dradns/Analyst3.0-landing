@@ -80,7 +80,7 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
-            Кому подойдет курс
+            {t('audience.title')}
             <HelpCircle className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
         </div>
@@ -96,11 +96,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Студентам
+                {t('audience.students.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Быстрый старт в профессии аналитика с реальным проектом в портфолио
+                {t('audience.students.desc')}
               </p>
             </CardContent>
           </Card>
@@ -115,11 +115,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Junior-аналитикам
+                {t('audience.junior.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Систематизация знаний и освоение работы с AI-инструментами
+                {t('audience.junior.desc')}
               </p>
             </CardContent>
           </Card>
@@ -134,11 +134,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Специалистам
+                {t('audience.specialists.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Расширение компетенций за счёт навыков работы с LLM и AI-агентами
+                {t('audience.specialists.desc')}
               </p>
             </CardContent>
           </Card>
@@ -153,11 +153,11 @@ const Features = () => {
               </div>
               
               <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
-                Опытным аналитикам
+                {t('audience.experienced.title')}
               </h3>
               
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Откроете для себя современные подходы и инструменты работы с LLM и AI-агентами
+                {t('audience.experienced.desc')}
               </p>
             </CardContent>
           </Card>

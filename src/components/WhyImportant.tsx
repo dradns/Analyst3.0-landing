@@ -12,22 +12,25 @@ import {
   Rocket,
   ChevronDown
 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhyImportant = () => {
+  const { t } = useLanguage();
+  
   const reasons = [
     {
       icon: Zap,
-      title: "AI-революция уже началась",
-      subtitle: "Внедрение AI в бизнес",
-      description: "Искусственный интеллект меняет бизнес-процессы",
-      details: "Компании интегрируют AI-решения в свои процессы"
+      title: t('why.revolution.title'),
+      subtitle: t('why.revolution.subtitle'),
+      description: t('why.revolution.desc1'),
+      details: t('why.revolution.desc2')
     },
     {
       icon: TrendingUp,
-      title: "Рост спроса на специалистов",
-      subtitle: "Преимущество при трудоустройстве", 
-      description: "Потребность в аналитиках со знанием AI-технологий растет",
-      details: "Навыки работы с AI становятся важным фактором при отборе"
+      title: t('why.demand.title'),
+      subtitle: t('why.demand.subtitle'), 
+      description: t('why.demand.desc1'),
+      details: t('why.demand.desc2')
     }
   ];
 
@@ -39,11 +42,11 @@ const WhyImportant = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
-            Почему это важно
+            {t('why.title')}
             <BarChart3 className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            И почему сейчас самое время изучать AI?
+            {t('why.subtitle')}
           </p>
         </div>
 
@@ -92,26 +95,26 @@ const WhyImportant = () => {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
               <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h4 className="font-semibold text-foreground mb-2">Высокие зарплаты</h4>
-              <p className="text-sm text-muted-foreground">AI-специалисты получают на 30-50% больше</p>
+              <h4 className="font-semibold text-foreground mb-2">{t('why.salary.title')}</h4>
+              <p className="text-sm text-muted-foreground">{t('why.salary.desc')}</p>
             </div>
             
             <div className="text-center p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
               <Trophy className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h4 className="font-semibold text-foreground mb-2">Карьерный рост</h4>
-              <p className="text-sm text-muted-foreground">Быстрое продвижение в tech-компаниях</p>
+              <h4 className="font-semibold text-foreground mb-2">{t('why.growth.title')}</h4>
+              <p className="text-sm text-muted-foreground">{t('why.growth.desc')}</p>
             </div>
             
             <div className="text-center p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
               <Zap className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h4 className="font-semibold text-foreground mb-2">Автоматизация</h4>
-              <p className="text-sm text-muted-foreground">Освободите время для творческих задач</p>
+              <h4 className="font-semibold text-foreground mb-2">{t('why.automation.title')}</h4>
+              <p className="text-sm text-muted-foreground">{t('why.automation.desc')}</p>
             </div>
             
             <div className="text-center p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
               <TrendingUp className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h4 className="font-semibold text-foreground mb-2">Будущее</h4>
-              <p className="text-sm text-muted-foreground">Навыки, которые будут востребованы всегда</p>
+              <h4 className="font-semibold text-foreground mb-2">{t('why.future.title')}</h4>
+              <p className="text-sm text-muted-foreground">{t('why.future.desc')}</p>
             </div>
           </div>
 
@@ -119,7 +122,7 @@ const WhyImportant = () => {
           <div className="mt-20 text-center animate-fade-in">
             <div className="mb-8">
               <p className="text-2xl font-semibold mb-4 max-w-3xl mx-auto text-center">
-                Общение, поддержка и обмен опытом с участниками курса ↓
+                {t('cta.community.title')}
               </p>
             </div>
             
@@ -133,7 +136,7 @@ const WhyImportant = () => {
                   }}
                 >
                   <span className="flex items-center gap-3">
-                    Присоединиться к комьюнити
+                    {t('cta.community.button')}
                     <Send className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
                   </span>
                 </Button>
