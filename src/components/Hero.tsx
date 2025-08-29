@@ -6,12 +6,12 @@ import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircl
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 import AppShowcase from "@/components/AppShowcase";
-
 const Hero = () => {
   const [activeDemo, setActiveDemo] = useState("ba");
   const [openCourseModule, setOpenCourseModule] = useState<string>("");
-  const { t } = useLanguage();
-
+  const {
+    t
+  } = useLanguage();
   const demoModes = {
     ba: {
       title: t('hero.mode.ba.title'),
@@ -31,7 +31,7 @@ BPMN – стандартизированная схема
 
 Activity Diagram – последовательность 
 действий и логика процессов.`,
-      icon: Sparkles,
+      icon: Sparkles
     },
     sa: {
       title: t('hero.mode.sa.title'),
@@ -56,7 +56,7 @@ ERD – диаграмма сущностей
 
 Нефункциональные требования – скорость, 
 безопасность, масштабируемость системы.`,
-      icon: TrendingUp,
+      icon: TrendingUp
     },
     reviewer: {
       title: t('hero.mode.reviewer.title'),
@@ -83,20 +83,24 @@ ERD – диаграмма сущностей
 
 Работающий продукт – готовое решение 
 как демонстрация ваших навыков.`,
-      icon: Zap,
-    },
+      icon: Zap
+    }
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
       
       {/* Subtle Background Mist - Almost Transparent */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-primary/1 rounded-full blur-3xl animate-glow pointer-events-none" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-secondary/2 rounded-full blur-2xl animate-glow pointer-events-none" style={{animationDelay: '0.5s'}} />
-      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/1 rounded-full blur-xl animate-glow pointer-events-none" style={{animationDelay: '1s'}} />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/1 rounded-full blur-3xl animate-glow pointer-events-none" style={{animationDelay: '1.5s'}} />
+      <div className="absolute top-40 right-20 w-72 h-72 bg-secondary/2 rounded-full blur-2xl animate-glow pointer-events-none" style={{
+      animationDelay: '0.5s'
+    }} />
+      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/1 rounded-full blur-xl animate-glow pointer-events-none" style={{
+      animationDelay: '1s'
+    }} />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/1 rounded-full blur-3xl animate-glow pointer-events-none" style={{
+      animationDelay: '1.5s'
+    }} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Grid Layout */}
@@ -129,9 +133,7 @@ ERD – диаграмма сущностей
                 <div className="inline-block relative">
                   <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
                   <p className="relative text-lg md:text-xl lg:text-2xl font-bold text-left bg-gradient-hero text-primary-foreground px-6 py-3 rounded-lg shadow-glow leading-relaxed mt-4">
-                    <span className="font-bold">
-                      Станьте аналитиком 3.0 — архитектором пути от бизнес-анализа к созданию систем будущего
-                    </span>
+                    <span className="font-bold">Станьте аналитиком 3.0 — архитектором будущего на стыке бизнес-анализа и AI</span>
                   </p>
                 </div>
               </div>
@@ -159,19 +161,19 @@ ERD – диаграмма сущностей
                 {/* Secondary Button */}
                 <div className="relative group animate-scale-in">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                  <button
-                    className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift"
-                    onClick={() => {
-                      setOpenCourseModule("module-1");
-                      // Прокрутка к разделу структуры курса
-                      setTimeout(() => {
-                        const element = document.getElementById('course-structure');
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        }
-                      }, 100);
-                    }}
-                  >
+                  <button className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift" onClick={() => {
+                  setOpenCourseModule("module-1");
+                  // Прокрутка к разделу структуры курса
+                  setTimeout(() => {
+                    const element = document.getElementById('course-structure');
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }, 100);
+                }}>
                     <span className="flex items-center gap-3">
                       Начать первый урок
                       <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
@@ -194,16 +196,9 @@ ERD – диаграмма сущностей
                 <Card className="overflow-hidden shadow-2xl">
                   <CardContent className="p-0">
                     <div className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 to-secondary/20">
-                      <video 
-                        className="w-full h-full object-contain rounded-lg"
-                        controls
-                        preload="metadata"
-                        playsInline
-                        webkit-playsinline="true"
-                        style={{ objectFit: 'contain' }}
-                        onError={(e) => console.log('Video error:', e)}
-                        onLoadStart={() => console.log('Video loading started')}
-                      >
+                      <video className="w-full h-full object-contain rounded-lg" controls preload="metadata" playsInline webkit-playsinline="true" style={{
+                      objectFit: 'contain'
+                    }} onError={e => console.log('Video error:', e)} onLoadStart={() => console.log('Video loading started')}>
                         <source src="/course-video.mp4" type="video/mp4" />
                         Ваш браузер не поддерживает воспроизведение видео.
                       </video>
@@ -228,10 +223,7 @@ ERD – диаграмма сущностей
 
         {/* Course Structure Section */}
         <div className="mt-8">
-          <CourseStructure 
-            openModuleId={openCourseModule} 
-            onOpenModule={setOpenCourseModule}
-          />
+          <CourseStructure openModuleId={openCourseModule} onOpenModule={setOpenCourseModule} />
         </div>
 
         {/* Demo Section */}
@@ -240,29 +232,16 @@ ERD – диаграмма сущностей
             <h3 className="text-2xl font-semibold mb-4">{t('hero.tryModes')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {Object.entries(demoModes).map(([key, mode]) => {
-                const IconComponent = mode.icon;
-                const isActive = activeDemo === key;
-                return (
-                  <div key={key} className="relative group animate-scale-in">
-                    {isActive && (
-                      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                    )}
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setActiveDemo(key)}
-                      className={`relative transition-all duration-300 ${
-                        isActive 
-                          ? 'bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground shadow-lg hover:shadow-glow hover:from-primary hover:to-secondary' 
-                          : 'bg-white text-black hover:bg-gray-50 shadow-sm'
-                      }`}
-                    >
+              const IconComponent = mode.icon;
+              const isActive = activeDemo === key;
+              return <div key={key} className="relative group animate-scale-in">
+                    {isActive && <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>}
+                    <Button variant="ghost" size="sm" onClick={() => setActiveDemo(key)} className={`relative transition-all duration-300 ${isActive ? 'bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground shadow-lg hover:shadow-glow hover:from-primary hover:to-secondary' : 'bg-white text-black hover:bg-gray-50 shadow-sm'}`}>
                       <IconComponent className="w-4 h-4 mr-2" />
                       {mode.title}
                     </Button>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
 
@@ -272,8 +251,8 @@ ERD – диаграмма сущностей
                 <div className="md:col-span-2">
                   <div className="flex items-center mb-4">
                     {React.createElement(demoModes[activeDemo].icon, {
-                      className: "w-6 h-6 mr-3 text-primary"
-                    })}
+                    className: "w-6 h-6 mr-3 text-primary"
+                  })}
                     <h4 className="text-xl font-semibold">
                       {demoModes[activeDemo].title}
                     </h4>
@@ -292,8 +271,6 @@ ERD – диаграмма сущностей
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
