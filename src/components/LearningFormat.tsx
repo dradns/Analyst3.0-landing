@@ -9,33 +9,33 @@ const LearningFormat = () => {
   } = useLanguage();
   const mainFeatures = [{
     icon: BookOpen,
-    title: "Практический подход",
-    subtitle: "12 недель интенсивного обучения",
-    description: "Комплексная программа с еженедельными заданиями",
-    details: "Создание AI-агента с нуля, реализация артефактов требований"
+    title: t('format.practical.title'),
+    subtitle: t('format.practical.duration'),
+    description: t('format.practical.description'),
+    details: t('format.practical.details')
   }, {
     icon: Users,
-    title: "Поддержка сообщества",
-    subtitle: "Общение и обмен опытом",
-    description: "Еженедельные встречи и общий чат участников",
-    details: "Карьерная поддержка, подготовка к собеседованиям"
+    title: t('format.community.title'),
+    subtitle: t('format.community.subtitle'),
+    description: t('format.community.description'),
+    details: t('format.community.details')
   }];
   const benefits = [{
     icon: Clock,
-    title: "Гибкий график",
-    description: "Обучение онлайн в удобное время"
+    title: t('format.flexible'),
+    description: t('format.flexible.desc')
   }, {
     icon: Target,
-    title: "Готовый проект",
-    description: "AI-агент в портфолио как результат"
+    title: t('format.project'),
+    description: t('format.project.desc')
   }, {
     icon: MessageCircle,
-    title: "Живое общение",
-    description: "P2P чат и еженедельные встречи"
+    title: t('format.communication'),
+    description: t('format.communication.desc')
   }, {
     icon: Trophy,
-    title: "Карьерный рост",
-    description: "Поддержка в трудоустройстве"
+    title: t('format.career'),
+    description: t('format.career.desc')
   }];
   return <section className="py-20 relative overflow-hidden">
       {/* Background Effects */}
@@ -44,10 +44,10 @@ const LearningFormat = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
-            Формат обучения
+            {t('modes.reviewer.title')}
             <Monitor className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Как мы поможем вам погрузиться в аналитику 3.0?</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t('format.community.subtitle')}</p>
         </div>
 
         <div className="max-w-6xl mx-auto">

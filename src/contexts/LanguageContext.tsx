@@ -275,7 +275,7 @@ ERD – диаграмма сущностей
     'format.practical.description': 'Комплексная программа с еженедельными заданиями',
     'format.practical.details': 'Создание AI-агента с нуля, реализация артефактов требований',
     'format.community.title': 'Поддержка сообщества',
-    'format.community.subtitle': 'Общение и обмен опытом',
+    'format.community.subtitle': 'Как мы поможем вам погрузиться в аналитику 3.0?',
     'format.community.description': 'Еженедельные встречи и общий чат участников',
     'format.community.details': 'Карьерная поддержка, подготовка к собеседованиям',
     
@@ -341,6 +341,7 @@ ERD – диаграмма сущностей
     'footer.materials.title': 'Полезные материалы',
     'footer.materials.agent': 'Как работает AI-агент',
     'footer.materials.template': 'Скачать шаблон требований',
+    'footer.telegram': 'Комьюнити курса в Telegram',
     'footer.forDevelopers': 'для разработчиков',
   },
   en: {
@@ -606,7 +607,7 @@ as demonstration of your skills.`,
     'format.practical.description': 'Comprehensive program with weekly assignments',
     'format.practical.details': 'Creating AI agent from scratch, implementing requirement artifacts',
     'format.community.title': 'Community Support',
-    'format.community.subtitle': 'Communication and experience sharing',
+    'format.community.subtitle': 'How will we help you dive into analytics 3.0?',
     'format.community.description': 'Weekly meetings and general participant chat',
     'format.community.details': 'Career support, interview preparation',
     
@@ -672,6 +673,7 @@ as demonstration of your skills.`,
     'footer.materials.title': 'Useful Materials',
     'footer.materials.agent': 'How AI Agent Works',
     'footer.materials.template': 'Download Requirements Template',
+    'footer.telegram': 'Course Community in Telegram',
     'footer.forDevelopers': 'for developers',
   }
 };

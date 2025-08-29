@@ -9,13 +9,13 @@ const Footer = () => {
   
   const navigation = {
     product: [
-      { name: "Программа", href: "#what-awaits" },
-      { name: "Для кого", href: "#features" },
-      { name: "Структура", href: "#course-structure" },
+      { name: t('footer.about.program'), href: "#what-awaits" },
+      { name: t('footer.about.audience'), href: "#features" },
+      { name: t('footer.about.structure'), href: "#course-structure" },
     ],
     support: [
-      { name: "Как работает AI-агент", href: "#" },
-      { name: "Скачать шаблон требований", href: "https://github.com/dradns/Analyst3.0-landing/blob/develop/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%CC%86.pdf" },
+      { name: t('footer.materials.agent'), href: "#" },
+      { name: t('footer.materials.template'), href: "https://github.com/dradns/Analyst3.0-landing/blob/develop/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%CC%86.pdf" },
     ]
   };
 
@@ -41,7 +41,7 @@ const Footer = () => {
                   className="w-11 h-10 rounded-full"
                 />
                 <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                  Системный Аналитик 3.0
+                  {t('header.title')}
                 </span>
               </div>
               
@@ -67,7 +67,7 @@ const Footer = () => {
                        rel={social.name === "Telegram" ? "noopener noreferrer" : undefined}
                        className="flex items-center gap-2"
                      >
-                        <span className="text-sm">Комьюнити курса в Telegram</span>
+                        <span className="text-sm">{t('footer.telegram')}</span>
                         <IconComponent className="w-4 h-4" />
                       </a>
                     </Button>
@@ -79,7 +79,7 @@ const Footer = () => {
             {/* Navigation Links */}
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:col-span-2">
               <div>
-                <h3 className="font-semibold mb-4">О курсе</h3>
+                <h3 className="font-semibold mb-4">{t('footer.about.title')}</h3>
                 <ul className="space-y-3">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
@@ -104,7 +104,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-4">Полезные материалы</h3>
+                <h3 className="font-semibold mb-4">{t('footer.materials.title')}</h3>
                 <ul className="space-y-3">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
