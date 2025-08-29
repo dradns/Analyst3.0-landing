@@ -76,14 +76,38 @@ const Hero = () => {
               <div className="mb-1 animate-scale-in">
                 <div className="inline-block relative">
                   <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3">
-                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
-                      12 недель бесплатного обучения
-                    </span>
-                    , где вы научитесь создавать{' '}
-                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
-                      AI агента с нуля
-                    </span>
-                    {' '}— с практикой и поддержкой комьюнити
+                    {(() => {
+                      const practiceText = t('hero.practice.text');
+                      const { language } = useLanguage();
+                      
+                      if (language === 'ru') {
+                        return (
+                          <>
+                            <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
+                              12 недель бесплатного обучения
+                            </span>
+                            , где вы научитесь создавать{' '}
+                            <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
+                              AI агента с нуля
+                            </span>
+                            {' '}— с практикой и поддержкой комьюнити
+                          </>
+                        );
+                      } else {
+                        return (
+                          <>
+                            <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
+                              12 weeks of free training
+                            </span>
+                            {' '}where you will learn to create an{' '}
+                            <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">
+                              AI agent from scratch
+                            </span>
+                            {' '}— with practice and community support
+                          </>
+                        );
+                      }
+                    })()}
                   </p>
                 </div>
               </div>
