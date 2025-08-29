@@ -6,6 +6,7 @@ import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
 import LearningFormat from "@/components/LearningFormat";
+import CourseStructure from "@/components/CourseStructure";
 import Footer from "@/components/Footer";
 import SectionTransition from "@/components/SectionTransition";
 import SectionWrapper from "@/components/SectionWrapper";
@@ -16,61 +17,71 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="relative overflow-hidden">
-        {/* Hero секция с плавным фоном */}
+        {/* Hero секция */}
         <SectionWrapper background="default">
           <Hero />
         </SectionWrapper>
         
-        {/* Шаг 1: Выбор режима */}
-        <RoadmapStep stepNumber={1} title="Выберите свой путь" isActive />
+        {/* Шаг 1: Программа курса */}
+        <RoadmapStep stepNumber={1} title="Программа курса" isActive position="left" />
         <SectionTransition variant="hero-to-cards" />
         
-        {/* Карточки режимов с мягким фоном */}
         <SectionWrapper background="glass">
+          <CourseStructure />
+        </SectionWrapper>
+        
+        {/* Шаг 2: AI-агенты */}
+        <RoadmapStep stepNumber={2} title="Вы научитесь создавать AI-агентов" position="right" />
+        <SectionTransition variant="cards-to-learning" />
+        
+        <SectionWrapper background="default">
           <ModeCards />
         </SectionWrapper>
         
-        {/* Шаг 2: Формат обучения */}
-        <RoadmapStep stepNumber={2} title="Изучите формат" position="right" />
-        <SectionTransition variant="cards-to-learning" />
+        {/* Шаг 3: Знания */}
+        <RoadmapStep stepNumber={3} title="В процессе обучения вы узнаете, что такое" position="left" />
+        <SectionTransition variant="learning-to-features" />
         
-        {/* Формат обучения */}
         <SectionWrapper background="muted">
+          <Features />
+        </SectionWrapper>
+        
+        {/* Шаг 4: Формат обучения */}
+        <RoadmapStep stepNumber={4} title="Формат обучения" position="right" />
+        <SectionTransition variant="features-to-cta" />
+        
+        <SectionWrapper background="glass">
           <LearningFormat />
         </SectionWrapper>
         
-        {/* Шаг 3: Возможности */}
-        <RoadmapStep stepNumber={3} title="Откройте возможности" position="left" />
-        <SectionTransition variant="learning-to-features" />
+        {/* Шаг 5: Кому подойдет */}
+        <RoadmapStep stepNumber={5} title="Кому подойдет курс" position="left" />
+        <SectionTransition variant="cta-to-why" />
         
-        {/* Функции курса */}
         <SectionWrapper background="default">
           <Features />
         </SectionWrapper>
         
-        {/* Шаг 4: Присоединение */}
-        <RoadmapStep stepNumber={4} title="Присоединяйтесь к курсу" position="right" />
-        <SectionTransition variant="features-to-cta" />
+        {/* Шаг 6: Не для всех */}
+        <RoadmapStep stepNumber={6} title="Вам сюда не надо, если" position="right" />
+        <SectionTransition variant="why-to-final" />
         
-        {/* Широкий CTA блок */}
         <SectionWrapper background="gradient-primary">
           <CourseCtaSectionWide />
         </SectionWrapper>
         
-        {/* Шаг 5: Понимание важности */}
-        <RoadmapStep stepNumber={5} title="Поймите важность AI" position="left" />
+        {/* Шаг 7: Важность */}
+        <RoadmapStep stepNumber={7} title="Почему это важно" position="left" />
         <SectionTransition variant="cta-to-why" />
         
-        {/* Почему важно */}
-        <SectionWrapper background="default">
+        <SectionWrapper background="muted">
           <WhyImportant />
         </SectionWrapper>
         
-        {/* Шаг 6: Финальное решение */}
-        <RoadmapStep stepNumber={6} title="Начните свой путь" />
+        {/* Шаг 8: Структура обучения */}
+        <RoadmapStep stepNumber={8} title="Структура обучения - Начать первый урок" position="center" />
         <SectionTransition variant="why-to-final" />
         
-        {/* Финальный CTA */}
         <SectionWrapper background="gradient-secondary">
           <CourseCtaSectionPositive />
         </SectionWrapper>
