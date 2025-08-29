@@ -30,16 +30,13 @@ const SectionTransition = ({ variant = 'default', className = '' }: SectionTrans
       case 'hero-to-cards':
         return (
           <>
-            <div className="absolute left-1/4 top-1/2 w-2 h-2 bg-primary/30 rounded-full animate-glow" />
-            <div className="absolute right-1/3 top-1/3 w-1 h-1 bg-secondary/40 rounded-full animate-glow delay-1000" />
-            <div className="absolute left-2/3 bottom-1/4 w-1.5 h-1.5 bg-primary-glow/30 rounded-full animate-glow delay-500" />
           </>
         );
       case 'features-to-cta':
         return (
           <>
             <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary/20 rounded-full blur-sm animate-pulse" />
+            
           </>
         );
       case 'cta-to-why':

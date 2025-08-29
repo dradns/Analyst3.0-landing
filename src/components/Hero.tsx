@@ -89,18 +89,6 @@ ERD – диаграмма сущностей
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-primary/8 pointer-events-none" />
-      
-      {/* Subtle Background Mist - Almost Transparent */}
-      <div className="absolute top-10 left-10 w-96 h-96 bg-primary/1 rounded-full blur-3xl animate-glow pointer-events-none" />
-      <div className="absolute top-40 right-20 w-72 h-72 bg-secondary/2 rounded-full blur-2xl animate-glow pointer-events-none" style={{
-      animationDelay: '0.5s'
-    }} />
-      <div className="absolute bottom-32 left-1/4 w-64 h-64 bg-primary/1 rounded-full blur-xl animate-glow pointer-events-none" style={{
-      animationDelay: '1s'
-    }} />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/1 rounded-full blur-3xl animate-glow pointer-events-none" style={{
-      animationDelay: '1.5s'
-    }} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Hero Grid Layout */}
@@ -187,9 +175,6 @@ ERD – диаграмма сущностей
           {/* Right Column - Video Content (2/5 width) */}
           <div className="lg:col-span-2">
             <div className="py-4 relative overflow-hidden">
-              {/* Enhanced Background Glow Effects */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] bg-primary/5 rounded-full blur-3xl animate-glow pointer-events-none" />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] bg-secondary/8 rounded-full blur-2xl animate-pulse pointer-events-none" />
               
 
               <div className="max-w-xs mx-auto mb-4">
