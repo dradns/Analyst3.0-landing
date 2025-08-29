@@ -27,19 +27,83 @@ const translations = {
     // Hero
     'hero.badge': 'Революция в аналитике',
     'hero.title': 'От бизнес-идей к AI-проектам',
+    'hero.subtitle': 'к AI-решениям',
+    'hero.course.description': 'Станьте аналитиком 3.0 — архитектором будущего на стыке бизнес-анализа и AI',
+    'hero.practice.text': '12 недель бесплатного обучения, где вы научитесь создавать AI агента с нуля — с практикой и поддержкой комьюнити',
+    'hero.homework.text': 'Попробуйте выполнить первое домашнее задание прямо сейчас',
+    'hero.start.button': 'Начать первый урок',
+    'hero.video.description': 'Как работает AI-агент',
     'hero.description': 'Бесплатный курс: бизнес- и системный анализ с AI',
     'hero.startFree': 'Присоединиться к курсу',
     'hero.watchDemo': 'Скачать шаблон',
     'hero.tryModes': 'В процессе обучения вы узнаете, что такое ↓',
     'hero.tryMode': 'Попробовать режим',
+    'hero.video.error': 'Ваш браузер не поддерживает воспроизведение видео.',
     
     // Hero Demo Modes  
     'hero.mode.ba.title': 'Бизнес требования',
     'hero.mode.ba.description': 'User Stories, Use Cases, прототипирование интерфейсов, BPMN, Activity diagram',
+    'hero.mode.ba.code': `User Stories – ожидания пользователя 
+в формате «Как [роль], хочу [цель], 
+чтобы [ценность]».
+
+Use Cases – пошаговые сценарии 
+взаимодействия с системой.
+
+Прототипирование – визуализация 
+интерфейсов для ранней проверки идей.
+
+BPMN – стандартизированная схема 
+бизнес-процессов.
+
+Activity Diagram – последовательность 
+действий и логика процессов.`,
     'hero.mode.sa.title': 'Системные требования', 
     'hero.mode.sa.description': 'Архитектура, модель данных, ERD, диаграмма последовательности, документирование API, Swagger, критерии приемки, нефункциональные требования',
+    'hero.mode.sa.code': `Архитектура – структура модулей 
+и их взаимодействие.
+
+Модель данных – логическая схема 
+хранения информации.
+
+ERD – диаграмма сущностей 
+и связей между ними.
+
+Диаграмма последовательности – порядок 
+обмена сообщениями между компонентами.
+
+Документирование API / Swagger – описание 
+интерфейсов и их параметров.
+
+Критерии приемки – условия, при которых 
+работа считается завершённой.
+
+Нефункциональные требования – скорость, 
+безопасность, масштабируемость системы.`,
     'hero.mode.reviewer.title': 'Реализация AI-агента',
     'hero.mode.reviewer.description': 'Готовый работающий AI-агент в вашем портфолио',
+    'hero.mode.reviewer.code': `Концепция – цель, задачи 
+и сценарии использования агента.
+
+Выбор модели – подбор ИИ по качеству, 
+скорости и стоимости.
+
+Интеграция – соединение модели 
+с приложением или сервисом.
+
+Логика агента – обработка запросов, 
+принятие решений, ответы.
+
+Обучение и настройка – улучшение качества 
+через данные и тесты.
+
+Тестирование – проверка стабильности 
+и корректности работы.
+
+Деплой – запуск агента в реальной среде.
+
+Работающий продукт – готовое решение 
+как демонстрация ваших навыков.`,
     
     // Mode Cards
     'modes.badge': 'Программа курса',
@@ -200,19 +264,83 @@ const translations = {
     // Hero
     'hero.badge': 'Analytics Revolution',
     'hero.title': 'Create an AI agent\nin 12 weeks',
+    'hero.subtitle': 'to AI Solutions',
+    'hero.course.description': 'Become an Analyst 3.0 — architect of the future at the intersection of business analysis and AI',
+    'hero.practice.text': '12 weeks of free training where you will learn to create an AI agent from scratch — with practice and community support',
+    'hero.homework.text': 'Try doing the first homework assignment right now',
+    'hero.start.button': 'Start First Lesson',
+    'hero.video.description': 'How AI Agent Works',
     'hero.description': 'Master business and system analysis skills, learn to work with AI agents, build a portfolio and prepare for employment.',
     'hero.startFree': 'Join the course',
     'hero.watchDemo': 'Download template',
     'hero.tryModes': 'In the learning process you will learn what is ↓',
     'hero.tryMode': 'Try Mode',
+    'hero.video.error': 'Your browser does not support video playback.',
     
     // Hero Demo Modes  
     'hero.mode.ba.title': 'Business Requirements',
     'hero.mode.ba.description': 'User Stories, Use Cases, interface prototyping, BPMN, Activity diagram',
+    'hero.mode.ba.code': `User Stories – user expectations 
+in format "As [role], I want [goal], 
+so that [value]".
+
+Use Cases – step-by-step scenarios 
+of system interaction.
+
+Prototyping – interface visualization 
+for early idea validation.
+
+BPMN – standardized business 
+process schemes.
+
+Activity Diagram – sequence 
+of actions and process logic.`,
     'hero.mode.sa.title': 'System Requirements',
     'hero.mode.sa.description': 'Architecture, data model, ERD, sequence diagram, API documentation, Swagger, acceptance criteria, non-functional requirements',
+    'hero.mode.sa.code': `Architecture – module structure 
+and their interactions.
+
+Data Model – logical scheme 
+of information storage.
+
+ERD – entity relationship 
+diagram.
+
+Sequence Diagram – order 
+of message exchange between components.
+
+API Documentation / Swagger – description 
+of interfaces and their parameters.
+
+Acceptance Criteria – conditions where 
+work is considered complete.
+
+Non-functional Requirements – speed, 
+security, system scalability.`,
     'hero.mode.reviewer.title': 'AI Agent Implementation',
     'hero.mode.reviewer.description': 'Ready working pet-project in your portfolio',
+    'hero.mode.reviewer.code': `Concept – goals, tasks 
+and agent usage scenarios.
+
+Model Selection – AI selection by quality, 
+speed and cost.
+
+Integration – connecting model 
+with application or service.
+
+Agent Logic – request processing, 
+decision making, responses.
+
+Training and Setup – quality improvement 
+through data and tests.
+
+Testing – checking stability 
+and correctness of operation.
+
+Deploy – launching agent in real environment.
+
+Working Product – ready solution 
+as demonstration of your skills.`,
     
     // Mode Cards
     'modes.badge': 'Course Program',

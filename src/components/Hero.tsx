@@ -16,73 +16,19 @@ const Hero = () => {
     ba: {
       title: t('hero.mode.ba.title'),
       description: t('hero.mode.ba.description'),
-      code: `User Stories – ожидания пользователя 
-в формате «Как [роль], хочу [цель], 
-чтобы [ценность]».
-
-Use Cases – пошаговые сценарии 
-взаимодействия с системой.
-
-Прототипирование – визуализация 
-интерфейсов для ранней проверки идей.
-
-BPMN – стандартизированная схема 
-бизнес-процессов.
-
-Activity Diagram – последовательность 
-действий и логика процессов.`,
+      code: t('hero.mode.ba.code'),
       icon: Sparkles
     },
     sa: {
       title: t('hero.mode.sa.title'),
       description: t('hero.mode.sa.description'),
-      code: `Архитектура – структура модулей 
-и их взаимодействие.
-
-Модель данных – логическая схема 
-хранения информации.
-
-ERD – диаграмма сущностей 
-и связей между ними.
-
-Диаграмма последовательности – порядок 
-обмена сообщениями между компонентами.
-
-Документирование API / Swagger – описание 
-интерфейсов и их параметров.
-
-Критерии приемки – условия, при которых 
-работа считается завершённой.
-
-Нефункциональные требования – скорость, 
-безопасность, масштабируемость системы.`,
+      code: t('hero.mode.sa.code'),
       icon: TrendingUp
     },
     reviewer: {
       title: t('hero.mode.reviewer.title'),
       description: t('hero.mode.reviewer.description'),
-      code: `Концепция – цель, задачи 
-и сценарии использования агента.
-
-Выбор модели – подбор ИИ по качеству, 
-скорости и стоимости.
-
-Интеграция – соединение модели 
-с приложением или сервисом.
-
-Логика агента – обработка запросов, 
-принятие решений, ответы.
-
-Обучение и настройка – улучшение качества 
-через данные и тесты.
-
-Тестирование – проверка стабильности 
-и корректности работы.
-
-Деплой – запуск агента в реальной среде.
-
-Работающий продукт – готовое решение 
-как демонстрация ваших навыков.`,
+      code: t('hero.mode.reviewer.code'),
       icon: Zap
     }
   };
@@ -102,12 +48,12 @@ ERD – диаграмма сущностей
                 <div className="relative">
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 relative">
                     <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl">
-                      От бизнес-идей
+                      {t('hero.title').split('\n')[0]}
                     </span>
                   </h1>
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight relative">
                     <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer drop-shadow-2xl flex items-center gap-4">
-                      к AI-решениям
+                      {t('hero.title').split('\n')[1] || t('hero.subtitle')}
                       <Bot className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-primary animate-pulse" />
                     </span>
                   </h1>
@@ -121,7 +67,7 @@ ERD – диаграмма сущностей
                 <div className="inline-block relative">
                   <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
                   <p className="relative text-lg md:text-xl lg:text-2xl font-bold text-left bg-gradient-hero text-primary-foreground px-6 py-3 rounded-lg shadow-glow leading-relaxed mt-4">
-                    <span className="font-bold">Станьте аналитиком 3.0 — архитектором будущего на стыке бизнес-анализа и AI</span>
+                    <span className="font-bold">{t('hero.course.description')}</span>
                   </p>
                 </div>
               </div>
@@ -130,7 +76,7 @@ ERD – диаграмма сущностей
               <div className="mb-1 animate-scale-in">
                 <div className="inline-block relative">
                   <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3">
-                    <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">12 недель бесплатного обучения</span>, где вы научитесь создавать <span className="bg-gradient-hero bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer font-bold">AI агента с нуля</span> — с практикой и поддержкой комьюнити
+                    {t('hero.practice.text')}
                   </p>
                 </div>
               </div>
@@ -139,7 +85,7 @@ ERD – диаграмма сущностей
               <div className="mb-8 animate-scale-in">
                 <div className="inline-block relative">
                   <p className="relative text-lg md:text-xl lg:text-2xl text-left text-muted-foreground px-6 py-3 font-semibold">
-                    Попробуйте выполнить первое домашнее задание прямо сейчас
+                    {t('hero.homework.text')}
                   </p>
                 </div>
               </div>
@@ -163,7 +109,7 @@ ERD – диаграмма сущностей
                   }, 100);
                 }}>
                     <span className="flex items-center gap-3">
-                      Начать первый урок
+                      {t('hero.start.button')}
                       <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
                     </span>
                   </button>
@@ -185,7 +131,7 @@ ERD – диаграмма сущностей
                       objectFit: 'contain'
                     }} onError={e => console.log('Video error:', e)} onLoadStart={() => console.log('Video loading started')}>
                         <source src="/course-video.mp4" type="video/mp4" />
-                        Ваш браузер не поддерживает воспроизведение видео.
+                        {t('hero.video.error')}
                       </video>
                     </div>
                   </CardContent>
@@ -195,7 +141,7 @@ ERD – диаграмма сущностей
               {/* Text under video */}
               <div className="text-center animate-fade-in mt-8">
                 <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-semibold flex items-center justify-center gap-3">
-                  Как работает AI-агент
+                  {t('hero.video.description')}
                   <ArrowUp className="w-6 h-6 text-primary animate-bounce" />
                 </p>
               </div>
