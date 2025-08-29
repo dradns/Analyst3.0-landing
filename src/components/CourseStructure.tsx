@@ -74,27 +74,27 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
     {
       id: "module-1",
       title: t('steps.1.title'),
-      description: "Вам предстоит выбрать тему для вашего AI-агента и создать базовые документы: User Story и Use Case. Это фундамент всего проекта. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.",
+      description: t('module.1.description'),
       tasks: [
-        "Выбрать AI-агента из предложенных вариантов",
-        "Написать User Story по формуле: \"Я, как [роль], хочу [действие], чтобы [результат]\"",
-        "Создать Use Case с описанием взаимодействия пользователя с системой"
+        t('module.1.task.1'),
+        t('module.1.task.2'),
+        t('module.1.task.3')
       ],
       examples: [
-        "HR AI ассистент для отбора кандидатов",
-        "Маркетинг AI агент для создания постов", 
-        "CustDev AI агент для опросов пользователей",
-        "Аналитик-консультант для создания артефактов",
-        "Pitch-Deck AI Reviewer для проверки презентаций"
+        t('module.1.example.1'),
+        t('module.1.example.2'),
+        t('module.1.example.3'),
+        t('module.1.example.4'),
+        t('module.1.example.5')
       ],
       resources: [
         {
-          title: "Видеолекция: \"Создание и работа с User Stories\"",
+          title: t('module.1.video.1'),
           url: "https://youtu.be/WVAeuRFio5s",
           icon: Video
         },
         {
-          title: "Видеолекция: \"Описание сценариев использования\"",
+          title: t('module.1.video.2'),
           url: "https://youtu.be/ZxuEFm9SIJs", 
           icon: Video
         }
@@ -417,7 +417,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                         </h3>
                       </div>
                       <div className="flex items-center gap-1 text-muted-foreground">
-                        <span className="text-xs">открыть</span>
+                        <span className="text-xs">{t('course.open')}</span>
                         <ChevronDown className="w-4 h-4 group-data-[state=open]:rotate-180 transition-transform duration-200" />
                       </div>
                     </div>
@@ -430,7 +430,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                       
                       {module.tasks && (
                         <div>
-                          <h4 className="font-semibold mb-3 text-foreground">Чек-лист выполнения:</h4>
+                          <h4 className="font-semibold mb-3 text-foreground">{t('course.checklist')}</h4>
                           <div className="space-y-3">
                             {module.tasks.map((task, idx) => {
                               const isChecked = moduleProgress[module.id]?.[idx] || false;
@@ -471,11 +471,11 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                               onClick={() => window.open('https://github.com/dradns/Analyst3.0-landing/blob/develop/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%CC%86.pdf', '_blank')}
                             >
                               <FileText className="w-4 h-4 mr-2" />
-                              Шаблон требований к домашнему заданию
+                              {t('course.template.button')}
                               <ExternalLink className="w-3 h-3 ml-2" />
                             </Button>
                             <p className="text-xs text-muted-foreground mt-2 px-2 leading-relaxed">
-                              Проверьте правильность выполнения этапа, сверившись с условиями и примерами из шаблона требований и видеолекций команды
+                              {t('course.template.description')}
                             </p>
                           </div>
                         </div>
@@ -483,7 +483,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
 
                       {module.examples && (
                         <div>
-                          <h4 className="font-semibold mb-3 text-foreground">Примеры AI-агентов:</h4>
+                          <h4 className="font-semibold mb-3 text-foreground">{t('course.examples')}</h4>
                           <ul className="space-y-2">
                             {module.examples.map((example, idx) => (
                               <li key={idx} className="flex items-start text-sm">
@@ -497,7 +497,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
 
                       {module.tools && (
                         <div>
-                          <h4 className="font-semibold mb-3 text-foreground">Инструменты:</h4>
+                          <h4 className="font-semibold mb-3 text-foreground">{t('course.tools')}</h4>
                           <ul className="space-y-2">
                             {module.tools.map((tool, idx) => (
                               <li key={idx} className="flex items-start text-sm">
@@ -511,7 +511,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
 
                       {module.resources && (
                         <div>
-                          <h4 className="font-semibold mb-3 text-foreground">Полезные ресурсы:</h4>
+                          <h4 className="font-semibold mb-3 text-foreground">{t('course.resources')}</h4>
                           <div className="space-y-3">
                             {module.resources.map((resource, idx) => {
                               const ResourceIcon = resource.icon;

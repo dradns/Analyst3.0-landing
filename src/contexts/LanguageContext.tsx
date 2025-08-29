@@ -333,6 +333,29 @@ ERD – диаграмма сущностей
     'cta.community.title': 'Общение, поддержка и обмен опытом с участниками курса',
     'cta.community.button': 'Присоединиться к комьюнити',
     
+    // Course Structure UI
+    'course.open': 'открыть',
+    'course.checklist': 'Чек-лист выполнения:',
+    'course.template.button': 'Шаблон требований к домашнему заданию',
+    'course.template.description': 'Проверьте правильность выполнения этапа, сверившись с условиями и примерами из шаблона требований и видеолекций команды',
+    'course.examples': 'Примеры AI-агентов:',
+    'course.resources': 'Полезные ресурсы:',
+    'course.tools': 'Инструменты:',
+    'course.video.lecture': 'Видеолекция:',
+    
+    // Module 1 Content
+    'module.1.description': 'Вам предстоит выбрать тему для вашего AI-агента и создать базовые документы: User Story и Use Case. Это фундамент всего проекта. Перед началом урока обязательно посмотрите видеолекции от команды создателей курса. Ссылки на youtube-канал находятся внизу каждого раздела.',
+    'module.1.task.1': 'Выбрать AI-агента из предложенных вариантов',
+    'module.1.task.2': 'Написать User Story по формуле: "Я, как [роль], хочу [действие], чтобы [результат]"',
+    'module.1.task.3': 'Создать Use Case с описанием взаимодействия пользователя с системой',
+    'module.1.example.1': 'HR AI ассистент для отбора кандидатов',
+    'module.1.example.2': 'Маркетинг AI агент для создания постов',
+    'module.1.example.3': 'CustDev AI агент для опросов пользователей',
+    'module.1.example.4': 'Аналитик-консультант для создания артефактов',
+    'module.1.example.5': 'Pitch-Deck AI Reviewer для проверки презентаций',
+    'module.1.video.1': 'Видеолекция: "Создание и работа с User Stories"',
+    'module.1.video.2': 'Видеолекция: "Описание сценариев использования"',
+    
     // Footer Sections
     'footer.about.title': 'О курсе',
     'footer.about.program': 'Программа',
@@ -664,6 +687,29 @@ as demonstration of your skills.`,
     // CTA Community
     'cta.community.title': 'Communication, support and experience sharing with course participants',
     'cta.community.button': 'Join the Community',
+    
+    // Course Structure UI
+    'course.open': 'open',
+    'course.checklist': 'Completion Checklist:',
+    'course.template.button': 'Requirements Template for Homework',
+    'course.template.description': 'Check the correctness of the stage completion by comparing with conditions and examples from the requirements template and video lectures',
+    'course.examples': 'AI Agent Examples:',
+    'course.resources': 'Useful Resources:',
+    'course.tools': 'Tools:',
+    'course.video.lecture': 'Video Lecture:',
+    
+    // Module 1 Content
+    'module.1.description': 'You need to choose a topic for your AI agent and create basic documents: User Story and Use Case. This is the foundation of the entire project. Before starting the lesson, be sure to watch video lectures from the course creators team. Links to the youtube channel are at the bottom of each section.',
+    'module.1.task.1': 'Choose AI agent from suggested options',
+    'module.1.task.2': 'Write User Story using formula: "As [role], I want [action], so that [result]"',
+    'module.1.task.3': 'Create Use Case describing user interaction with system',
+    'module.1.example.1': 'HR AI assistant for candidate selection',
+    'module.1.example.2': 'Marketing AI agent for post creation',
+    'module.1.example.3': 'CustDev AI agent for user surveys',
+    'module.1.example.4': 'Analyst-consultant for artifact creation',
+    'module.1.example.5': 'Pitch-Deck AI Reviewer for presentation checking',
+    'module.1.video.1': 'Video Lecture: "Creating and Working with User Stories"',
+    'module.1.video.2': 'Video Lecture: "Describing Usage Scenarios"',
     
     // Footer Sections
     'footer.about.title': 'About Course',
