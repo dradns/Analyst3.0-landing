@@ -130,7 +130,7 @@ ERD – диаграмма сущностей
                   <div className="absolute inset-0 bg-gradient-hero opacity-30 blur-lg animate-pulse" />
                   <p className="relative text-lg md:text-xl lg:text-2xl font-bold text-left bg-gradient-hero text-primary-foreground px-6 py-3 rounded-lg shadow-glow leading-relaxed mt-4">
                     <span className="font-bold">
-                      Бесплатный онлайн-курс: бизнес- и системный анализ нового поколения 3.0
+                      Станьте аналитиком 3.0 — специалистом нового поколения
                     </span>
                   </p>
                 </div>
