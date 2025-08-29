@@ -43,7 +43,7 @@ const Index = () => {
         <SectionTransition variant="learning-to-features" />
         
         <SectionWrapper background="muted">
-          <Features />
+          <ModeCards />
         </SectionWrapper>
         
         {/* Шаг 4: Формат обучения */}
