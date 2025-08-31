@@ -52,7 +52,7 @@ const LearningFormat = () => {
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        Как будут проходить занятия
+                        {t('course.format.title')}
                       </h3>
                     </div>
                   </div>

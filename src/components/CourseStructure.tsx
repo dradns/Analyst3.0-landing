@@ -356,7 +356,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        10 этапов для создания ИИ-агента
+                        {t('course.stages.title')}
                       </h3>
                     </div>
                   </div>

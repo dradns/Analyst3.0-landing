@@ -48,7 +48,7 @@ const AppShowcase = () => {
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        Итог обучения на курсе
+                        {t('course.result.title')}
                       </h3>
                     </div>
                   </div>

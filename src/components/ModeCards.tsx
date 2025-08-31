@@ -92,7 +92,7 @@ const ModeCards = () => {
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        Чему вы научитесь за 12 недель online
+                        {t('course.learning.title')}
                       </h3>
                     </div>
                   </div>

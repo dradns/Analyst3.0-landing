@@ -51,7 +51,7 @@ const WhyImportant = () => {
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        Сейчас самое время изучать AI
+                        {t('course.importance.title')}
                       </h3>
                     </div>
                   </div>

@@ -247,6 +247,14 @@ ERD – диаграмма сущностей
     'footer.newsletter.subscribe': 'Подписаться',
     'footer.copyright': '© 2025 Системный Аналитик 3.0. Все права защищены.',
     'footer.madeWith': 'Сделано с',
+    // Course Sections
+    'course.result.title': 'Итог обучения на курсе',
+    'course.stages.title': '10 этапов для создания ИИ-агента',
+    'course.learning.title': 'Чему вы научитесь за 12 недель online',
+    'course.format.title': 'Как будут проходить занятия',
+    'course.audience.title': 'Для кого предназначен курс, и кому он будет не актуален',
+    'course.importance.title': 'Сейчас самое время изучать AI',
+    
     // Hero Additional
     'hero.main.title': 'Вы научитесь создавать AI-агентов',
     'hero.agent.subtitle': 'Реальный кейс: агент, разработанный нашим студентом, в рамках обучения на бесплатном курсе\n"Системный Аналитик 3.0"',
@@ -699,6 +707,14 @@ as demonstration of your skills.`,
     'footer.newsletter.subscribe': 'Subscribe',
     'footer.copyright': '© 2025 System Analyst 3.0. All rights reserved.',
     'footer.madeWith': 'Made with',
+    // Course Sections
+    'course.result.title': 'Course Learning Outcomes',
+    'course.stages.title': '10 Stages to Create an AI Agent',
+    'course.learning.title': 'What You Will Learn in 12 Weeks Online',
+    'course.format.title': 'How Classes Will Be Conducted',
+    'course.audience.title': 'Who This Course Is For, and Who It Won\'t Be Relevant For',
+    'course.importance.title': 'Now Is the Perfect Time to Study AI',
+    
     // Hero Additional
     'hero.main.title': 'You will learn to create AI agents',
     'hero.agent.subtitle': 'Real case: an agent developed by our student during training in the free course "System Analyst 3.0"',

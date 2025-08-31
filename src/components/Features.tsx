@@ -89,7 +89,7 @@ const Features = () => {
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
                       <h3 className="text-xl text-muted-foreground">
-                        Для кого предназначен курс, и кому он будет не актуален
+                        {t('course.audience.title')}
                       </h3>
                     </div>
                   </div>
