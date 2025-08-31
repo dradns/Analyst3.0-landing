@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, ArrowUp, Bot, Cpu } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Zap, TrendingUp, Code2, Play, PlayCircle, Rocket, ArrowDown, ArrowUp, Bot, Cpu, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import CourseStructure from "@/components/CourseStructure";
 import AppShowcase from "@/components/AppShowcase";
@@ -112,27 +112,109 @@ const Hero = () => {
 
               {/* Enhanced Buttons */}
               <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
-                {/* Secondary Button */}
-                <div className="relative group animate-scale-in">
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                  <button className="relative inline-flex items-center justify-center gap-3 h-16 px-10 py-5 text-xl font-bold rounded-2xl bg-gradient-to-r from-primary/90 to-secondary/90 text-primary-foreground hover:from-primary hover:to-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-2xl hover:shadow-glow group hover-lift" onClick={() => {
-                  setOpenCourseModule("module-1");
-                  // Прокрутка к разделу структуры курса
-                  setTimeout(() => {
-                    const element = document.getElementById('course-structure');
-                    if (element) {
-                      element.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                      });
-                    }
-                  }, 100);
-                }}>
-                    <span className="flex items-center gap-3">
-                      {t('hero.start.button')}
-                      <Rocket className="w-6 h-6 group-hover:translate-y-[-2px] group-hover:rotate-12 transition-transform duration-300" />
-                    </span>
-                  </button>
+                {/* Compact Roadmap */}
+                <div className="animate-scale-in">
+                  <div className="max-w-2xl mx-auto">
+                    <div className="relative">
+                      {/* Horizontal Roadmap */}
+                      <div className="flex items-center justify-center overflow-x-auto pb-2">
+                        <div className="flex items-center gap-2 sm:gap-3 min-w-max px-2">
+                          {/* Step 1 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              1
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Результат
+                            </p>
+                          </div>
+
+                          {/* Connection arrow */}
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+
+                          {/* Step 2 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('modes')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              2
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Уроки
+                            </p>
+                          </div>
+
+                          {/* Connection arrow */}
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+
+                          {/* Step 3 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('structure')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              3
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Программа
+                            </p>
+                          </div>
+
+                          {/* Connection arrow */}
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+
+                          {/* Step 4 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('format')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              4
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Формат
+                            </p>
+                          </div>
+
+                          {/* Connection arrow */}
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+
+                          {/* Step 5 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              5
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Для кого
+                            </p>
+                          </div>
+
+                          {/* Connection arrow */}
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+
+                          {/* Step 6 */}
+                          <div 
+                            className="group cursor-pointer flex flex-col items-center"
+                            onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
+                          >
+                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                              6
+                            </div>
+                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                              Важность
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
