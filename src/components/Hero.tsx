@@ -113,103 +113,103 @@ const Hero = () => {
               {/* Enhanced Buttons */}
               <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
                 {/* Compact Roadmap */}
-                <div className="animate-scale-in">
-                  <div className="max-w-3xl mx-auto">
+                <div className="animate-scale-in w-full">
+                  <div className="w-full">
                     <div className="relative">
                       {/* Horizontal Roadmap */}
-                      <div className="flex items-center justify-center overflow-x-auto pb-2">
-                        <div className="flex items-center gap-3 sm:gap-4 md:gap-5 min-w-max px-4">
+                      <div className="w-full overflow-x-auto pb-4 px-2">
+                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 min-w-max mx-auto justify-start sm:justify-center" style={{ minWidth: 'fit-content' }}>
                           {/* Step 1 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               1
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.result')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.result')}
+                            </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
                           {/* Step 2 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('course-structure')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               2
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.lessons')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.lessons')}
+                            </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
                           {/* Step 3 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('what-awaits')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               3
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.program')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.program')}
+                            </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
                           {/* Step 4 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('learning-format')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               4
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.format')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.format')}
+                            </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
                           {/* Step 5 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               5
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.audience')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.audience')}
+                            </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
                           {/* Step 6 */}
                           <div 
-                            className="group cursor-pointer flex flex-col items-center"
+                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
                             onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               6
                             </div>
-                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                               {t('roadmap.importance')}
-                             </p>
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
+                              {t('roadmap.importance')}
+                            </p>
                           </div>
                         </div>
                       </div>
