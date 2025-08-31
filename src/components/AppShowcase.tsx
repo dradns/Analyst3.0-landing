@@ -69,7 +69,7 @@ const AppShowcase = () => {
                       2
                     </div>
                     <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
-                      Курс
+                      Уроки
                     </p>
                   </div>
 
