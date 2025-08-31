@@ -169,13 +169,13 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* App Showcase Section */}
+        <AppShowcase />
+
         {/* Course Structure Section */}
         <div className="mt-8">
           <CourseStructure openModuleId={openCourseModule} onOpenModule={setOpenCourseModule} />
         </div>
-
-        {/* App Showcase Section */}
-        <AppShowcase />
 
         {/* Demo Section */}
         <div className="max-w-6xl mx-auto animate-slide-up">
