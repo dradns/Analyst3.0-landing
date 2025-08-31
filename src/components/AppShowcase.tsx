@@ -142,6 +142,34 @@ const AppShowcase = () => {
           </div>
         </div>
 
+        {/* Interactive Roadmap Step 1 */}
+        <div className="mb-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Roadmap Step 1 */}
+              <div className="group cursor-pointer">
+                <div className="relative">
+                  <div className="flex items-center justify-center">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg z-10 relative">
+                        1
+                      </div>
+                      <h3 className="text-xl text-muted-foreground">
+                        Результат обучения на курсе
+                      </h3>
+                    </div>
+                  </div>
+                  
+                  {/* Road path continuing down */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
+                    <div className="w-1 h-8 bg-gradient-to-b from-primary to-primary/30"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
             {t('hero.main.title')}
