@@ -138,7 +138,7 @@ const Hero = () => {
                           {/* Step 2 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
-                            onClick={() => document.getElementById('modes')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => document.getElementById('course-structure')?.scrollIntoView({ behavior: 'smooth' })}
                           >
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               2
