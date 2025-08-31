@@ -114,100 +114,100 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
                 {/* Compact Roadmap */}
                 <div className="animate-scale-in">
-                  <div className="max-w-2xl mx-auto">
+                  <div className="max-w-3xl mx-auto">
                     <div className="relative">
                       {/* Horizontal Roadmap */}
                       <div className="flex items-center justify-center overflow-x-auto pb-2">
-                        <div className="flex items-center gap-2 sm:gap-3 min-w-max px-2">
+                        <div className="flex items-center gap-3 sm:gap-4 md:gap-5 min-w-max px-4">
                           {/* Step 1 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               1
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Результат
                             </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
 
                           {/* Step 2 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('modes')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               2
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Уроки
                             </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
 
                           {/* Step 3 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('structure')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               3
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Программа
                             </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
 
                           {/* Step 4 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('format')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               4
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Формат
                             </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
 
                           {/* Step 5 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               5
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Для кого
                             </p>
                           </div>
 
                           {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+                          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
 
                           {/* Step 6 */}
                           <div 
                             className="group cursor-pointer flex flex-col items-center"
                             onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
                           >
-                            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xs sm:text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-1">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               6
                             </div>
-                            <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors max-w-12 leading-tight">
+                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
                               Важность
                             </p>
                           </div>
