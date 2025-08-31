@@ -75,7 +75,7 @@ const LearningFormat = () => {
             {t('modes.reviewer.title')}
             <Monitor className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t('format.community.subtitle')}</p>
+          
         </div>
 
         <div className="max-w-6xl mx-auto">
