@@ -43,23 +43,25 @@ const AppShowcase = () => {
             <div className="relative">
               {/* Roadmap Step 1 */}
               <div className="group cursor-pointer">
-                <div className="relative bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center justify-between">
+                <div className="relative bg-gradient-to-b from-primary/20 via-primary/10 to-muted/5 rounded-full px-8 py-4 border-l-4 border-r-4 border-primary/30 shadow-inner">
+                  <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
-                        1
+                      <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold shadow-lg border-2 border-white">
+                        🚀
                       </div>
                       <h3 className="text-xl text-foreground">
                         Результат обучения на нашем курсе
                       </h3>
                     </div>
-                    <div className="text-primary animate-bounce">
+                  </div>
+                  
+                  {/* Road path continuing down */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
+                    <div className="w-1 h-8 bg-gradient-to-b from-primary/50 to-primary/20 rounded-full"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 top-6 text-primary animate-bounce text-2xl">
                       ↓
                     </div>
                   </div>
-                  
-                  {/* Connecting line */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-0.5 h-8 bg-gradient-to-b from-primary/50 to-transparent"></div>
                 </div>
               </div>
             </div>
