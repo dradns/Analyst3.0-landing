@@ -94,7 +94,7 @@ const ModeCards = () => {
                         3
                       </div>
                       <h3 className="text-xl text-muted-foreground">
-                        Чему вы научитесь за 12 недель
+                        Чему вы научитесь за 12 недель online
                       </h3>
                     </div>
                   </div>
