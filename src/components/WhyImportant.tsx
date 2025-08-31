@@ -10,7 +10,8 @@ import {
   BarChart3,
   Send,
   Rocket,
-  ChevronDown
+  ChevronDown,
+  ChevronRight
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -57,7 +58,7 @@ const WhyImportant = () => {
                   
                   {/* Road path continuing down */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
-                    <div className="w-1 h-8 bg-gradient-to-b from-primary to-primary/30"></div>
+                    <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse rotate-90" />
                   </div>
                 </div>
               </div>

@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
-import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown, ArrowDown } from "lucide-react";
+import { BookOpen, Play, ExternalLink, Video, FileText, Users, BarChart3, Target, Settings, Brain, Trophy, Presentation, Layers, Database, Activity, Globe, Code, CheckCircle, Map, ChevronDown, ArrowDown, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CourseStructureProps {
@@ -363,7 +363,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
                   
                   {/* Road path continuing down */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
-                    <div className="w-1 h-8 bg-gradient-to-b from-primary to-primary/30"></div>
+                    <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse rotate-90" />
                   </div>
                 </div>
               </div>
