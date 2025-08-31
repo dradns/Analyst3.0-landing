@@ -498,7 +498,7 @@ ERD – диаграмма сущностей
     'hero.subtitle': 'to AI Solutions',
     'hero.course.description': 'Become an Analyst 3.0 — architect of the future at the intersection of business analysis and AI',
     'hero.practice.text': '12 weeks of free training where you will learn to create an AI agent from scratch — with practice and community support',
-    'hero.homework.text': 'Try doing the first homework assignment right now',
+    'hero.homework.text': 'Study each course block and start practicing next-generation analytics today',
     'hero.start.button': 'Start First Lesson',
     'hero.video.description': 'How AI Agent Works',
     'hero.description': 'Free course: business and system analysis with AI',
