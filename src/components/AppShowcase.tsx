@@ -49,7 +49,7 @@ const AppShowcase = () => {
                       <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg z-10 relative">
                         1
                       </div>
-                      <h3 className="text-xl text-foreground">
+                      <h3 className="text-xl text-muted-foreground">
                         Результат обучения на нашем курсе
                       </h3>
                     </div>
