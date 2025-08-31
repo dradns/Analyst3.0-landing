@@ -55,7 +55,7 @@ const LearningFormat = () => {
                         4
                       </div>
                       <h3 className="text-xl text-muted-foreground">
-                        Сколько времени нужно выделить для курса
+                        Как будут проходить занятия
                       </h3>
                     </div>
                   </div>
