@@ -37,27 +37,104 @@ const AppShowcase = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-primary/5 to-transparent"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Interactive Roadmap */}
+        {/* Interactive Roadmap - Full Roadmap */}
         <div className="mb-12">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="relative">
-              {/* Roadmap Step 1 */}
-              <div className="group cursor-pointer">
-                <div className="relative">
-                  <div className="flex items-center justify-center">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg z-10 relative">
-                        1
-                      </div>
-                      <h3 className="text-xl text-muted-foreground">
-                        Результат обучения на нашем курсе
-                      </h3>
+              {/* Horizontal Roadmap */}
+              <div className="flex items-center justify-center">
+                <div className="flex items-center gap-8 lg:gap-12">
+                  {/* Step 1 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      1
                     </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Результат
+                    </p>
                   </div>
-                  
-                  {/* Road path continuing down */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
-                    <div className="w-1 h-8 bg-gradient-to-b from-primary to-primary/30"></div>
+
+                  {/* Connection line */}
+                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+
+                  {/* Step 2 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('modes')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      2
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Курс
+                    </p>
+                  </div>
+
+                  {/* Connection line */}
+                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+
+                  {/* Step 3 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('structure')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      3
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Структура
+                    </p>
+                  </div>
+
+                  {/* Connection line */}
+                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+
+                  {/* Step 4 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('format')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      4
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Формат
+                    </p>
+                  </div>
+
+                  {/* Connection line */}
+                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+
+                  {/* Step 5 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      5
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Аудитория
+                    </p>
+                  </div>
+
+                  {/* Connection line */}
+                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+
+                  {/* Step 6 */}
+                  <div 
+                    className="group cursor-pointer flex flex-col items-center"
+                    onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg hover:scale-110 transition-transform duration-300 mb-2">
+                      6
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-20">
+                      Важность
+                    </p>
                   </div>
                 </div>
               </div>
