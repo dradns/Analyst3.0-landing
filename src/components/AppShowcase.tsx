@@ -155,7 +155,7 @@ const AppShowcase = () => {
                         1
                       </div>
                       <h3 className="text-xl text-muted-foreground">
-                        Результат обучения на курсе
+                        Итог обучения на курсе
                       </h3>
                     </div>
                   </div>
