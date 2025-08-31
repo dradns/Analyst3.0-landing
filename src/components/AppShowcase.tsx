@@ -31,7 +31,7 @@ const AppShowcase = () => {
   ];
 
   return (
-    <section className="py-16 relative overflow-hidden bg-gradient-to-b from-background to-background/50">
+    <section id="app-showcase" className="py-16 relative overflow-hidden bg-gradient-to-b from-background to-background/50">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent opacity-60"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-primary/5 to-transparent"></div>
