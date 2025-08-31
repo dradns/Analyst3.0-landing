@@ -127,9 +127,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               1
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Результат
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.result')}
+                             </p>
                           </div>
 
                           {/* Connection arrow */}
@@ -143,9 +143,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               2
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Уроки
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.lessons')}
+                             </p>
                           </div>
 
                           {/* Connection arrow */}
@@ -159,9 +159,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               3
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Программа
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.program')}
+                             </p>
                           </div>
 
                           {/* Connection arrow */}
@@ -175,9 +175,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               4
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Формат
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.format')}
+                             </p>
                           </div>
 
                           {/* Connection arrow */}
@@ -191,9 +191,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               5
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Для кого
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.audience')}
+                             </p>
                           </div>
 
                           {/* Connection arrow */}
@@ -207,9 +207,9 @@ const Hero = () => {
                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                               6
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
-                              Важность
-                            </p>
+                             <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors max-w-16 leading-tight">
+                               {t('roadmap.importance')}
+                             </p>
                           </div>
                         </div>
                       </div>

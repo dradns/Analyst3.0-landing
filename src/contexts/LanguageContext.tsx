@@ -247,6 +247,14 @@ ERD – диаграмма сущностей
     'footer.newsletter.subscribe': 'Подписаться',
     'footer.copyright': '© 2025 Системный Аналитик 3.0. Все права защищены.',
     'footer.madeWith': 'Сделано с',
+    // Roadmap Elements
+    'roadmap.result': 'Результат',
+    'roadmap.lessons': 'Уроки', 
+    'roadmap.program': 'Программа',
+    'roadmap.format': 'Формат',
+    'roadmap.audience': 'Для кого',
+    'roadmap.importance': 'Важность',
+    
     // Course Sections
     'course.result.title': 'Итог обучения на курсе',
     'course.stages.title': '10 этапов для создания ИИ-агента',
@@ -707,6 +715,14 @@ as demonstration of your skills.`,
     'footer.newsletter.subscribe': 'Subscribe',
     'footer.copyright': '© 2025 System Analyst 3.0. All rights reserved.',
     'footer.madeWith': 'Made with',
+    // Roadmap Elements
+    'roadmap.result': 'Result',
+    'roadmap.lessons': 'Lessons', 
+    'roadmap.program': 'Program',
+    'roadmap.format': 'Format',
+    'roadmap.audience': 'For whom',
+    'roadmap.importance': 'Importance',
+    
     // Course Sections
     'course.result.title': 'Course Learning Outcomes',
     'course.stages.title': '10 Stages to Create an AI Agent',
