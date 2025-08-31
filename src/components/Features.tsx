@@ -87,9 +87,6 @@ const Features = () => {
                 <div className="relative">
                   <div className="flex items-center justify-center">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg z-10 relative">
-                        5
-                      </div>
                       <h3 className="text-xl text-muted-foreground">
                         Для кого предназначен курс, и кому он будет не актуален
                       </h3>
