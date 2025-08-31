@@ -37,6 +37,35 @@ const AppShowcase = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-primary/5 to-transparent"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Interactive Roadmap */}
+        <div className="mb-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Roadmap Step 1 */}
+              <div className="group cursor-pointer">
+                <div className="relative bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                        1
+                      </div>
+                      <h3 className="text-xl font-bold text-foreground">
+                        Результат обучения на нашем курсе
+                      </h3>
+                    </div>
+                    <div className="text-primary animate-bounce">
+                      ↓
+                    </div>
+                  </div>
+                  
+                  {/* Connecting line */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-0.5 h-8 bg-gradient-to-b from-primary/50 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground flex items-center justify-center gap-3">
             {t('hero.main.title')}
