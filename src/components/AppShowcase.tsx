@@ -58,9 +58,6 @@ const AppShowcase = () => {
                   {/* Road path continuing down */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 top-full">
                     <div className="w-1 h-8 bg-gradient-to-b from-primary to-primary/30"></div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 top-6 text-primary animate-bounce text-2xl">
-                      ↓
-                    </div>
                   </div>
                 </div>
               </div>
