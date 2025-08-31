@@ -175,7 +175,7 @@ const AppShowcase = () => {
             {t('hero.main.title')}
             <Smartphone className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto">
             {t('hero.agent.subtitle')}
           </p>
         </div>
