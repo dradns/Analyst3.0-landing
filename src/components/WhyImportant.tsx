@@ -36,7 +36,7 @@ const WhyImportant = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section id="why-important" className="py-20 relative overflow-hidden scroll-mt-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       
