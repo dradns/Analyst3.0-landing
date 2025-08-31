@@ -37,7 +37,7 @@ const LearningFormat = () => {
     title: t('format.career'),
     description: t('format.career.desc')
   }];
-  return <section className="py-20 relative overflow-hidden">
+  return <section id="learning-format" className="py-20 relative overflow-hidden scroll-mt-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       
