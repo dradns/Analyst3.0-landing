@@ -1,4 +1,4 @@
-import { Smartphone, X } from "lucide-react";
+import { Smartphone, X, ChevronRight } from "lucide-react";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -57,8 +57,8 @@ const AppShowcase = () => {
                     </p>
                   </div>
 
-                  {/* Connection line */}
-                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+                  {/* Connection arrow */}
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
 
                   {/* Step 2 */}
                   <div 
@@ -73,8 +73,8 @@ const AppShowcase = () => {
                     </p>
                   </div>
 
-                  {/* Connection line */}
-                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+                  {/* Connection arrow */}
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
 
                   {/* Step 3 */}
                   <div 
@@ -89,8 +89,8 @@ const AppShowcase = () => {
                     </p>
                   </div>
 
-                  {/* Connection line */}
-                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+                  {/* Connection arrow */}
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
 
                   {/* Step 4 */}
                   <div 
@@ -105,8 +105,8 @@ const AppShowcase = () => {
                     </p>
                   </div>
 
-                  {/* Connection line */}
-                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+                  {/* Connection arrow */}
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
 
                   {/* Step 5 */}
                   <div 
@@ -121,8 +121,8 @@ const AppShowcase = () => {
                     </p>
                   </div>
 
-                  {/* Connection line */}
-                  <div className="w-8 lg:w-12 h-1 bg-gradient-to-r from-primary to-secondary"></div>
+                  {/* Connection arrow */}
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
 
                   {/* Step 6 */}
                   <div 
