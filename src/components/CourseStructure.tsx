@@ -376,7 +376,7 @@ const CourseStructure = ({ openModuleId, onOpenModule }: CourseStructureProps = 
             {t('learning.title')}
             <Map className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary" />
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto mb-8">
             {t('learning.description')}
           </p>
           <Button 
