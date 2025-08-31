@@ -58,7 +58,7 @@ const AppShowcase = () => {
                   </div>
 
                   {/* Connection arrow */}
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse" />
 
                   {/* Step 2 */}
                   <div 
@@ -74,7 +74,7 @@ const AppShowcase = () => {
                   </div>
 
                   {/* Connection arrow */}
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse" />
 
                   {/* Step 3 */}
                   <div 
@@ -90,7 +90,7 @@ const AppShowcase = () => {
                   </div>
 
                   {/* Connection arrow */}
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse" />
 
                   {/* Step 4 */}
                   <div 
@@ -106,7 +106,7 @@ const AppShowcase = () => {
                   </div>
 
                   {/* Connection arrow */}
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse" />
 
                   {/* Step 5 */}
                   <div 
@@ -122,7 +122,7 @@ const AppShowcase = () => {
                   </div>
 
                   {/* Connection arrow */}
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-primary animate-pulse" />
 
                   {/* Step 6 */}
                   <div 
