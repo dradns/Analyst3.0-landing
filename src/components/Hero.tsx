@@ -116,100 +116,195 @@ const Hero = () => {
                 <div className="animate-scale-in w-full">
                   <div className="w-full">
                     <div className="relative">
-                      {/* Horizontal Roadmap */}
-                      <div className="w-full overflow-x-auto pb-4 px-2">
-                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 min-w-max mx-auto justify-start sm:justify-center" style={{ minWidth: 'fit-content' }}>
-                          {/* Step 1 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              1
+                      {/* Mobile: 2 rows, Desktop: horizontal */}
+                      <div className="block sm:hidden">
+                        {/* Mobile version - 2 rows */}
+                        <div className="space-y-4">
+                          {/* Row 1: Steps 1-3 */}
+                          <div className="flex items-center justify-center gap-2">
+                            {/* Step 1 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                1
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.result')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.result')}
-                            </p>
+
+                            <ChevronRight className="w-4 h-4 text-primary animate-pulse mx-1" />
+
+                            {/* Step 2 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('course-structure')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                2
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.lessons')}
+                              </p>
+                            </div>
+
+                            <ChevronRight className="w-4 h-4 text-primary animate-pulse mx-1" />
+
+                            {/* Step 3 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('what-awaits')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                3
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.program')}
+                              </p>
+                            </div>
                           </div>
 
-                          {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
-
-                          {/* Step 2 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('course-structure')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              2
+                          {/* Row 2: Steps 4-6 */}
+                          <div className="flex items-center justify-center gap-2">
+                            {/* Step 4 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('learning-format')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                4
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.format')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.lessons')}
-                            </p>
+
+                            <ChevronRight className="w-4 h-4 text-primary animate-pulse mx-1" />
+
+                            {/* Step 5 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                5
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.audience')}
+                              </p>
+                            </div>
+
+                            <ChevronRight className="w-4 h-4 text-primary animate-pulse mx-1" />
+
+                            {/* Step 6 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
+                              onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                6
+                              </div>
+                              <p className="text-xs text-center text-muted-foreground group-hover:text-primary transition-colors leading-tight">
+                                {t('roadmap.importance')}
+                              </p>
+                            </div>
                           </div>
+                        </div>
+                      </div>
 
-                          {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
-
-                          {/* Step 3 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('what-awaits')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              3
+                      {/* Desktop version - horizontal */}
+                      <div className="hidden sm:block">
+                        <div className="w-full overflow-x-auto pb-4 px-2">
+                          <div className="flex items-center gap-3 md:gap-4 min-w-max mx-auto justify-center">
+                            {/* Step 1 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                1
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.result')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.program')}
-                            </p>
-                          </div>
 
-                          {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
+                            <ChevronRight className="w-5 h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
-                          {/* Step 4 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('learning-format')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              4
+                            {/* Step 2 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('course-structure')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                2
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.lessons')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.format')}
-                            </p>
-                          </div>
 
-                          {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
+                            <ChevronRight className="w-5 h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
-                          {/* Step 5 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              5
+                            {/* Step 3 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('what-awaits')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                3
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.program')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.audience')}
-                            </p>
-                          </div>
 
-                          {/* Connection arrow */}
-                          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
+                            <ChevronRight className="w-5 h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
 
-                          {/* Step 6 */}
-                          <div 
-                            className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                            onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
-                          >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm sm:text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
-                              6
+                            {/* Step 4 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('learning-format')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                4
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.format')}
+                              </p>
                             </div>
-                            <p className="text-xs sm:text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-12 sm:w-16 leading-tight">
-                              {t('roadmap.importance')}
-                            </p>
+
+                            <ChevronRight className="w-5 h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
+
+                            {/* Step 5 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                5
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.audience')}
+                              </p>
+                            </div>
+
+                            <ChevronRight className="w-5 h-5 text-primary animate-pulse flex-shrink-0 mx-1" />
+
+                            {/* Step 6 */}
+                            <div 
+                              className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
+                              onClick={() => document.getElementById('why-important')?.scrollIntoView({ behavior: 'smooth' })}
+                            >
+                              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
+                                6
+                              </div>
+                              <p className="text-sm text-center text-muted-foreground group-hover:text-primary transition-colors w-16 leading-tight">
+                                {t('roadmap.importance')}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
