@@ -955,19 +955,8 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState<Language>(() => {
-    // Получаем язык из localStorage или используем системный
-    const savedLang = localStorage.getItem('language') as Language;
-    if (savedLang && ['ru', 'en'].includes(savedLang)) {
-      return savedLang;
-    }
-    // Дефолтный язык - русский
-    return 'ru';
-  });
+  const [language, setLanguage] = useState<Language>('ru');
 
-  useEffect(() => {
-    localStorage.setItem('language', language);
-  }, [language]);
 
   const t = (key: string): string => {
     return translations[language][key] || key;
