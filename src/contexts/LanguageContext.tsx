@@ -961,9 +961,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     if (savedLang && ['ru', 'en'].includes(savedLang)) {
       return savedLang;
     }
-    // Определяем язык браузера
-    const browserLang = navigator.language.toLowerCase();
-    return browserLang.startsWith('ru') ? 'ru' : 'en';
+    // Дефолтный язык - русский
+    return 'ru';
   });
 
   useEffect(() => {
