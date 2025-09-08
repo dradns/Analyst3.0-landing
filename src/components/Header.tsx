@@ -24,18 +24,32 @@ const Header = () => {
               alt="Analyst 3.0 Logo" 
               className="w-14 h-12 rounded-lg"
             />
-            <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <span className="text-xl md:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               {t('header.title')}
             </span>
           </div>
 
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          {/* Desktop Navigation - Flexible positioning */}
+          <nav className="hidden lg:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105 text-sm lg:text-base whitespace-nowrap"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105 whitespace-nowrap"
+                {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* Tablet Navigation - Right aligned */}
+          <nav className="hidden md:flex lg:hidden items-center space-x-4">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm whitespace-nowrap"
                 {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
