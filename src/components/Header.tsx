@@ -30,12 +30,12 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105 text-sm lg:text-base whitespace-nowrap"
                 {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
