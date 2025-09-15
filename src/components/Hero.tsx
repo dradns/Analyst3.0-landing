@@ -375,23 +375,23 @@ const Hero = () => {
 
           <Card className="max-w-4xl mx-auto">
             <CardContent className="p-6">
-              <div className="grid md:grid-cols-5 gap-6 items-center">
+              <div className="grid md:grid-cols-5 gap-6 items-start">
                 <div className="md:col-span-2">
                   <div className="flex items-center mb-4">
                     {React.createElement(demoModes[activeDemo].icon, {
                     className: "w-6 h-6 mr-3 text-primary"
                   })}
-                    <h4 className="text-xl font-semibold">
+                    <h4 className="text-lg md:text-xl font-semibold">
                       {demoModes[activeDemo].title}
                     </h4>
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     {demoModes[activeDemo].description}
                   </p>
                 </div>
-                <div className="md:col-span-3 bg-muted/50 rounded-lg p-4 border border-glass-border">
-                  <pre className="text-sm font-mono text-muted-foreground overflow-x-auto">
-                    <code>{demoModes[activeDemo].code}</code>
+                <div className="md:col-span-3 bg-muted/50 rounded-lg p-3 md:p-4 border border-glass-border">
+                  <pre className="text-xs sm:text-sm font-mono text-muted-foreground overflow-x-auto whitespace-pre-wrap break-words">
+                    <code className="block max-w-full">{demoModes[activeDemo].code}</code>
                   </pre>
                 </div>
               </div>
