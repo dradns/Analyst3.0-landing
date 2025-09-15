@@ -18,24 +18,24 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 min-w-0">
             <img 
               src="/lovable-uploads/cfc79ad7-a059-4cab-a04c-293a54663f7c.png" 
               alt="Analyst 3.0 Logo" 
               className="w-14 h-12 rounded-lg"
             />
-            <span className="text-xl md:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <span className="text-xl md:text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent truncate max-w-[55vw] md:max-w-[40vw] lg:max-w-[28vw] xl:max-w-none">
               {t('header.title')}
             </span>
           </div>
 
           {/* Desktop Navigation - Flexible positioning */}
-          <nav className="hidden lg:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          <nav className="hidden lg:flex flex-1 items-center justify-center space-x-6 xl:space-x-8">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 hover:scale-105 whitespace-nowrap"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300 whitespace-nowrap"
                 {...(item.href.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
@@ -44,7 +44,7 @@ const Header = () => {
           </nav>
 
           {/* Tablet Navigation - Right aligned */}
-          <nav className="hidden md:flex lg:hidden items-center space-x-4">
+          <nav className="hidden md:flex lg:hidden flex-1 items-center justify-end space-x-4 overflow-x-auto">
             {navigation.map((item) => (
               <a
                 key={item.name}
