@@ -1,4 +1,5 @@
-name: Deploy to GitHub Pages
+name: Deploy Analyst to GitHub Pages
+
 on:
   push:
     branches: [ main ]
@@ -9,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,12 +22,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm i; fi
+      - name: Build
+        run: |
+          if npm run | grep -q "build"; then npm run build; else echo "no build script"; fi
+      - name: Ensure dist + .nojekyll
+        run: |
+          mkdir -p dist
+          touch dist/.nojekyll
+      - name: SPA 404 fallback (optional)
+        run: |
+          if [ -f dist/index.html ]; then cp dist/index.html dist/404.html; fi
+      - name: Add CNAME
+        run: echo "analyst.aiidebas.com" > dist/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./dist
 
   deploy:
     needs: build
