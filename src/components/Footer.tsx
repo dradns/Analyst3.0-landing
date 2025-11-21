@@ -12,6 +12,7 @@ const Footer = () => {
       { name: t('footer.about.program'), href: "#what-awaits" },
       { name: t('footer.about.audience'), href: "#features" },
       { name: t('footer.about.structure'), href: "#course-structure" },
+      { name: t('students.menu.title'), href: "#student-projects" },
     ],
     support: [
       { name: t('footer.materials.agent'), href: "#" },

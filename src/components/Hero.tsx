@@ -125,7 +125,7 @@ const Hero = () => {
                             {/* Step 1 */}
                             <div 
                               className="group cursor-pointer flex flex-col items-center flex-1 max-w-[80px]"
-                              onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                              onClick={() => document.getElementById('student-projects')?.scrollIntoView({ behavior: 'smooth' })}
                             >
                               <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                                 1
@@ -221,7 +221,7 @@ const Hero = () => {
                             {/* Step 1 */}
                             <div 
                               className="group cursor-pointer flex flex-col items-center min-w-0 flex-shrink-0"
-                              onClick={() => document.getElementById('app-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                              onClick={() => document.getElementById('student-projects')?.scrollIntoView({ behavior: 'smooth' })}
                             >
                               <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-primary-foreground font-bold text-base shadow-md hover:scale-110 transition-transform duration-300 mb-2">
                                 1

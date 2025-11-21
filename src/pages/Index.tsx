@@ -6,6 +6,7 @@ import CourseCtaSectionWide from "@/components/CourseCtaSectionWide";
 import CourseCtaSectionPositive from "@/components/CourseCtaSectionPositive";
 import WhyImportant from "@/components/WhyImportant";
 import LearningFormat from "@/components/LearningFormat";
+import StudentProjects from "@/components/StudentProjects";
 import Footer from "@/components/Footer";
 import SectionTransition from "@/components/SectionTransition";
 import SectionWrapper from "@/components/SectionWrapper";
@@ -42,6 +43,14 @@ const Index = () => {
         {/* Функции курса */}
         <SectionWrapper background="default">
           <Features />
+        </SectionWrapper>
+        
+        {/* Переход к проектам студентов */}
+        <SectionTransition variant="features-to-cta" />
+        
+        {/* Проекты студентов */}
+        <SectionWrapper background="muted">
+          <StudentProjects />
         </SectionWrapper>
         
         {/* Переход к CTA */}

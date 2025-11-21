@@ -11,6 +11,7 @@ const Header = () => {
     { name: t('header.features'), href: "#what-awaits" },
     { name: t('header.quickstart'), href: "#features" },
     { name: t('header.integrations'), href: "#course-structure" },
+    { name: t('students.menu.title'), href: "#student-projects" },
   ];
 
   return (
