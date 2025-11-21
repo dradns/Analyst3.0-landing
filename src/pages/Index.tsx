@@ -17,13 +17,25 @@ const Index = () => {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      // Задержка для полной загрузки страницы
-      setTimeout(() => {
+      // Увеличенная задержка для мобильных устройств
+      const scrollToElement = () => {
         const element = document.querySelector(hash);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Используем более надежный способ для мобильных
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - 80; // Отступ для header
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
         }
-      }, 300);
+      };
+
+      // Пробуем несколько раз с увеличивающейся задержкой
+      setTimeout(scrollToElement, 100);
+      setTimeout(scrollToElement, 500);
+      setTimeout(scrollToElement, 1000);
     }
   }, []);
 
