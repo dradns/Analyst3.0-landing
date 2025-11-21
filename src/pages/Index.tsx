@@ -16,27 +16,41 @@ const Index = () => {
   // Обработка якоря при загрузке страницы
   useEffect(() => {
     const hash = window.location.hash;
-    if (hash) {
-      // Увеличенная задержка для мобильных устройств
-      const scrollToElement = () => {
-        const element = document.querySelector(hash);
-        if (element) {
-          // Используем более надежный способ для мобильных
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-          const offsetPosition = elementPosition - 80; // Отступ для header
-          
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      };
+    if (!hash) return;
 
-      // Пробуем несколько раз с увеличивающейся задержкой
+    const scrollToElement = () => {
+      const element = document.querySelector(hash);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - 80;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    // Ждем полной загрузки всего контента
+    if (document.readyState === 'complete') {
+      // Страница уже загружена
       setTimeout(scrollToElement, 100);
       setTimeout(scrollToElement, 500);
-      setTimeout(scrollToElement, 1000);
+    } else {
+      // Ждем события load
+      window.addEventListener('load', () => {
+        setTimeout(scrollToElement, 100);
+        setTimeout(scrollToElement, 500);
+        setTimeout(scrollToElement, 1000);
+      }, { once: true });
     }
+
+    // Дополнительная попытка через requestAnimationFrame
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setTimeout(scrollToElement, 100);
+      });
+    });
   }, []);
 
   return (
