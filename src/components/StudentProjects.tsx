@@ -99,7 +99,7 @@ const StudentProjects = () => {
       studentName: t('students.project.9.name'),
       title: t('students.project.9.title'),
       description: t('students.project.9.description'),
-      image: "/students/Ruslan.jpg",
+      image: "/students/Ruslan_2.JPG",
       videoUrl: "https://vkvideo.ru/video-231325948_456239145?list=ln-c5OvcYV70E6s7NY4bC",
       presentationUrl: "https://docs.google.com/presentation/d/172FW8tKRHGtcqXeBOc7LlbqqoArdFsGFeNvJl-lN_Vc/edit?slide=id.p#slide=id.p"
     },
