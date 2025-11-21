@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
+    <!-- Preload student images for faster loading on mobile -->
+    <link rel="preload" as="image" href="/students/Artem.jpg">
+    <link rel="preload" as="image" href="/students/Diana.jpg">
+    <link rel="preload" as="image" href="/students/Ivan.jpg">
+    <link rel="preload" as="image" href="/students/Ekaterina.jpg">
+    
     <!-- Favicon -->
     <link rel="icon" href="/lovable-uploads/7a3c6563-23ad-4d43-9684-32fdf736184b.png" type="image/png" sizes="16x16">
     <link rel="icon" href="/lovable-uploads/7a3c6563-23ad-4d43-9684-32fdf736184b.png" type="image/png" sizes="32x32">
@@ -47,6 +53,17 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://analyst.aiidebas.com/" />
     <!-- ========== КОНЕЦ ПЕРЕБИВАЮЩИХ ТЕГОВ ========== -->
+    
+    <style>
+      /* Принудительный рендеринг для мобильных */
+      * {
+        content-visibility: auto;
+      }
+      /* Отключаем lazy rendering для секции студентов */
+      #student-projects {
+        content-visibility: visible !important;
+      }
+    </style>
   </head>
 
   <body>

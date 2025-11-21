@@ -18,64 +18,65 @@ const Index = () => {
     const hash = window.location.hash;
     if (!hash) return;
 
-    // Для #student-projects делаем грубую оценку позиции
-    // чтобы сразу показать контент, даже если он еще не полностью загружен
-    if (hash === '#student-projects') {
-      // Примерная позиция раздела студентов (после hero, modes, learning, features)
-      // Скроллим сразу, чтобы пользователь видел хоть что-то
-      const estimatedPosition = window.innerHeight * 4; // Примерно 4 экрана вниз
-      window.scrollTo({
-        top: estimatedPosition,
-        behavior: 'instant' // Мгновенный скролл без анимации
-      });
-    }
-
-    let attempts = 0;
-    const maxAttempts = 15;
+    // Принудительно триггерим рендеринг всей страницы
+    // Это заставит браузер отрендерить весь контент
+    const forceRender = () => {
+      // Добавляем и сразу убираем класс для триггера reflow
+      document.body.style.display = 'none';
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+      document.body.offsetHeight; // Trigger reflow
+      document.body.style.display = '';
+    };
 
     const scrollToElement = () => {
       const element = document.querySelector(hash);
       if (element) {
-        // Проверяем, что элемент действительно отрендерился
         const rect = element.getBoundingClientRect();
         if (rect.height > 0) {
           const elementPosition = rect.top + window.pageYOffset;
           const offsetPosition = elementPosition - 80;
           
-          // Используем instant для первого скролла, чтобы не было задержки
           window.scrollTo({
             top: offsetPosition,
-            behavior: attempts === 0 ? 'instant' : 'smooth'
+            behavior: 'instant'
           });
+          
+          // Принудительный reflow после скролла
+          setTimeout(() => {
+            window.dispatchEvent(new Event('resize'));
+          }, 50);
+          
           return true;
         }
       }
       return false;
     };
 
-    const tryScroll = () => {
-      if (scrollToElement()) {
-        return; // Успешно прокрутили
-      }
+    // Стратегия для мобильных
+    const handleMobileScroll = () => {
+      // 1. Принудительный рендеринг
+      forceRender();
       
-      attempts++;
-      if (attempts < maxAttempts) {
-        // Пробуем снова через короткий интервал
-        setTimeout(tryScroll, 150);
-      }
+      // 2. Множественные попытки скролла
+      const intervals = [100, 300, 600, 1000, 1500, 2000];
+      intervals.forEach(delay => {
+        setTimeout(() => {
+          if (!scrollToElement()) {
+            forceRender();
+          }
+        }, delay);
+      });
     };
 
-    // Начинаем попытки сразу
-    setTimeout(tryScroll, 50);
-    setTimeout(tryScroll, 200);
-    setTimeout(tryScroll, 500);
-    setTimeout(tryScroll, 1000);
-    setTimeout(tryScroll, 1500);
+    // Запускаем сразу
+    setTimeout(handleMobileScroll, 0);
 
-    // Ждем события load для финальной попытки
-    window.addEventListener('load', () => {
-      setTimeout(tryScroll, 100);
-    }, { once: true });
+    // И после полной загрузки
+    if (document.readyState === 'complete') {
+      handleMobileScroll();
+    } else {
+      window.addEventListener('load', handleMobileScroll, { once: true });
+    }
   }, []);
 
   return (
