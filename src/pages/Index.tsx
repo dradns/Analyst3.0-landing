@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ModeCards from "@/components/ModeCards";
@@ -12,6 +13,20 @@ import SectionTransition from "@/components/SectionTransition";
 import SectionWrapper from "@/components/SectionWrapper";
 
 const Index = () => {
+  // Обработка якоря при загрузке страницы
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Задержка для полной загрузки страницы
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
