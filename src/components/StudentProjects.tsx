@@ -218,6 +218,7 @@ const StudentProjects = () => {
                   <img 
                     src={project.image}
                     alt={project.studentName}
+                    loading="eager"
                     className="w-full h-full object-cover rounded-2xl"
                     onError={(e) => {
                       // Fallback на UI Avatars если фото не загрузилось
