@@ -18,8 +18,20 @@ const Index = () => {
     const hash = window.location.hash;
     if (!hash) return;
 
+    // Для #student-projects делаем грубую оценку позиции
+    // чтобы сразу показать контент, даже если он еще не полностью загружен
+    if (hash === '#student-projects') {
+      // Примерная позиция раздела студентов (после hero, modes, learning, features)
+      // Скроллим сразу, чтобы пользователь видел хоть что-то
+      const estimatedPosition = window.innerHeight * 4; // Примерно 4 экрана вниз
+      window.scrollTo({
+        top: estimatedPosition,
+        behavior: 'instant' // Мгновенный скролл без анимации
+      });
+    }
+
     let attempts = 0;
-    const maxAttempts = 10;
+    const maxAttempts = 15;
 
     const scrollToElement = () => {
       const element = document.querySelector(hash);
@@ -30,9 +42,10 @@ const Index = () => {
           const elementPosition = rect.top + window.pageYOffset;
           const offsetPosition = elementPosition - 80;
           
+          // Используем instant для первого скролла, чтобы не было задержки
           window.scrollTo({
             top: offsetPosition,
-            behavior: 'smooth'
+            behavior: attempts === 0 ? 'instant' : 'smooth'
           });
           return true;
         }
@@ -47,28 +60,22 @@ const Index = () => {
       
       attempts++;
       if (attempts < maxAttempts) {
-        // Пробуем снова через увеличивающийся интервал
-        setTimeout(tryScroll, 200 * attempts);
+        // Пробуем снова через короткий интервал
+        setTimeout(tryScroll, 150);
       }
     };
 
-    // Ждем полной загрузки всего контента
-    if (document.readyState === 'complete') {
-      // Страница уже загружена
-      setTimeout(tryScroll, 100);
-    } else {
-      // Ждем события load
-      window.addEventListener('load', () => {
-        setTimeout(tryScroll, 100);
-      }, { once: true });
-    }
+    // Начинаем попытки сразу
+    setTimeout(tryScroll, 50);
+    setTimeout(tryScroll, 200);
+    setTimeout(tryScroll, 500);
+    setTimeout(tryScroll, 1000);
+    setTimeout(tryScroll, 1500);
 
-    // Дополнительная попытка через requestAnimationFrame
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setTimeout(tryScroll, 50);
-      });
-    });
+    // Ждем события load для финальной попытки
+    window.addEventListener('load', () => {
+      setTimeout(tryScroll, 100);
+    }, { once: true });
   }, []);
 
   return (
