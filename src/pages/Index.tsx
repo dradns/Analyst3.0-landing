@@ -18,37 +18,55 @@ const Index = () => {
     const hash = window.location.hash;
     if (!hash) return;
 
+    let attempts = 0;
+    const maxAttempts = 10;
+
     const scrollToElement = () => {
       const element = document.querySelector(hash);
       if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - 80;
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+        // Проверяем, что элемент действительно отрендерился
+        const rect = element.getBoundingClientRect();
+        if (rect.height > 0) {
+          const elementPosition = rect.top + window.pageYOffset;
+          const offsetPosition = elementPosition - 80;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          return true;
+        }
+      }
+      return false;
+    };
+
+    const tryScroll = () => {
+      if (scrollToElement()) {
+        return; // Успешно прокрутили
+      }
+      
+      attempts++;
+      if (attempts < maxAttempts) {
+        // Пробуем снова через увеличивающийся интервал
+        setTimeout(tryScroll, 200 * attempts);
       }
     };
 
     // Ждем полной загрузки всего контента
     if (document.readyState === 'complete') {
       // Страница уже загружена
-      setTimeout(scrollToElement, 100);
-      setTimeout(scrollToElement, 500);
+      setTimeout(tryScroll, 100);
     } else {
       // Ждем события load
       window.addEventListener('load', () => {
-        setTimeout(scrollToElement, 100);
-        setTimeout(scrollToElement, 500);
-        setTimeout(scrollToElement, 1000);
+        setTimeout(tryScroll, 100);
       }, { once: true });
     }
 
     // Дополнительная попытка через requestAnimationFrame
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        setTimeout(scrollToElement, 100);
+        setTimeout(tryScroll, 50);
       });
     });
   }, []);
