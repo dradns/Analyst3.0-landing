@@ -18,64 +18,20 @@ const Index = () => {
     const hash = window.location.hash;
     if (!hash) return;
 
-    // Принудительно триггерим рендеринг всей страницы
-    // Это заставит браузер отрендерить весь контент
-    const forceRender = () => {
-      // Добавляем и сразу убираем класс для триггера reflow
-      document.body.style.display = 'none';
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-      document.body.offsetHeight; // Trigger reflow
-      document.body.style.display = '';
-    };
-
     const scrollToElement = () => {
       const element = document.querySelector(hash);
       if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.height > 0) {
-          const elementPosition = rect.top + window.pageYOffset;
-          const offsetPosition = elementPosition - 80;
-          
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'instant'
-          });
-          
-          // Принудительный reflow после скролла
-          setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-          }, 50);
-          
-          return true;
-        }
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-      return false;
     };
 
-    // Стратегия для мобильных
-    const handleMobileScroll = () => {
-      // 1. Принудительный рендеринг
-      forceRender();
-      
-      // 2. Множественные попытки скролла
-      const intervals = [100, 300, 600, 1000, 1500, 2000];
-      intervals.forEach(delay => {
-        setTimeout(() => {
-          if (!scrollToElement()) {
-            forceRender();
-          }
-        }, delay);
-      });
-    };
-
-    // Запускаем сразу
-    setTimeout(handleMobileScroll, 0);
-
-    // И после полной загрузки
+    // Ждем полной загрузки страницы
     if (document.readyState === 'complete') {
-      handleMobileScroll();
+      setTimeout(scrollToElement, 300);
     } else {
-      window.addEventListener('load', handleMobileScroll, { once: true });
+      window.addEventListener('load', () => {
+        setTimeout(scrollToElement, 300);
+      }, { once: true });
     }
   }, []);
 
