@@ -137,7 +137,7 @@ const StudentProjects = () => {
       description: t('students.project.13.description'),
       image: "/students/Marina.JPG",
       videoUrl: "https://vkvideo.ru/video-231325948_456239143?list=ln-z5yzMR12vjnPYs98io",
-      presentationUrl: "https://github.com/barramus/GymAiMentor/blob/main/GymAiMentor.pptx"
+      presentationUrl: "https://github.com/maridelavias/GymAiMentor/blob/main/GymAiMentor.pptx"
     }
   ];
 
