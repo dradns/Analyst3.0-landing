@@ -135,7 +135,7 @@ const StudentProjects = () => {
       studentName: t('students.project.13.name'),
       title: t('students.project.13.title'),
       description: t('students.project.13.description'),
-      image: "/students/Marina.jpg?v=2",
+      image: "/students/Marina.JPG?v=2",
       videoUrl: "https://vkvideo.ru/video-231325948_456239143?list=ln-z5yzMR12vjnPYs98io",
       presentationUrl: "https://github.com/maridelavias/GymAiMentor/blob/main/GymAiMentor.pptx"
     }
